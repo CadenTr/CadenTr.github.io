@@ -1,64 +1,87 @@
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-  margin: 0;
-}
-header {
-  background-color: #2d72d9;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-nav ul li {
-  margin: 0 15px;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-.container {
-  width: 90%;
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
-section {
-  margin-bottom: 40px;
-}
-h2 {
-  color: #2d72d9;
-  border-bottom: 2px solid #2d72d9;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-}
-.project, .certification {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-}
-footer {
-  text-align: center;
-  padding: 10px;
-  background: #2d72d9;
-  color: #fff;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease, transform 0.3s ease;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Engineering Portfolio</title>
+  <style>
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+      margin: 0;
+    }
+    /* Header styling */
+    header {
+      background-color: #2d72d9;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    /* Navigation styling */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    /* Link styling */
+    nav ul li a {
+      color: #fff; /* White color */
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and size transition */
+    }
+    /* Hover effect */
+    nav ul li a:hover {
+      color: red; /* Change to red on hover */
+      transform: scale(1.1); /* Slightly increase size on hover */
+    }
+    /* Container styling */
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #2d72d9;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
 
-nav ul li a:hover {
-  color: red;
-  transform: scale(1.1); 
-}
+<header>
+  <h1>My Engineering Portfolio</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an electrical engineering student with practical experience in civil and geospatial engineering.</p>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2024 My Engineering Portfolio</p>
+</footer>
+
+</body>
+</html>
