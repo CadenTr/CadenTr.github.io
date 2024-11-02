@@ -52,3 +52,13 @@ footer {
   background: #2d72d9;
   color: #fff;
 }
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+
+nav ul li a:hover {
+  color: red;
+  transform: scale(1.1); 
+}
