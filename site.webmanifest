@@ -1,0 +1,16 @@
+{
+  "name": "Caden Trahan | Surveying, Engineering & Music",
+  "short_name": "Caden Trahan",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081014",
+  "theme_color": "#081014",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
