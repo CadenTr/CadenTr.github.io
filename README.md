@@ -8,7 +8,8 @@ Serve the repository root with any local static-file server, then open `index.ht
 
 ## Site files
 
-- `index.html` — full one-page portfolio and metadata
+- `index.html` — Home, About, Contact, and site-wide metadata
+- `surveying.html`, `engineering.html`, `music.html` — dedicated discipline pages
 - `styles.css` — responsive visual system
 - `script.js` — accessible navigation, hero topic switching, and progressive reveals
 - `assets/images/` — locally hosted licensed stock images
@@ -16,3 +17,5 @@ Serve the repository root with any local static-file server, then open `index.ht
 - `ASSET-CREDITS.md` — image sources and license record
 
 Professional work is intentionally described at a general level. No client drawings, parcel-owner information, internal trackers, credential IDs, or proprietary deliverables are published.
+
+The signature styling reserves the `Bright Sunshine` family name and currently falls back to locally available script fonts. Add a properly licensed Bright Sunshine webfont kit before publishing the exact typeface.

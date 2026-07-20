@@ -26,9 +26,14 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="assets/images/surveying-field.jpg" as="image" fetchpriority="high">
-  <script>document.documentElement.classList.add("js");</script>
-  <link rel="stylesheet" href="styles.css?v=20260719-3">
-  <script src="script.js?v=20260719-3" defer></script>
+  <script>
+    document.documentElement.classList.add("js");
+    if (["#surveying", "#engineering", "#music"].includes(window.location.hash)) {
+      window.location.replace(`${window.location.hash.slice(1)}.html`);
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css?v=20260719-11">
+  <script src="script.js?v=20260719-5" defer></script>
 
   <script type="application/ld+json">
     {
@@ -38,8 +43,7 @@
       "url": "https://cadentrahan.com/",
       "jobTitle": "Survey and Geospatial CADD Operator",
       "sameAs": [
-        "https://www.linkedin.com/in/caden-trahan",
-        "https://github.com/CadenTr"
+        "https://www.linkedin.com/in/caden-trahan"
       ],
       "knowsAbout": [
         "Surveying",
@@ -58,8 +62,7 @@
   <header class="site-header" data-site-header>
     <div class="site-header__inner shell">
       <a class="brand" href="#home" aria-label="Caden Trahan, home">
-        <span class="brand__mark" aria-hidden="true"><span></span></span>
-        <span class="brand__name">Caden Trahan</span>
+        <span class="brand__signature">Caden Trahan</span>
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
@@ -70,9 +73,9 @@
 
       <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
         <a href="#home">Home</a>
-        <a href="#surveying">Surveying</a>
-        <a href="#engineering">Engineering</a>
-        <a href="#music">Music</a>
+        <a href="surveying.html">Surveying</a>
+        <a href="engineering.html">Engineering</a>
+        <a href="music.html">Music</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -91,12 +94,11 @@
 
       <div class="hero__body shell">
         <div class="hero__meta mono">
-          <span>Portfolio / Charlotte region</span>
           <span>Field / Design / Performance</span>
+          <span>Charlotte region</span>
         </div>
 
         <div class="hero__intro">
-          <p class="eyebrow">Survey + Geospatial CADD</p>
           <h1 id="hero-title">Caden<br>
             Trahan</h1>
           <p class="hero__statement">
@@ -104,35 +106,30 @@
             <span>Engineering.</span>
             <span>Music.</span>
           </p>
-          <p class="hero__role">Survey &amp; Geospatial CADD Operator at Colliers Engineering &amp; Design. Civil Engineering Technology—Geomatics student. Percussionist.</p>
-        </div>
-
-        <div class="hero__notation mono" aria-hidden="true">
-          <span>POINT / CT-001</span>
-          <span>SCALE / 1:1</span>
+          <p class="hero__role">Survey &amp; Geospatial CADD Operator, supporting surveying, mapping, and infrastructure projects. Civil Engineering Technology student pursuing a career in land surveying and civil engineering, shaped by a lifelong passion for music and percussion.</p>
         </div>
       </div>
 
       <div class="topic-cards shell" aria-label="Explore Caden's work">
-        <a class="topic-card topic-card--surveying" href="#surveying" data-topic-link="surveying">
+        <a class="topic-card topic-card--surveying" href="surveying.html" data-topic-link="surveying">
           <span class="topic-card__number mono">01</span>
           <span class="topic-card__copy">
             <strong>Surveying</strong>
-            <small>Field data · Records · Deliverables</small>
+            <small>FIELD DATA · CONSTRUCTION · RECORDING</small>
           </span>
           <span class="topic-card__arrow" aria-hidden="true">↘</span>
         </a>
 
-        <a class="topic-card topic-card--engineering" href="#engineering" data-topic-link="engineering">
+        <a class="topic-card topic-card--engineering" href="engineering.html" data-topic-link="engineering">
           <span class="topic-card__number mono">02</span>
           <span class="topic-card__copy">
             <strong>Engineering</strong>
-            <small>Civil systems · Plans · Estimates</small>
+            <small>CIVIL PLANS · TECHNICAL DRAFTING · AS-BUILTS</small>
           </span>
           <span class="topic-card__arrow" aria-hidden="true">↘</span>
         </a>
 
-        <a class="topic-card topic-card--music" href="#music" data-topic-link="music">
+        <a class="topic-card topic-card--music" href="music.html" data-topic-link="music">
           <span class="topic-card__number mono">03</span>
           <span class="topic-card__copy">
             <strong>Music</strong>
@@ -143,167 +140,27 @@
       </div>
     </section>
 
-    <aside class="proof-rail" aria-label="Portfolio highlights">
-      <div class="proof-rail__inner shell">
-        <p><span class="proof-rail__index mono">A</span> Survey &amp; Geospatial CADD Operator</p>
-        <p><span class="proof-rail__index mono">B</span> CST Field Track Level I</p>
-        <p><span class="proof-rail__index mono">C</span> Civil Engineering Technology / Geomatics</p>
-        <p><span class="proof-rail__index mono">D</span> Percussion / Paradigm</p>
-      </div>
-    </aside>
-
-    <section class="discipline discipline--surveying" id="surveying" aria-labelledby="surveying-title">
-      <div class="section-grid shell">
-        <header class="section-heading reveal">
-          <p class="section-kicker mono"><span>01</span> / Surveying</p>
-          <h2 id="surveying-title">Measured in the field.<br>Made clear in the drawing.</h2>
-          <p class="section-lede">I support survey and geospatial production from field-point review through finished CADD documentation, with an eye for accuracy, legibility, and how information will be used downstream.</p>
-        </header>
-
-        <figure class="section-figure section-figure--surveying reveal">
-          <img src="assets/images/surveying-field.jpg" width="1920" height="1443" loading="lazy" alt="Surveyor sighting through a leveling instrument in an open field.">
-          <figcaption class="mono">Field / Observation / Control</figcaption>
-        </figure>
-
-        <div class="work-modules">
-          <article class="work-module reveal">
-            <p class="module-tag mono">S-01 / Surface</p>
-            <h3>Field data &amp; terrain</h3>
-            <p>Point review, linework integrity, TIN surfaces, contours, and terrain-model quality control using Civil 3D and Trimble Business Center.</p>
-          </article>
-          <article class="work-module reveal">
-            <p class="module-tag mono">S-02 / Records</p>
-            <h3>As-built documentation</h3>
-            <p>Clear record information for storm, water, sewer, and BMP systems, developed from field observations, redlines, and supporting records.</p>
-          </article>
-          <article class="work-module reveal">
-            <p class="module-tag mono">S-03 / Boundary</p>
-            <h3>Research &amp; exhibits</h3>
-            <p>Deed research, record easements, exhibits, and legal-description plats—described here without exposing client or parcel information.</p>
-          </article>
-          <article class="work-module reveal">
-            <p class="module-tag mono">S-04 / Scope</p>
-            <h3>Proposal support</h3>
-            <p>Survey scope development, effort estimates, and organized production tracking in Excel, Bluebeam, and CADD workflows.</p>
-          </article>
-        </div>
-
-        <div class="process-line reveal" aria-label="Survey production workflow">
-          <span>Field data</span><i aria-hidden="true"></i><span>QC</span><i aria-hidden="true"></i><span>CADD</span><i aria-hidden="true"></i><span>Deliverable</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="discipline discipline--engineering" id="engineering" aria-labelledby="engineering-title">
-      <div class="section-grid shell">
-        <header class="section-heading reveal">
-          <p class="section-kicker mono"><span>02</span> / Engineering</p>
-          <h2 id="engineering-title">Survey accuracy with an infrastructure mindset.</h2>
-          <p class="section-lede">My Civil Engineering Technology studies and production work connect survey information to the storm, water, sewer, land-development, and construction systems it supports.</p>
-        </header>
-
-        <figure class="section-figure section-figure--engineering reveal">
-          <img src="assets/images/engineering-plans.jpg" width="1920" height="1281" loading="lazy" alt="Civil engineering team reviewing construction plans on a table.">
-          <figcaption class="mono">Plan / Coordinate / Build</figcaption>
-        </figure>
-
-        <div class="work-modules">
-          <article class="work-module reveal">
-            <p class="module-tag mono">E-01 / Coordination</p>
-            <h3>Infrastructure plans</h3>
-            <p>Construction-composite drafting from coordinated plan PDFs and redlines, translating separate sources into a clearer shared reference.</p>
-          </article>
-          <article class="work-module reveal">
-            <p class="module-tag mono">E-02 / Hydrology</p>
-            <h3>Flows &amp; quantities</h3>
-            <p>Coursework applying measured flow rates, storage-volume geometry, cross-section quantities, unit conversions, and documented calculations.</p>
-          </article>
-          <article class="work-module reveal">
-            <p class="module-tag mono">E-03 / Estimating</p>
-            <h3>Project planning</h3>
-            <p>Academic and professional practice with direct-labor assumptions, overhead, fee development, scope definition, and responsible project decisions.</p>
-          </article>
-          <article class="work-module reveal">
-            <p class="module-tag mono">E-04 / Direction</p>
-            <h3>Land development</h3>
-            <p>Completing an A.A.S. in Civil Engineering Technology—Geomatics while preparing for a civil-engineering pathway focused on land development and infrastructure.</p>
-          </article>
-        </div>
-
-        <div class="tool-rail reveal" aria-label="Primary software">
-          <span class="mono">Primary toolkit</span>
-          <ul>
-            <li>Civil 3D</li>
-            <li>Bluebeam</li>
-            <li>Trimble Business Center</li>
-            <li>Excel</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="discipline discipline--music" id="music" aria-labelledby="music-title">
-      <div class="music-backdrop" aria-hidden="true"></div>
-      <div class="music-overlay" aria-hidden="true"></div>
-      <div class="music-layout shell">
-        <header class="section-heading reveal">
-          <p class="section-kicker mono"><span>03</span> / Music</p>
-          <h2 id="music-title">Precision changes character when it becomes performance.</h2>
-          <p class="section-lede">Percussion is a core part of my identity, shaped by ensemble accountability, repetition, and leadership through Paradigm Percussion.</p>
-        </header>
-
-        <div class="music-principles">
-          <article class="music-principle reveal">
-            <span class="mono">M-01</span>
-            <h3>Performance</h3>
-            <p>Turning focused preparation into energy, clarity, and communication in the moment.</p>
-          </article>
-          <article class="music-principle reveal">
-            <span class="mono">M-02</span>
-            <h3>Ensemble leadership</h3>
-            <p>Listening closely, setting a dependable standard, and helping a group move as one.</p>
-          </article>
-          <article class="music-principle reveal">
-            <span class="mono">M-03</span>
-            <h3>Rehearsal discipline</h3>
-            <p>Breaking complex work into repeatable decisions—the same habit that strengthens technical production.</p>
-          </article>
-        </div>
-
-        <p class="music-note mono reveal">TIME / TOUCH / TEAM</p>
-      </div>
-    </section>
-
     <section class="about" id="about" aria-labelledby="about-title">
       <div class="about__inner shell">
         <header class="section-heading reveal">
           <p class="section-kicker mono"><span>About</span> / The connection</p>
-          <h2 id="about-title">Three disciplines.<br>One working style.</h2>
-          <p class="section-lede">I am Caden Trahan, a Survey &amp; Geospatial CADD Operator in the Charlotte region and a Civil Engineering Technology student focused on geomatics. My work is grounded in accuracy, legibility, and the relationship between what is measured, designed, and built.</p>
+          <h2 id="about-title">Three disciplines.<br>One Style.</h2>
+          <div class="section-lede about-copy">
+            <p>Hi, I’m Caden. I’m based in the Charlotte area, where I work as a CADD Operator with Colliers Engineering &amp; Design while studying Civil Engineering Technology at Central Piedmont Community College. Most of my work involves Civil 3D and Bluebeam. I really enjoy taking field information and turning it into drawings that help teams build sites people can actually rely on. I take pride in knowing that the work I do is accurate and relied upon.</p>
+            <p>What I enjoy most is being useful at the core of a project. I like working through the heavier drafting tasks, figuring out how the different pieces fit together, and seeing something gradually come together. Surveying interests me because it allows me to model the earth while contributing to projects that have a real effect on people. Typically, that means establishing a clear property boundary or laying out infrastructure where and how it should be built.</p>
+            <p>I’m currently working toward becoming a Professional Land Surveyor (PLS) in North Carolina and progressing through the Certified Survey Technician (CST) levels as I go. At the same time, I’m completing the educational requirements needed to pursue Professional Engineer (PE) licensure. I want to continue growing into work where technical knowledge carries real responsibility and where the quality of what I produce matters beyond the drawing itself.</p>
+            <p>Music is where I first learned to take that responsibility seriously. As a percussionist with Paradigm Percussion, I learned that there are no shortcuts once a performance begins. The preparation you did—or did not do—becomes excruciatingly obvious in real time, and the people around you depend on you knowing your part. That pressure and leadership shaped the way I approach my work today.</p>
+            <p>At the end of the day, I care about doing work I can stand behind and becoming someone others can rely on. This portfolio shows the projects, skills, and experiences that have shaped me so far, but more importantly, it reflects the kind of person and professional I’m working to become.</p>
+          </div>
         </header>
 
-        <div class="status-grid">
-          <article class="status-card reveal">
-            <p class="mono">Now / Work</p>
-            <h3>Survey &amp; Geospatial CADD Operator</h3>
-            <span>Colliers Engineering &amp; Design · Charlotte region</span>
-          </article>
-          <article class="status-card reveal">
-            <p class="mono">Now / Study</p>
-            <h3>Civil Engineering Technology—Geomatics</h3>
-            <span>Central Piedmont Community College · A.A.S. pathway</span>
-          </article>
-          <article class="status-card reveal">
-            <p class="mono">Credential</p>
-            <h3>Certified Survey Technician</h3>
-            <span>NSPS Field Track Level I · Issued 2025</span>
-          </article>
-          <article class="status-card reveal">
-            <p class="mono">Working toward</p>
-            <h3>Licensure &amp; civil practice</h3>
-            <span>PLS · B.S.C.E. pathway · Land development · Infrastructure</span>
-          </article>
-        </div>
+        <figure class="about-portrait reveal">
+          <div class="about-portrait__placeholder" role="img" aria-label="Portrait photograph placeholder for Caden Trahan">
+            <span class="about-portrait__initials" aria-hidden="true">CT</span>
+            <span class="about-portrait__label mono" aria-hidden="true">Portrait / 4:5</span>
+          </div>
+          <figcaption class="mono">Portrait photograph forthcoming</figcaption>
+        </figure>
 
         <div class="credentials reveal">
           <div class="credentials__heading">
@@ -319,6 +176,56 @@
             <li><strong>Autodesk Certified User</strong><span>AutoCAD · 2022</span></li>
           </ul>
         </div>
+
+        <div class="credentials goals reveal">
+          <div class="credentials__heading">
+            <p class="mono">What I’m Working Toward</p>
+            <p>My current timeline for professional licensure, certification, and education.</p>
+          </div>
+          <div class="goals-grid">
+            <article class="goal-group">
+              <h3>Professional Land Surveyor</h3>
+              <dl class="goal-milestones">
+                <div><dt>NC PLS:</dt><dd>Summer to Fall 2032</dd></div>
+                <div><dt>SC PLS:</dt><dd>Fall 2033 to Early 2034</dd></div>
+                <div><dt>NC State Exam:</dt><dd>Summer 2032</dd></div>
+                <div><dt>SC State Exam:</dt><dd>Fall 2033</dd></div>
+                <div><dt>PS Exam:</dt><dd>Summer 2027</dd></div>
+                <div><dt>NC SI:</dt><dd>Summer 2027</dd></div>
+                <div><dt>FS Exam:</dt><dd>October 2026</dd></div>
+              </dl>
+            </article>
+
+            <article class="goal-group">
+              <h3>Professional Engineer</h3>
+              <dl class="goal-milestones">
+                <div><dt>NC PE:</dt><dd>Summer to Fall 2036</dd></div>
+                <div><dt>SC PE:</dt><dd>Summer to Fall 2037</dd></div>
+                <div><dt>PE Exam:</dt><dd>Spring to Summer 2034</dd></div>
+                <div><dt>NC EI:</dt><dd>Summer 2033</dd></div>
+                <div><dt>FE Exam:</dt><dd>Spring 2033</dd></div>
+              </dl>
+            </article>
+
+            <article class="goal-group">
+              <h3>Certified Survey Technician</h3>
+              <dl class="goal-milestones">
+                <div><dt>CST IV:</dt><dd>2030 to 2031</dd></div>
+                <div><dt>CST III:</dt><dd>Spring 2028</dd></div>
+                <div><dt>CST II:</dt><dd>Spring 2027</dd></div>
+                <div><dt>CST I:</dt><dd>Completed 2025</dd></div>
+              </dl>
+            </article>
+
+            <article class="goal-group">
+              <h3>Education</h3>
+              <dl class="goal-milestones">
+                <div><dt>BSCE, Land Development Concentration:</dt><dd>Spring 2033</dd></div>
+                <div><dt>AAS, Civil Engineering Technology–Geomatics:</dt><dd>Spring 2027</dd></div>
+              </dl>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -327,23 +234,23 @@
         <div class="contact__copy reveal">
           <p class="section-kicker mono"><span>Contact</span> / Start a conversation</p>
           <h2 id="contact-title">Let's connect.</h2>
-          <p>I welcome conversations with employers, mentors, professors, and peers working in surveying, geomatics, civil engineering, infrastructure, or music.</p>
+          <p>I welcome conversations with employers, mentors, professors, and peers working in surveying, geomatics, civil engineering, infrastructure, or music!</p>
         </div>
 
         <div class="contact-links reveal">
+          <a href="mailto:caden.trahan@collierseng.com">
+            <span class="mono">Work email</span>
+            <strong>caden.trahan@collierseng.com</strong>
+            <i aria-hidden="true">↗</i>
+          </a>
           <a href="mailto:cadentrahan06@gmail.com">
-            <span class="mono">Email</span>
+            <span class="mono">Personal email</span>
             <strong>cadentrahan06@gmail.com</strong>
             <i aria-hidden="true">↗</i>
           </a>
           <a href="https://www.linkedin.com/in/caden-trahan" target="_blank" rel="noopener noreferrer">
             <span class="mono">LinkedIn</span>
             <strong>Professional profile</strong>
-            <i aria-hidden="true">↗</i>
-          </a>
-          <a href="https://github.com/CadenTr" target="_blank" rel="noopener noreferrer">
-            <span class="mono">GitHub</span>
-            <strong>@CadenTr</strong>
             <i aria-hidden="true">↗</i>
           </a>
         </div>

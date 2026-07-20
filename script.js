@@ -8,7 +8,8 @@ document.documentElement.classList.add("js");
   const header = document.querySelector("[data-site-header]");
   const navToggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector("#primary-nav");
-  const navLinks = [...document.querySelectorAll(".primary-nav a[href^='#']")];
+  const menuLinks = [...document.querySelectorAll(".primary-nav a")];
+  const sectionLinks = menuLinks.filter((link) => link.getAttribute("href")?.startsWith("#"));
   const pageMain = document.querySelector("main");
   const siteFooter = document.querySelector("footer");
 
@@ -29,7 +30,7 @@ document.documentElement.classList.add("js");
     [pageMain, siteFooter].forEach((region) => region?.toggleAttribute("inert", open));
 
     if (open) {
-      window.requestAnimationFrame(() => navLinks[0]?.focus());
+      window.requestAnimationFrame(() => menuLinks[0]?.focus());
     } else if (returnFocus) {
       navToggle.focus({ preventScroll: true });
     }
@@ -40,10 +41,11 @@ document.documentElement.classList.add("js");
     setNavOpen(open);
   });
 
-  navLinks.forEach((link) => {
+  menuLinks.forEach((link) => {
     link.addEventListener("click", () => {
       const wasOpen = header?.classList.contains("nav-open") ?? false;
-      const target = document.querySelector(link.getAttribute("href"));
+      const href = link.getAttribute("href") ?? "";
+      const target = href.startsWith("#") ? document.querySelector(href) : null;
       const targetHeading = target?.querySelector("h1, h2");
 
       setNavOpen(false, wasOpen);
@@ -67,7 +69,7 @@ document.documentElement.classList.add("js");
     }
 
     if (event.key === "Tab" && navIsOpen && navToggle) {
-      const focusable = [navToggle, ...navLinks];
+      const focusable = [navToggle, ...menuLinks];
       const first = focusable[0];
       const last = focusable.at(-1);
 
@@ -87,34 +89,77 @@ document.documentElement.classList.add("js");
 
   const hero = document.querySelector("[data-hero]");
   const topicLinks = [...document.querySelectorAll("[data-topic-link]")];
-  const defaultTopic = "surveying";
+  const topics = ["surveying", "engineering", "music"];
+  const rotationDelay = 4200;
+  let activeTopic = topics.includes(hero?.dataset.topic) ? hero.dataset.topic : topics[0];
+  let rotationTimer = 0;
+  let userSelectedTopic = false;
+  let heroIsVisible = true;
 
   const setHeroTopic = (topic) => {
-    if (!hero || !["surveying", "engineering", "music"].includes(topic)) return;
+    if (!hero || !topics.includes(topic)) return;
+    activeTopic = topic;
     hero.dataset.topic = topic;
+  };
+
+  const stopHeroRotation = () => {
+    window.clearTimeout(rotationTimer);
+    rotationTimer = 0;
+  };
+
+  const scheduleHeroRotation = () => {
+    stopHeroRotation();
+    if (!hero || userSelectedTopic || reducedMotion.matches || document.hidden || !heroIsVisible) return;
+
+    rotationTimer = window.setTimeout(() => {
+      const nextIndex = (topics.indexOf(activeTopic) + 1) % topics.length;
+      setHeroTopic(topics[nextIndex]);
+      scheduleHeroRotation();
+    }, rotationDelay);
+  };
+
+  const selectHeroTopic = (topic) => {
+    userSelectedTopic = true;
+    stopHeroRotation();
+    setHeroTopic(topic);
   };
 
   topicLinks.forEach((link) => {
     const topic = link.dataset.topicLink;
 
     link.addEventListener("pointerenter", () => {
-      if (finePointer.matches) setHeroTopic(topic);
+      if (finePointer.matches) selectHeroTopic(topic);
     });
 
-    link.addEventListener("focus", () => setHeroTopic(topic));
-    link.addEventListener("click", () => setHeroTopic(topic));
+    link.addEventListener("focus", () => selectHeroTopic(topic));
+    link.addEventListener("pointerdown", (event) => {
+      if (event.pointerType !== "mouse") selectHeroTopic(topic);
+    });
+    link.addEventListener("click", () => selectHeroTopic(topic));
   });
 
-  document.querySelector(".topic-cards")?.addEventListener("pointerleave", () => {
-    if (finePointer.matches) setHeroTopic(defaultTopic);
+  if (hero && "IntersectionObserver" in window) {
+    const heroObserver = new IntersectionObserver(([entry]) => {
+      heroIsVisible = entry.isIntersecting;
+      if (heroIsVisible) scheduleHeroRotation();
+      else stopHeroRotation();
+    }, { threshold: 0.15 });
+
+    heroObserver.observe(hero);
+  }
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) stopHeroRotation();
+    else scheduleHeroRotation();
   });
 
-  document.querySelector(".topic-cards")?.addEventListener("focusout", () => {
-    window.setTimeout(() => {
-      const focusedTopic = document.activeElement?.closest?.("[data-topic-link]");
-      if (!focusedTopic) setHeroTopic(defaultTopic);
-    }, 0);
-  });
+  if ("addEventListener" in reducedMotion) {
+    reducedMotion.addEventListener("change", scheduleHeroRotation);
+  }
+
+  window.addEventListener("pagehide", stopHeroRotation);
+  window.addEventListener("pageshow", scheduleHeroRotation);
+  scheduleHeroRotation();
 
   const preloadTopicImages = () => {
     ["assets/images/engineering-plans.jpg", "assets/images/music-performance.jpg"].forEach((src) => {
@@ -151,17 +196,24 @@ document.documentElement.classList.add("js");
     revealItems.forEach((item) => revealObserver.observe(item));
   }
 
-  const sections = [...document.querySelectorAll("main section[id]")];
-  const navById = new Map(navLinks.map((link) => [link.getAttribute("href").slice(1), link]));
+  const sections = sectionLinks
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
+  const navById = new Map(sectionLinks.map((link) => [link.getAttribute("href").slice(1), link]));
 
   const markCurrentSection = (id) => {
-    navLinks.forEach((link) => link.removeAttribute("aria-current"));
+    sectionLinks.forEach((link) => link.removeAttribute("aria-current"));
     navById.get(id)?.setAttribute("aria-current", "location");
   };
 
   let sectionTicking = false;
 
   const updateCurrentSection = () => {
+    if (!sections.length) {
+      sectionTicking = false;
+      return;
+    }
+
     const headerOffset = (header?.offsetHeight ?? 0) + 24;
     const marker = window.scrollY + Math.max(headerOffset, window.innerHeight * 0.28);
     let currentId = sections[0]?.id ?? "home";
