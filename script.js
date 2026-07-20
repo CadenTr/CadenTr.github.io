@@ -87,6 +87,245 @@ document.documentElement.classList.add("js");
     if (window.innerWidth > 900) setNavOpen(false);
   });
 
+  const createSiteSearch = () => {
+    if (!nav || document.querySelector("[data-search-trigger]")) return;
+
+    const pageName = window.location.pathname.split("/").pop()?.toLowerCase() ?? "";
+    const onMainPage = pageName === "" || pageName === "index.html";
+    const mainSectionHref = (id) => onMainPage ? `#${id}` : `index.html#${id}`;
+    const searchDestinations = [
+      { label: "Home", meta: "Overview", href: mainSectionHref("home"), keywords: "home start introduction overview" },
+      { label: "Surveying", meta: "Field & CADD", href: "surveying.html", keywords: "surveying field geomatics cadd construction recording" },
+      { label: "Engineering", meta: "Civil design", href: "engineering.html", keywords: "engineering civil plans drafting as-builts land development" },
+      { label: "Music", meta: "Performance", href: "music.html", keywords: "music percussion performance leadership paradigm" },
+      { label: "About", meta: "Background", href: mainSectionHref("about"), keywords: "about biography background credentials goals" },
+      { label: "Résumé", meta: "Experience", href: mainSectionHref("resume"), keywords: "resume résumé experience education credentials pdf" },
+      { label: "Contact", meta: "Connect", href: mainSectionHref("contact"), keywords: "contact email linkedin connect message" },
+      { label: "Send a message", meta: "Email draft", href: mainSectionHref("message"), keywords: "send message form email draft contact" },
+      { label: "Open résumé PDF", meta: "Document ↗", href: "assets/documents/caden-trahan-resume.pdf", keywords: "open download resume résumé pdf document", newTab: true }
+    ];
+
+    const searchTrigger = document.createElement("button");
+    searchTrigger.className = "site-search-trigger";
+    searchTrigger.type = "button";
+    searchTrigger.dataset.searchTrigger = "";
+    searchTrigger.setAttribute("aria-haspopup", "dialog");
+    searchTrigger.setAttribute("aria-controls", "site-search-dialog");
+    searchTrigger.setAttribute("aria-expanded", "false");
+    searchTrigger.setAttribute("aria-label", "Search the portfolio");
+    searchTrigger.innerHTML = `
+      <span class="search-icon" aria-hidden="true"></span>
+      <span class="site-search-trigger__label">Search</span>
+      <kbd aria-hidden="true">Ctrl K</kbd>
+    `;
+    nav.insertAdjacentElement("afterend", searchTrigger);
+
+    const searchDialog = document.createElement("dialog");
+    searchDialog.className = "search-dialog";
+    searchDialog.id = "site-search-dialog";
+    searchDialog.dataset.searchDialog = "";
+    searchDialog.setAttribute("aria-labelledby", "site-search-title");
+    searchDialog.innerHTML = `
+      <div class="search-dialog__surface">
+        <div class="search-dialog__field">
+          <span class="search-icon" aria-hidden="true"></span>
+          <label class="sr-only" for="site-search-input">Search pages, sections, and actions</label>
+          <input id="site-search-input" type="search" inputmode="search" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-controls="site-search-results" aria-expanded="false" placeholder="Jump to a page, section, or action…" data-search-input>
+          <button class="search-dialog__close" type="button" data-search-close aria-label="Close search"><kbd aria-hidden="true">Esc</kbd></button>
+        </div>
+        <div class="search-dialog__body">
+          <p class="search-dialog__label mono" id="site-search-title">Go to</p>
+          <nav class="search-results" id="site-search-results" role="listbox" aria-label="Search destinations" data-search-results>
+            ${searchDestinations.map((item, index) => `
+              <a id="site-search-option-${index}" role="option" aria-selected="false" href="${item.href}" data-search-item data-search-text="${item.label} ${item.meta} ${item.keywords}"${item.newTab ? ' target="_blank" rel="noopener"' : ""}>
+                <span>${item.label}</span>
+                <small class="mono">${item.meta}</small>
+              </a>
+            `).join("")}
+          </nav>
+          <p class="search-dialog__empty" data-search-empty hidden>No matching destination.</p>
+          <p class="sr-only" data-search-status role="status" aria-live="polite" aria-atomic="true"></p>
+        </div>
+        <div class="search-dialog__footer mono" aria-hidden="true">
+          <span>↑ ↓ navigate</span>
+          <span>Enter select</span>
+          <span>Esc close</span>
+        </div>
+      </div>
+    `;
+    document.body.append(searchDialog);
+
+    const searchInput = searchDialog.querySelector("[data-search-input]");
+    const searchClose = searchDialog.querySelector("[data-search-close]");
+    const searchEmpty = searchDialog.querySelector("[data-search-empty]");
+    const searchStatus = searchDialog.querySelector("[data-search-status]");
+    const searchItems = [...searchDialog.querySelectorAll("[data-search-item]")];
+    let activeSearchItem = null;
+    let restoreSearchFocus = true;
+    let focusAfterSearchClose = null;
+
+    const normalizeSearch = (value) => value
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .trim();
+
+    const getVisibleSearchItems = () => searchItems.filter((item) => !item.hidden);
+    const isSearchOpen = () => searchDialog.open || searchDialog.hasAttribute("open");
+
+    const setActiveSearchItem = (item) => {
+      searchItems.forEach((searchItem) => {
+        const isActive = searchItem === item;
+        searchItem.classList.toggle("is-active", isActive);
+        searchItem.setAttribute("aria-selected", String(isActive));
+      });
+      activeSearchItem = item ?? null;
+      if (activeSearchItem) searchInput.setAttribute("aria-activedescendant", activeSearchItem.id);
+      else searchInput.removeAttribute("aria-activedescendant");
+      activeSearchItem?.scrollIntoView({ block: "nearest" });
+    };
+
+    const filterSearchItems = () => {
+      const query = normalizeSearch(searchInput?.value ?? "");
+
+      searchItems.forEach((item) => {
+        item.hidden = query !== "" && !normalizeSearch(item.dataset.searchText ?? "").includes(query);
+      });
+
+      const visibleItems = getVisibleSearchItems();
+      if (searchEmpty) searchEmpty.hidden = visibleItems.length > 0;
+      if (searchStatus) {
+        searchStatus.textContent = visibleItems.length === 1
+          ? "1 destination available."
+          : `${visibleItems.length} destinations available.`;
+      }
+      setActiveSearchItem(visibleItems[0] ?? null);
+    };
+
+    const finishSearchClose = () => {
+      document.body.classList.remove("search-open");
+      searchTrigger.setAttribute("aria-expanded", "false");
+      searchInput.setAttribute("aria-expanded", "false");
+
+      if (focusAfterSearchClose instanceof HTMLElement) {
+        window.requestAnimationFrame(() => focusAfterSearchClose.focus({ preventScroll: true }));
+      } else if (restoreSearchFocus) {
+        searchTrigger.focus({ preventScroll: true });
+      }
+
+      restoreSearchFocus = true;
+      focusAfterSearchClose = null;
+    };
+
+    const closeSearch = ({ restoreFocus = true, focusTarget = null } = {}) => {
+      restoreSearchFocus = restoreFocus;
+      focusAfterSearchClose = focusTarget;
+
+      if (typeof searchDialog.close === "function" && isSearchOpen()) {
+        searchDialog.close();
+      } else {
+        searchDialog.removeAttribute("open");
+        finishSearchClose();
+      }
+    };
+
+    const openSearch = () => {
+      setNavOpen(false);
+      if (isSearchOpen()) return;
+
+      searchInput.value = "";
+      filterSearchItems();
+      searchTrigger.setAttribute("aria-expanded", "true");
+      searchInput.setAttribute("aria-expanded", "true");
+      document.body.classList.add("search-open");
+
+      if (typeof searchDialog.showModal === "function") searchDialog.showModal();
+      else searchDialog.setAttribute("open", "");
+
+      window.requestAnimationFrame(() => searchInput.focus());
+    };
+
+    searchTrigger.addEventListener("click", openSearch);
+    searchClose?.addEventListener("click", () => closeSearch());
+    searchDialog.addEventListener("close", finishSearchClose);
+    searchDialog.addEventListener("cancel", (event) => {
+      event.preventDefault();
+      closeSearch();
+    });
+    searchDialog.addEventListener("click", (event) => {
+      if (event.target === searchDialog) closeSearch();
+    });
+
+    searchInput?.addEventListener("input", filterSearchItems);
+    searchInput?.addEventListener("keydown", (event) => {
+      const visibleItems = getVisibleSearchItems();
+      if (!visibleItems.length) return;
+
+      const currentIndex = Math.max(0, visibleItems.indexOf(activeSearchItem));
+
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        setActiveSearchItem(visibleItems[(currentIndex + 1) % visibleItems.length]);
+      } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        setActiveSearchItem(visibleItems[(currentIndex - 1 + visibleItems.length) % visibleItems.length]);
+      } else if (event.key === "Enter" && activeSearchItem) {
+        event.preventDefault();
+        activeSearchItem.click();
+      }
+    });
+
+    searchItems.forEach((item) => {
+      item.addEventListener("pointerenter", () => setActiveSearchItem(item));
+      item.addEventListener("focus", () => setActiveSearchItem(item));
+      item.addEventListener("click", () => {
+        const itemUrl = new URL(item.href, window.location.href);
+        const currentUrl = new URL(window.location.href);
+        const sameDocumentTarget = itemUrl.origin === currentUrl.origin
+          && itemUrl.pathname === currentUrl.pathname
+          && itemUrl.search === currentUrl.search
+          && itemUrl.hash;
+        const destination = sameDocumentTarget ? document.querySelector(itemUrl.hash) : null;
+        const destinationFocus = destination?.querySelector("h1, h2, h3") ?? destination;
+
+        if (destinationFocus instanceof HTMLElement) destinationFocus.setAttribute("tabindex", "-1");
+        closeSearch({
+          restoreFocus: item.target === "_blank",
+          focusTarget: destinationFocus
+        });
+      });
+    });
+
+    searchDialog.addEventListener("keydown", (event) => {
+      if (event.key !== "Tab" || typeof searchDialog.showModal === "function") return;
+
+      const fallbackFocusable = [searchInput, searchClose, ...getVisibleSearchItems()].filter(Boolean);
+      const first = fallbackFocusable[0];
+      const last = fallbackFocusable.at(-1);
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last?.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first?.focus();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        if (isSearchOpen()) closeSearch();
+        else openSearch();
+      } else if (event.key === "Escape" && isSearchOpen() && typeof searchDialog.showModal !== "function") {
+        event.preventDefault();
+        closeSearch();
+      }
+    });
+  };
+
+  createSiteSearch();
+
   const hero = document.querySelector("[data-hero]");
   const topicLinks = [...document.querySelectorAll("[data-topic-link]")];
   const topics = ["surveying", "engineering", "music"];
@@ -236,6 +475,41 @@ document.documentElement.classList.add("js");
   window.addEventListener("scroll", requestSectionUpdate, { passive: true });
   window.addEventListener("resize", requestSectionUpdate);
   window.addEventListener("hashchange", requestSectionUpdate);
+
+  const contactForm = document.querySelector("[data-contact-form]");
+  const formStatus = contactForm?.querySelector("[data-form-status]");
+  const contactName = contactForm?.elements.namedItem("name");
+  const contactEmail = contactForm?.elements.namedItem("email");
+  const contactMessage = contactForm?.elements.namedItem("message");
+
+  const setTrimmedValidity = (field, message) => {
+    if (!(field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement)) return;
+    field.setCustomValidity(field.value.trim() ? "" : message);
+  };
+
+  contactName?.addEventListener("input", () => setTrimmedValidity(contactName, "Please enter your name."));
+  contactMessage?.addEventListener("input", () => setTrimmedValidity(contactMessage, "Please enter a message."));
+
+  contactForm?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    setTrimmedValidity(contactName, "Please enter your name.");
+    setTrimmedValidity(contactMessage, "Please enter a message.");
+
+    if (!contactForm.reportValidity()) return;
+
+    const name = contactName.value.trim().replace(/[\r\n]+/g, " ");
+    const email = contactEmail.value.trim();
+    const message = contactMessage.value.trim();
+    const recipient = contactForm.dataset.recipient;
+    const subject = `Portfolio message from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+
+    if (formStatus) {
+      formStatus.textContent = "Your email app should open with a prepared draft. Review it, then press send.";
+    }
+
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
 
   const year = document.querySelector("[data-year]");
   if (year) year.textContent = String(new Date().getFullYear());

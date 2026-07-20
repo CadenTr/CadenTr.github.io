@@ -8,11 +8,12 @@ Serve the repository root with any local static-file server, then open `index.ht
 
 ## Site files
 
-- `index.html` — Home, About, Contact, and site-wide metadata
+- `index.html` — Home, About, Résumé, Contact, and site-wide metadata
 - `surveying.html`, `engineering.html`, `music.html` — dedicated discipline pages
 - `styles.css` — responsive visual system
-- `script.js` — accessible navigation, hero topic switching, and progressive reveals
+- `script.js` — accessible navigation, command search, email-draft form, hero topic switching, and progressive reveals
 - `assets/images/` — locally hosted licensed stock images
+- `assets/documents/` — résumé PDF displayed on the main page
 - `CNAME` — custom domain for `cadentrahan.com`
 - `ASSET-CREDITS.md` — image sources and license record
 
