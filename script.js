@@ -101,7 +101,6 @@ document.documentElement.classList.add("js");
       { label: "About", meta: "Background", href: mainSectionHref("about"), keywords: "about biography background credentials goals" },
       { label: "Résumé", meta: "Experience", href: mainSectionHref("resume"), keywords: "resume résumé experience education credentials pdf" },
       { label: "Contact", meta: "Connect", href: mainSectionHref("contact"), keywords: "contact email linkedin connect message" },
-      { label: "Send a message", meta: "Email draft", href: mainSectionHref("message"), keywords: "send message form email draft contact" },
       { label: "Open résumé PDF", meta: "Document ↗", href: "assets/documents/caden-trahan-resume.pdf", keywords: "open download resume résumé pdf document", newTab: true }
     ];
 
@@ -475,41 +474,6 @@ document.documentElement.classList.add("js");
   window.addEventListener("scroll", requestSectionUpdate, { passive: true });
   window.addEventListener("resize", requestSectionUpdate);
   window.addEventListener("hashchange", requestSectionUpdate);
-
-  const contactForm = document.querySelector("[data-contact-form]");
-  const formStatus = contactForm?.querySelector("[data-form-status]");
-  const contactName = contactForm?.elements.namedItem("name");
-  const contactEmail = contactForm?.elements.namedItem("email");
-  const contactMessage = contactForm?.elements.namedItem("message");
-
-  const setTrimmedValidity = (field, message) => {
-    if (!(field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement)) return;
-    field.setCustomValidity(field.value.trim() ? "" : message);
-  };
-
-  contactName?.addEventListener("input", () => setTrimmedValidity(contactName, "Please enter your name."));
-  contactMessage?.addEventListener("input", () => setTrimmedValidity(contactMessage, "Please enter a message."));
-
-  contactForm?.addEventListener("submit", (event) => {
-    event.preventDefault();
-    setTrimmedValidity(contactName, "Please enter your name.");
-    setTrimmedValidity(contactMessage, "Please enter a message.");
-
-    if (!contactForm.reportValidity()) return;
-
-    const name = contactName.value.trim().replace(/[\r\n]+/g, " ");
-    const email = contactEmail.value.trim();
-    const message = contactMessage.value.trim();
-    const recipient = contactForm.dataset.recipient;
-    const subject = `Portfolio message from ${name}`;
-    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-
-    if (formStatus) {
-      formStatus.textContent = "Your email app should open with a prepared draft. Review it, then press send.";
-    }
-
-    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  });
 
   const year = document.querySelector("[data-year]");
   if (year) year.textContent = String(new Date().getFullYear());
