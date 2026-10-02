@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>North Carolina Layered Topography | Caden Trahan</title>
+  <meta name="description" content="A QGIS and fabrication case study for Caden Trahan's scale-accurate, layered topographic map of North Carolina.">
+  <meta name="author" content="Caden Trahan">
+  <meta name="theme-color" content="#081014">
+  <meta name="color-scheme" content="dark light">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cadentrahan.com/nc-topo.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="styles.css?v=20261002-2">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="nc-topo-viewer.js?v=20261002-2"></script>
+  <script src="script.js?v=20261002-2" defer></script>
+</head>
+<body class="discipline-page case-page case-page--survey">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header site-header--solid" data-site-header>
+    <div class="site-header__inner shell">
+      <a class="brand" href="index.html#home" aria-label="Caden Trahan, home"><span class="brand__signature">Caden Trahan</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Open navigation</span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="index.html#home">Home</a>
+        <a href="surveying.html" aria-current="page">Surveying</a>
+        <a href="engineering.html">Engineering</a>
+        <a href="music.html">Music</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#resume">Résumé</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <article class="case-study">
+      <header class="case-hero shell reveal">
+        <div class="case-hero__copy">
+          <p class="section-kicker mono"><span>Case study 01</span> / QGIS + physical fabrication</p>
+          <h1>North Carolina in 54 layers.</h1>
+          <p class="case-hero__lede">I used QGIS to turn statewide elevation data into nested contour sheets for a 50-inch laser-cut map. This page shows both sides of the project: building reliable geometry on the computer and working out how to cut, register, and stack it in the real world.</p>
+          <a class="text-link" href="surveying.html#projects">Back to survey projects <span aria-hidden="true">↙</span></a>
+        </div>
+        <dl class="case-metrics" aria-label="Project summary">
+          <div><dt>Horizontal scale</dt><dd>1:850,000</dd></div>
+          <div><dt>Physical layers</dt><dd>54 sheets</dd></div>
+          <div><dt>Finished footprint</dt><dd>50 × 15 in</dd></div>
+          <div><dt>Highest modeled layer</dt><dd>5,600 ft</dd></div>
+        </dl>
+      </header>
+
+      <section class="model-section" aria-labelledby="model-title">
+        <div class="shell">
+          <div class="model-heading reveal">
+            <div>
+              <p class="section-kicker mono"><span>Interactive model</span> / The actual 54-sheet stack</p>
+              <h2 id="model-title">See each contour sheet.</h2>
+            </div>
+            <p>Move the slider to choose the highest visible sheet. The model keeps that contour and every sheet below it, just like the physical stack. Drag to rotate, scroll to zoom, or let it turn on its own.</p>
+          </div>
+          <div class="model-frame reveal" data-topo-viewer>
+            <div class="topo-viewer__stage" tabindex="0" aria-label="Interactive 3D model of the North Carolina contour stack. Drag to rotate and scroll to zoom.">
+              <canvas class="topo-viewer__canvas" data-topo-canvas aria-hidden="true"></canvas>
+              <img class="topo-viewer__poster" data-topo-poster src="assets/images/nc-topo-qgis-visualization.png" alt="QGIS view of the layered North Carolina topographic map.">
+              <p class="topo-viewer__loading mono" data-topo-loading role="status">Loading the 54 contour sheets…</p>
+            </div>
+            <div class="topo-viewer__controls">
+              <div class="topo-viewer__control-copy">
+                <label for="topo-layer-slider">Highest visible sheet</label>
+                <output for="topo-layer-slider" data-topo-output>54 of 54 · through 5,600 ft</output>
+              </div>
+              <input id="topo-layer-slider" data-topo-slider type="range" min="0" max="53" value="53" step="1" aria-describedby="topo-layer-status" disabled>
+              <div class="topo-viewer__control-meta">
+                <span>Base</span>
+                <p id="topo-layer-status" data-topo-status aria-live="polite">Showing the full stack.</p>
+                <span>5,600 ft</span>
+              </div>
+              <button class="topo-viewer__reset" data-topo-reset type="button" disabled>Reset view</button>
+            </div>
+            <div class="model-legend" aria-label="Elevation regions">
+              <span><i class="legend-swatch legend-swatch--coast"></i>Coastal Plain / 25 ft</span>
+              <span><i class="legend-swatch legend-swatch--piedmont"></i>Piedmont / 50 ft</span>
+              <span><i class="legend-swatch legend-swatch--mountains"></i>Mountains / 200 ft</span>
+            </div>
+            <p class="topo-boundary-note">The colors follow the project's approximate physiographic boundary polygons. A short gradient at each shared edge keeps the three regions distinct without drawing a hard stripe across the state.</p>
+          </div>
+
+          <div class="topo-profile reveal" data-topo-profile>
+            <div class="topo-profile__copy">
+              <p class="section-kicker mono"><span>Section view</span> / W3 → W1 → W2 → E2 → E1 → E3</p>
+              <h3>The registration-pin line, opened into a profile.</h3>
+              <p>I cut the same six-point path through every contour sheet, then laid those cuts out in a straight line. The result works like a utility profile: each horizontal band is one physical sheet, and the gaps show where a registration hole still passes through that elevation.</p>
+            </div>
+            <figure class="topo-profile__figure">
+              <div class="topo-profile__graphic">
+                <img src="assets/images/nc-topo-profile.svg" alt="Plan and profile diagram of the North Carolina contour stack along registration points W3, W1, W2, E2, E1, and E3.">
+                <span class="topo-profile__selection" data-profile-selection aria-hidden="true"></span>
+              </div>
+              <figcaption>The orange line in plan view is the section path. The highlighted profile band follows the sheet selected above.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section shell" aria-labelledby="computer-title">
+        <header class="case-section__heading reveal">
+          <p class="section-kicker mono"><span>Computer work</span> / QGIS geometry</p>
+          <h2 id="computer-title">Building the contour stack.</h2>
+        </header>
+        <div class="case-steps">
+          <article class="case-step reveal">
+            <span class="mono">01 / Source + projection</span>
+            <h3>Set one statewide working grid</h3>
+            <p>I paired a U.S. Census North Carolina boundary with USGS 3DEP one-arc-second elevation data, then worked in North Carolina State Plane coordinates (EPSG:32119). So the elevation surface was resampled to a consistent working grid before the actual contour extraction.</p>
+          </article>
+          <article class="case-step reveal">
+            <span class="mono">02 / Cumulative geometry</span>
+            <h3>Keep every sheet inside the one below it</h3>
+            <p>Each layer represents all ground at or above one elevation. I converted those thresholds into nested polygons, then checked validity, containment, slivers, and disconnected pieces. A small error low in the stack would carry through dozens of physical layers when represented in the real world.</p>
+          </article>
+          <article class="case-step reveal">
+            <span class="mono">03 / Regional interval logic</span>
+            <h3>Use intervals that fit each region</h3>
+            <p>The stack uses 25-foot intervals across the Coastal Plain, 50-foot intervals through the Piedmont, and 200-foot intervals in the mountains. That keeps the low relief on the coast visible while preventing the Appalachian Mountains from becoming a truly impractical number of sheets to cut.</p>
+          </article>
+          <article class="case-step reveal">
+            <span class="mono">04 / Two working files</span>
+            <h3>Separate geography from fabrication changes</h3>
+            <p>The geographic file preserves the mapped geometry. The fabrication file removes features that would not cut reliably, divides sheets to fit the machine, adds elevator-pin registration holes, and carries the physiographic boundaries for the Coastal Plain, Piedmont, and Mountains.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-section--paper" aria-labelledby="manufacturing-title">
+        <div class="shell case-split">
+          <div class="case-section__heading reveal">
+            <p class="section-kicker mono"><span>Manufacturing / cutting</span> / From file to stacked board</p>
+            <h2 id="manufacturing-title">Making 54 sheets line up.</h2>
+          </div>
+          <div class="decision-list reveal">
+            <div><strong>Board size and split sheets</strong><p>The finished map is 50 × 15 inches, so each statewide layer is divided into East and West cutting layouts sized for the available laser bed. Both halves keep the same coordinate origin and placement marks.</p></div>
+            <div><strong>Elevator-pin heights</strong><p>Each registration pin stops below the first contour that naturally closes over its location. The next intact sheet becomes its cover: from 150 feet at E3 to 4,200 feet at W3.</p></div>
+            <div><strong>Cutting and stacking</strong><p>The 1.297 mm white matboard sheets are cut as cumulative areas, not loose contour rings. Registration holes, seam logic, and consistent sheet order keep the stack from drifting as the layers build upward.</p></div>
+            <div><strong>Checks before cutting</strong><p>I kept source, geographic, fabrication, split-sheet, and layout outputs separate. That makes it possible to trace a cut change without quietly changing the mapped contour beneath it.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-sources shell reveal" aria-labelledby="sources-title">
+        <h2 id="sources-title">Data and references</h2>
+        <p>The case study uses public elevation and boundary data. The web model is a simplified derivative of my QGIS fabrication layers.</p>
+        <ul>
+          <li><a href="https://www.usgs.gov/3d-elevation-program/about-3dep-products-services" target="_blank" rel="noopener noreferrer">USGS 3D Elevation Program <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.census.gov/geographies/mapping-files/2025/geo/carto-boundary-file.html" target="_blank" rel="noopener noreferrer">U.S. Census cartographic boundary files <span aria-hidden="true">↗</span></a></li>
+          <li><a href="assets/images/nc-topo-qgis-visualization.png" target="_blank" rel="noopener noreferrer">Open the full QGIS visualization <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__main shell"><p><strong>Caden Trahan</strong><span>Surveying · Engineering · Music</span></p><a href="#main-content">Back to top <span aria-hidden="true">↑</span></a></div>
+    <div class="site-footer__meta shell"><p>© <span data-year>2026</span> Caden Trahan.</p><p class="photo-credits">Elevation: USGS 3DEP. Boundary: U.S. Census Bureau. Interactive model derived from Caden's QGIS project.</p></div>
+  </footer>
+</body>
+</html>

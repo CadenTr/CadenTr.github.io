@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Surveying | Caden Trahan</title>
-  <meta name="description" content="Caden Trahan's surveying and geospatial CADD experience, including field data, terrain, as-builts, records, exhibits, and proposal support.">
+  <meta name="description" content="Caden Trahan's survey and geospatial CADD work: as-builts, construction stakeout, boundary research, terrain, and a North Carolina QGIS topographic map.">
   <meta name="author" content="Caden Trahan">
   <meta name="theme-color" content="#081014">
   <meta name="color-scheme" content="dark light">
@@ -14,21 +14,20 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Caden Trahan">
   <meta property="og:title" content="Surveying | Caden Trahan">
-  <meta property="og:description" content="Survey and geospatial CADD work grounded in clear field data, records, and deliverables.">
+  <meta property="og:description" content="As-builts, construction stakeout, boundary research, and a North Carolina QGIS topographic map.">
   <meta property="og:url" content="https://cadentrahan.com/surveying.html">
-  <meta property="og:image" content="https://cadentrahan.com/assets/images/surveying-field.jpg">
-  <meta property="og:image:alt" content="A surveyor sighting through a leveling instrument in a field.">
+  <meta property="og:image" content="https://cadentrahan.com/assets/images/nc-topo-qgis-visualization.png">
+  <meta property="og:image:alt" content="QGIS visualization of Caden's layered North Carolina topographic map.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Surveying | Caden Trahan">
-  <meta name="twitter:description" content="Survey and geospatial CADD work grounded in clear field data, records, and deliverables.">
-  <meta name="twitter:image" content="https://cadentrahan.com/assets/images/surveying-field.jpg">
+  <meta name="twitter:description" content="As-builts, construction stakeout, boundary research, and a North Carolina QGIS topographic map.">
+  <meta name="twitter:image" content="https://cadentrahan.com/assets/images/nc-topo-qgis-visualization.png">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" href="assets/images/surveying-field.jpg" as="image" fetchpriority="high">
   <script>document.documentElement.classList.add("js");</script>
-  <link rel="stylesheet" href="styles.css?v=20260724-2">
-  <script src="script.js?v=20260724-2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261002-2">
+  <script src="script.js?v=20261002-2" defer></script>
 </head>
 <body class="discipline-page">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -61,41 +60,99 @@
     <section class="discipline discipline--surveying" id="surveying" aria-labelledby="surveying-title">
       <div class="section-grid shell">
         <header class="section-heading reveal">
-          <p class="section-kicker mono"><span>01</span> / Surveying</p>
-          <h1 id="surveying-title">Measured in the field.<br>Made clear in the drawing.</h1>
-          <p class="section-lede">I support survey and geospatial production from field-point review through finished CADD documentation, with an eye for accuracy, legibility, and how information will be used downstream.</p>
+          <p class="section-kicker mono"><span>01</span> / Surveying + geospatial CADD</p>
+          <h1 id="surveying-title">Office survey and CADD work.</h1>
+          <p class="section-lede">Most of my survey work happens at a desk: as-builts, stakeout preparation, ROW and easement exhibits, deed research, terrain surfaces, and contours. I use Civil 3D, Trimble Business Center, Bluebeam, and Excel to work through the details.</p>
         </header>
 
-        <figure class="section-figure section-figure--surveying reveal">
-          <img src="assets/images/surveying-field.jpg" width="1920" height="1443" alt="Surveyor sighting through a leveling instrument in an open field.">
-          <figcaption class="mono">Field / Observation / Control</figcaption>
+        <figure class="section-figure section-figure--surveying section-figure--cadd reveal">
+          <div class="survey-cadd-graphic" role="img" aria-label="Abstract plan view with parcel, easement, utility, point, and contour geometry representing office survey and CADD work.">
+            <svg viewBox="0 0 640 820" aria-hidden="true">
+              <defs>
+                <pattern id="survey-grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="currentColor" stroke-opacity=".08"/></pattern>
+                <pattern id="survey-hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 0V14" stroke="currentColor" stroke-opacity=".28" stroke-width="3"/></pattern>
+              </defs>
+              <rect width="640" height="820" fill="url(#survey-grid)"/>
+              <path class="cadd-contour" d="M-15 125C110 58 220 118 333 88S555 31 682 104"/><path class="cadd-contour" d="M-35 182C92 121 215 169 324 139S538 82 672 149"/><path class="cadd-contour" d="M-44 245C99 182 214 236 344 198S552 148 684 214"/>
+              <path class="cadd-boundary" d="M102 235 483 171 560 542 214 662 73 471Z"/>
+              <path class="cadd-easement" d="M122 290 486 228 518 382 153 446Z"/>
+              <path class="cadd-centerline" d="M29 555C156 495 265 526 393 474S553 378 674 402"/>
+              <path class="cadd-utility" d="M74 606 174 558 296 589 415 533 575 568"/>
+              <g class="cadd-point"><circle cx="102" cy="235" r="7"/><circle cx="483" cy="171" r="7"/><circle cx="560" cy="542" r="7"/><circle cx="214" cy="662" r="7"/><circle cx="73" cy="471" r="7"/></g>
+              <g class="cadd-label"><text x="310" y="330">20' EASEMENT</text><text x="346" y="496">ROW</text><text x="233" y="611">UTILITY AS-BUILT</text><text x="87" y="216">IP</text><text x="490" y="157">CM</text></g>
+              <path class="cadd-tick" d="M415 533v-24m-12 12h24M296 589v-24m-12 12h24M174 558v-24m-12 12h24"/>
+            </svg>
+          </div>
+          <figcaption class="mono">Office survey / CADD / geospatial</figcaption>
         </figure>
 
         <div class="work-modules">
           <article class="work-module reveal">
-            <p class="module-tag mono">S-01 / Surface</p>
-            <h2>Field data &amp; terrain</h2>
-            <p>Point review, linework integrity, TIN surfaces, contours, and terrain-model quality control using Civil 3D and Trimble Business Center.</p>
+            <p class="module-tag mono">S-01 / As-builts</p>
+            <h2>Utility and BMP as-builts</h2>
+            <p>I draft storm, water, sewer, and BMP as-builts. On selected jobs, that has also meant scheduling field work, following up on missing information, checking rims, inverts, slopes, pipe data, and linework, working through redlines, and helping get the record package out.</p>
           </article>
           <article class="work-module reveal">
-            <p class="module-tag mono">S-02 / Records</p>
-            <h2>As-built documentation</h2>
-            <p>Clear record information for storm, water, sewer, and BMP systems, developed from field observations, redlines, and supporting records.</p>
+            <p class="module-tag mono">S-02 / Stakeout</p>
+            <h2>Stakeout preparation</h2>
+            <p>I have prepared more than 50 stakeout proposals from civil and site plans. I use Bluebeam and Excel to build the scope and estimate, recreate proposed geometry in Civil 3D, and organize the information the field crew needs.</p>
           </article>
           <article class="work-module reveal">
-            <p class="module-tag mono">S-03 / Boundary</p>
-            <h2>Research &amp; exhibits</h2>
-            <p>Deed research, record easements, exhibits, and legal-description plats—described here without exposing client or parcel information.</p>
+            <p class="module-tag mono">S-03 / Records</p>
+            <h2>ROW &amp; easement mapping</h2>
+            <p>I plot legal descriptions, research deeds, recorded plats, and rights-of-way, and draft ROW and easement exhibits for surveyor review. When records disagree, I keep the source and assumptions visible instead of forcing them into one clean answer.</p>
           </article>
           <article class="work-module reveal">
-            <p class="module-tag mono">S-04 / Scope</p>
-            <h2>Proposal support</h2>
-            <p>Survey scope development, effort estimates, and organized production tracking in Excel, Bluebeam, and CADD workflows.</p>
+            <p class="module-tag mono">S-04 / Terrain</p>
+            <h2>Terrain surfaces &amp; contours</h2>
+            <p>I review point files and as-staked reports in Trimble Business Center, then build and check TIN surfaces and contours in Civil 3D. I pay attention to breaklines, missing shots, and surface behavior because small problems there carry through the rest of the drawing.</p>
           </article>
         </div>
+      </div>
+    </section>
 
-        <div class="process-line reveal" aria-label="Survey production workflow">
-          <span>Field data</span><i aria-hidden="true"></i><span>QC</span><i aria-hidden="true"></i><span>CADD</span><i aria-hidden="true"></i><span>Deliverable</span>
+    <section class="portfolio-projects" id="projects" aria-labelledby="projects-title">
+      <div class="shell">
+        <header class="projects-heading reveal">
+          <p class="section-kicker mono"><span>Personal projects</span> / Survey research + geospatial work</p>
+          <h2 id="projects-title">Personal survey and mapping projects.</h2>
+          <p>These are the two survey and mapping projects I have been building outside work and school. One deals with statewide terrain; the other follows the boundary history of one Charlotte park.</p>
+        </header>
+
+        <div class="project-showcase-grid">
+          <article class="project-showcase reveal" id="nc-topo">
+            <figure class="project-showcase__media">
+              <img src="assets/images/nc-topo-project-card.webp" width="2387" height="701" loading="lazy" alt="Angled QGIS visualization of layered North Carolina terrain, with dense mountain contours in the west and low coastal terrain in the east.">
+              <figcaption class="mono">QGIS / 53 elevation thresholds + base</figcaption>
+            </figure>
+            <div class="project-showcase__copy">
+              <p class="module-tag mono">P-01 / North Carolina topography</p>
+              <h3>North Carolina layered topographic map.</h3>
+              <p>I combined a Census state boundary with USGS 3DEP elevation data, projected the work in North Carolina State Plane, and built cumulative polygons for every physical sheet. I kept geographic and fabrication geometry separate, checked validity and nesting, cleaned features that could not survive the material, split the layers for the laser bed, and added registration logic.</p>
+              <p>The elevation stack uses <strong>25-foot intervals across the Coastal Plain</strong>, <strong>50-foot intervals through the Piedmont</strong>, and <strong>200-foot intervals in the mountains</strong>. It holds the state at 1:850,000 for a 50 × 15 inch installation.</p>
+              <ul class="project-facts" aria-label="North Carolina topo project facts">
+                <li><span>54</span>physical sheets</li><li><span>1:850k</span>horizontal scale</li><li><span>3D</span>interactive model</li>
+              </ul>
+              <a class="project-button" href="nc-topo.html">Read more about it <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-showcase project-showcase--reverse reveal" id="independence-park">
+            <figure class="project-showcase__media project-showcase__media--map">
+              <img src="assets/images/independence-park-boundary.svg" width="1000" height="700" loading="lazy" alt="Current Mecklenburg County GIS footprint of Independence Park, showing the upper and lower park sections divided by Hawthorne Lane with nearby street context.">
+              <figcaption class="mono">Current GIS footprint / historical layers studied separately</figcaption>
+            </figure>
+            <div class="project-showcase__copy">
+              <p class="module-tag mono">P-02 / Independence Park</p>
+              <h3>Independence Park.</h3>
+              <p>I am rebuilding the park’s record history from handwritten deeds, a 1905 division map, street and right-of-way changes, adjoining parcel records, monuments, and Sugar Creek calls. Instead of making every source agree with one modern line, I am keeping the original acquisition, later transfers and public projects, and present-day operational footprint as separate dated layers.</p>
+              <p>The case study shows how I transcribe and plot the record, track source confidence, compare stated and computed areas, and leave unresolved evidence visible when the record does not support a clean answer.</p>
+              <ul class="project-facts" aria-label="Independence Park research facts">
+                <li><span>1904–05</span>early assemblage</li><li><span>5</span>source groups</li><li><span>Layered</span>boundary history</li>
+              </ul>
+              <a class="project-button" href="independence-park.html">Read more about it <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -107,8 +164,8 @@
       <a href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
     </div>
     <div class="site-footer__meta shell">
-      <p>© <span data-year>2026</span> Caden Trahan. No client or proprietary materials are shown.</p>
-      <p class="photo-credits">Stock photography via Pexels: <a href="https://www.pexels.com/photo/a-man-doing-land-surveying-7499043/" target="_blank" rel="noopener noreferrer">Joice Rivas</a>, <a href="https://www.pexels.com/photo/civil-engineer-planning-dam-3862384/" target="_blank" rel="noopener noreferrer">ThisIsEngineering</a>, and <a href="https://www.pexels.com/photo/person-playing-drums-on-stage-9009569/" target="_blank" rel="noopener noreferrer">Yan Krukau</a>.</p>
+      <p>© <span data-year>2026</span> Caden Trahan.</p>
+      <p class="photo-credits">Independence Park context from <a href="https://meckgis.mecklenburgcountync.gov/server/rest/services/ParkBoundaries/FeatureServer/0" target="_blank" rel="noopener noreferrer">Mecklenburg County GIS Park Boundaries</a> and <a href="https://meckgis.mecklenburgcountync.gov/server/rest/services/StreetCenterline/FeatureServer/0" target="_blank" rel="noopener noreferrer">Street Centerline</a>.</p>
     </div>
   </footer>
 </body>

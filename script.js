@@ -95,13 +95,18 @@ document.documentElement.classList.add("js");
     const mainSectionHref = (id) => onMainPage ? `#${id}` : `index.html#${id}`;
     const searchDestinations = [
       { label: "Home", meta: "Overview", href: mainSectionHref("home"), keywords: "home start introduction overview" },
-      { label: "Surveying", meta: "Field & CADD", href: "surveying.html", keywords: "surveying field geomatics cadd construction recording" },
-      { label: "Engineering", meta: "Civil design", href: "engineering.html", keywords: "engineering civil plans drafting as-builts land development" },
-      { label: "Music", meta: "Performance", href: "music.html", keywords: "music percussion performance leadership paradigm" },
+      { label: "Surveying", meta: "Office survey & CADD", href: "surveying.html", keywords: "surveying office geomatics cadd as-builts stakeout row easement mapping terrain contours" },
+      { label: "Survey projects", meta: "Personal work", href: "surveying.html#projects", keywords: "survey personal projects qgis boundary research" },
+      { label: "North Carolina topo map", meta: "Interactive case study", href: "nc-topo.html", keywords: "north carolina qgis topographic topo map contours elevation laser matboard 3d model" },
+      { label: "Independence Park", meta: "Boundary history", href: "independence-park.html", keywords: "independence park charlotte deeds boundary history right of way" },
+      { label: "Engineering", meta: "Civil 3D + as-builts", href: "engineering.html", keywords: "engineering civil 3d plans drafting as-builts land development" },
+      { label: "Civil CAD final", meta: "Academic plan", href: "engineering.html#civil-cad", keywords: "civil 3d cad final subdivision academic plan sheet" },
+      { label: "Music", meta: "Performance & arranging", href: "music.html", keywords: "music percussion performance leadership paradigm flute wgi" },
+      { label: "Selected arrangements", meta: "Audio + context", href: "music.html#arrangements", keywords: "semente kiss from a rose tricky malaguena arrangements audio musescore" },
       { label: "About", meta: "Background", href: mainSectionHref("about"), keywords: "about biography background credentials goals" },
       { label: "Résumé", meta: "Experience", href: mainSectionHref("resume"), keywords: "resume résumé experience education credentials pdf" },
       { label: "Contact", meta: "Connect", href: mainSectionHref("contact"), keywords: "contact email linkedin connect message" },
-      { label: "Open résumé PDF", meta: "Document ↗", href: "assets/documents/caden-trahan-resume.pdf", keywords: "open download resume résumé pdf document", newTab: true }
+      { label: "Open résumé PDF", meta: "Document ↗", href: "assets/documents/caden-trahan-resume.pdf?v=20261002-2", keywords: "open download resume résumé pdf document", newTab: true }
     ];
 
     const searchTrigger = document.createElement("button");

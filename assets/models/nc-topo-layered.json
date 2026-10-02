@@ -1,0 +1,1298 @@
+{
+  "version": 1,
+  "model": "assets/models/nc-topo-layered.glb",
+  "sourceCrs": "EPSG:32119",
+  "coordinateSystem": {
+    "x": "east-west",
+    "y": "vertical physical sheet stack",
+    "z": "north-south",
+    "origin": "center of the simplified registered base extent"
+  },
+  "sourceExtent": {
+    "minX": 123998.0,
+    "minY": 10744.0,
+    "maxX": 930750.0,
+    "maxY": 318087.0
+  },
+  "modelDimensions": {
+    "width": 10.0,
+    "depth": 3.809634187457856,
+    "stackHeight": 1.65,
+    "sheetThickness": 0.030555555555555555
+  },
+  "simplificationToleranceMeters": 300.0,
+  "regionBoundaryBlendMeters": 12000.0,
+  "layers": [
+    {
+      "index": 0,
+      "nodeName": "layer_00_base",
+      "elevation": 0,
+      "label": "Base",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2",
+        "E1",
+        "E3"
+      ],
+      "vertexCount": 15311,
+      "triangleCount": 16518
+    },
+    {
+      "index": 1,
+      "nodeName": "layer_01_0025ft",
+      "elevation": 25,
+      "label": "25 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2",
+        "E1",
+        "E3"
+      ],
+      "vertexCount": 17843,
+      "triangleCount": 19062
+    },
+    {
+      "index": 2,
+      "nodeName": "layer_02_0050ft",
+      "elevation": 50,
+      "label": "50 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2",
+        "E1",
+        "E3"
+      ],
+      "vertexCount": 17489,
+      "triangleCount": 18656
+    },
+    {
+      "index": 3,
+      "nodeName": "layer_03_0075ft",
+      "elevation": 75,
+      "label": "75 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2",
+        "E1",
+        "E3"
+      ],
+      "vertexCount": 17942,
+      "triangleCount": 19075
+    },
+    {
+      "index": 4,
+      "nodeName": "layer_04_0100ft",
+      "elevation": 100,
+      "label": "100 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2",
+        "E1",
+        "E3"
+      ],
+      "vertexCount": 17773,
+      "triangleCount": 18818
+    },
+    {
+      "index": 5,
+      "nodeName": "layer_05_0125ft",
+      "elevation": 125,
+      "label": "125 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2",
+        "E1",
+        "E3"
+      ],
+      "vertexCount": 16735,
+      "triangleCount": 17673
+    },
+    {
+      "index": 6,
+      "nodeName": "layer_06_0150ft",
+      "elevation": 150,
+      "label": "150 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2",
+        "E1"
+      ],
+      "vertexCount": 15144,
+      "triangleCount": 16118
+    },
+    {
+      "index": 7,
+      "nodeName": "layer_07_0175ft",
+      "elevation": 175,
+      "label": "175 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2",
+        "E1"
+      ],
+      "vertexCount": 14709,
+      "triangleCount": 15407
+    },
+    {
+      "index": 8,
+      "nodeName": "layer_08_0200ft",
+      "elevation": 200,
+      "label": "200 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2",
+        "E1"
+      ],
+      "vertexCount": 14625,
+      "triangleCount": 15232
+    },
+    {
+      "index": 9,
+      "nodeName": "layer_09_0250ft",
+      "elevation": 250,
+      "label": "250 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2"
+      ],
+      "vertexCount": 15140,
+      "triangleCount": 15658
+    },
+    {
+      "index": 10,
+      "nodeName": "layer_10_0300ft",
+      "elevation": 300,
+      "label": "300 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2"
+      ],
+      "vertexCount": 14606,
+      "triangleCount": 15002
+    },
+    {
+      "index": 11,
+      "nodeName": "layer_11_0350ft",
+      "elevation": 350,
+      "label": "350 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2"
+      ],
+      "vertexCount": 12743,
+      "triangleCount": 13135
+    },
+    {
+      "index": 12,
+      "nodeName": "layer_12_0400ft",
+      "elevation": 400,
+      "label": "400 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2"
+      ],
+      "vertexCount": 11254,
+      "triangleCount": 11581
+    },
+    {
+      "index": 13,
+      "nodeName": "layer_13_0450ft",
+      "elevation": 450,
+      "label": "450 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2"
+      ],
+      "vertexCount": 10021,
+      "triangleCount": 10364
+    },
+    {
+      "index": 14,
+      "nodeName": "layer_14_0500ft",
+      "elevation": 500,
+      "label": "500 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2"
+      ],
+      "vertexCount": 9713,
+      "triangleCount": 10051
+    },
+    {
+      "index": 15,
+      "nodeName": "layer_15_0550ft",
+      "elevation": 550,
+      "label": "550 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2",
+        "E2"
+      ],
+      "vertexCount": 9762,
+      "triangleCount": 10163
+    },
+    {
+      "index": 16,
+      "nodeName": "layer_16_0600ft",
+      "elevation": 600,
+      "label": "600 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 10042,
+      "triangleCount": 10493
+    },
+    {
+      "index": 17,
+      "nodeName": "layer_17_0650ft",
+      "elevation": 650,
+      "label": "650 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 10013,
+      "triangleCount": 10471
+    },
+    {
+      "index": 18,
+      "nodeName": "layer_18_0700ft",
+      "elevation": 700,
+      "label": "700 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 9458,
+      "triangleCount": 9840
+    },
+    {
+      "index": 19,
+      "nodeName": "layer_19_0750ft",
+      "elevation": 750,
+      "label": "750 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 9368,
+      "triangleCount": 9769
+    },
+    {
+      "index": 20,
+      "nodeName": "layer_20_0800ft",
+      "elevation": 800,
+      "label": "800 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 8943,
+      "triangleCount": 9387
+    },
+    {
+      "index": 21,
+      "nodeName": "layer_21_0850ft",
+      "elevation": 850,
+      "label": "850 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 8455,
+      "triangleCount": 8897
+    },
+    {
+      "index": 22,
+      "nodeName": "layer_22_0900ft",
+      "elevation": 900,
+      "label": "900 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 8133,
+      "triangleCount": 8605
+    },
+    {
+      "index": 23,
+      "nodeName": "layer_23_0950ft",
+      "elevation": 950,
+      "label": "950 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 7650,
+      "triangleCount": 8147
+    },
+    {
+      "index": 24,
+      "nodeName": "layer_24_1000ft",
+      "elevation": 1000,
+      "label": "1,000 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 7272,
+      "triangleCount": 7779
+    },
+    {
+      "index": 25,
+      "nodeName": "layer_25_1050ft",
+      "elevation": 1050,
+      "label": "1,050 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 7280,
+      "triangleCount": 7784
+    },
+    {
+      "index": 26,
+      "nodeName": "layer_26_1100ft",
+      "elevation": 1100,
+      "label": "1,100 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 7368,
+      "triangleCount": 7856
+    },
+    {
+      "index": 27,
+      "nodeName": "layer_27_1150ft",
+      "elevation": 1150,
+      "label": "1,150 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 7548,
+      "triangleCount": 8013
+    },
+    {
+      "index": 28,
+      "nodeName": "layer_28_1200ft",
+      "elevation": 1200,
+      "label": "1,200 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 7452,
+      "triangleCount": 7909
+    },
+    {
+      "index": 29,
+      "nodeName": "layer_29_1250ft",
+      "elevation": 1250,
+      "label": "1,250 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 7177,
+      "triangleCount": 7615
+    },
+    {
+      "index": 30,
+      "nodeName": "layer_30_1300ft",
+      "elevation": 1300,
+      "label": "1,300 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 6977,
+      "triangleCount": 7409
+    },
+    {
+      "index": 31,
+      "nodeName": "layer_31_1350ft",
+      "elevation": 1350,
+      "label": "1,350 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 7021,
+      "triangleCount": 7475
+    },
+    {
+      "index": 32,
+      "nodeName": "layer_32_1400ft",
+      "elevation": 1400,
+      "label": "1,400 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 6895,
+      "triangleCount": 7349
+    },
+    {
+      "index": 33,
+      "nodeName": "layer_33_1600ft",
+      "elevation": 1600,
+      "label": "1,600 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 6481,
+      "triangleCount": 6939
+    },
+    {
+      "index": 34,
+      "nodeName": "layer_34_1800ft",
+      "elevation": 1800,
+      "label": "1,800 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 6737,
+      "triangleCount": 7177
+    },
+    {
+      "index": 35,
+      "nodeName": "layer_35_2000ft",
+      "elevation": 2000,
+      "label": "2,000 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 6972,
+      "triangleCount": 7421
+    },
+    {
+      "index": 36,
+      "nodeName": "layer_36_2200ft",
+      "elevation": 2200,
+      "label": "2,200 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 7772,
+      "triangleCount": 8084
+    },
+    {
+      "index": 37,
+      "nodeName": "layer_37_2400ft",
+      "elevation": 2400,
+      "label": "2,400 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 8094,
+      "triangleCount": 8398
+    },
+    {
+      "index": 38,
+      "nodeName": "layer_38_2600ft",
+      "elevation": 2600,
+      "label": "2,600 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1",
+        "W2"
+      ],
+      "vertexCount": 8693,
+      "triangleCount": 8915
+    },
+    {
+      "index": 39,
+      "nodeName": "layer_39_2800ft",
+      "elevation": 2800,
+      "label": "2,800 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1"
+      ],
+      "vertexCount": 8543,
+      "triangleCount": 8741
+    },
+    {
+      "index": 40,
+      "nodeName": "layer_40_3000ft",
+      "elevation": 3000,
+      "label": "3,000 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1"
+      ],
+      "vertexCount": 7872,
+      "triangleCount": 8020
+    },
+    {
+      "index": 41,
+      "nodeName": "layer_41_3200ft",
+      "elevation": 3200,
+      "label": "3,200 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1"
+      ],
+      "vertexCount": 7734,
+      "triangleCount": 7808
+    },
+    {
+      "index": 42,
+      "nodeName": "layer_42_3400ft",
+      "elevation": 3400,
+      "label": "3,400 ft",
+      "activeHoleIds": [
+        "W3",
+        "W1"
+      ],
+      "vertexCount": 7185,
+      "triangleCount": 7218
+    },
+    {
+      "index": 43,
+      "nodeName": "layer_43_3600ft",
+      "elevation": 3600,
+      "label": "3,600 ft",
+      "activeHoleIds": [
+        "W3"
+      ],
+      "vertexCount": 5827,
+      "triangleCount": 5891
+    },
+    {
+      "index": 44,
+      "nodeName": "layer_44_3800ft",
+      "elevation": 3800,
+      "label": "3,800 ft",
+      "activeHoleIds": [
+        "W3"
+      ],
+      "vertexCount": 4974,
+      "triangleCount": 4972
+    },
+    {
+      "index": 45,
+      "nodeName": "layer_45_4000ft",
+      "elevation": 4000,
+      "label": "4,000 ft",
+      "activeHoleIds": [
+        "W3"
+      ],
+      "vertexCount": 3886,
+      "triangleCount": 3838
+    },
+    {
+      "index": 46,
+      "nodeName": "layer_46_4200ft",
+      "elevation": 4200,
+      "label": "4,200 ft",
+      "activeHoleIds": [],
+      "vertexCount": 2614,
+      "triangleCount": 2636
+    },
+    {
+      "index": 47,
+      "nodeName": "layer_47_4400ft",
+      "elevation": 4400,
+      "label": "4,400 ft",
+      "activeHoleIds": [],
+      "vertexCount": 2022,
+      "triangleCount": 1978
+    },
+    {
+      "index": 48,
+      "nodeName": "layer_48_4600ft",
+      "elevation": 4600,
+      "label": "4,600 ft",
+      "activeHoleIds": [],
+      "vertexCount": 1426,
+      "triangleCount": 1390
+    },
+    {
+      "index": 49,
+      "nodeName": "layer_49_4800ft",
+      "elevation": 4800,
+      "label": "4,800 ft",
+      "activeHoleIds": [],
+      "vertexCount": 968,
+      "triangleCount": 948
+    },
+    {
+      "index": 50,
+      "nodeName": "layer_50_5000ft",
+      "elevation": 5000,
+      "label": "5,000 ft",
+      "activeHoleIds": [],
+      "vertexCount": 708,
+      "triangleCount": 688
+    },
+    {
+      "index": 51,
+      "nodeName": "layer_51_5200ft",
+      "elevation": 5200,
+      "label": "5,200 ft",
+      "activeHoleIds": [],
+      "vertexCount": 372,
+      "triangleCount": 356
+    },
+    {
+      "index": 52,
+      "nodeName": "layer_52_5400ft",
+      "elevation": 5400,
+      "label": "5,400 ft",
+      "activeHoleIds": [],
+      "vertexCount": 128,
+      "triangleCount": 112
+    },
+    {
+      "index": 53,
+      "nodeName": "layer_53_5600ft",
+      "elevation": 5600,
+      "label": "5,600 ft",
+      "activeHoleIds": [],
+      "vertexCount": 32,
+      "triangleCount": 28
+    }
+  ],
+  "regions": [
+    {
+      "id": "coastalPlain",
+      "label": "Coastal Plain",
+      "maximumSourceElevation": 650,
+      "lowColor": "#2c7ab0",
+      "highColor": "#5db4d7"
+    },
+    {
+      "id": "piedmont",
+      "label": "Piedmont",
+      "maximumSourceElevation": 2200,
+      "lowColor": "#bc942b",
+      "highColor": "#eeca53"
+    },
+    {
+      "id": "mountains",
+      "label": "Mountains",
+      "maximumSourceElevation": 5600,
+      "lowColor": "#a64038",
+      "highColor": "#e26752"
+    }
+  ],
+  "pins": [
+    {
+      "id": "W3",
+      "panel": "W",
+      "region": "mountains",
+      "sourcePosition": {
+        "x": 308640.89,
+        "y": 225385.663
+      },
+      "normalizedPosition": {
+        "x": 0.22887193338225378,
+        "y": 0.6983782386454223
+      },
+      "modelPosition": {
+        "x": -2.711280666177462,
+        "z": 0.7557485199912739
+      },
+      "lastHoledElevation": 4000,
+      "coverElevation": 4200,
+      "lastHoledLayerIndex": 45,
+      "coverLayerIndex": 46,
+      "sheetCountBelowCover": 46,
+      "shaftHeightMm": 59.362,
+      "holeDiameterMm": 2.3,
+      "presentLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "holeLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "id": "W1",
+      "panel": "W",
+      "region": "mountains",
+      "sourcePosition": {
+        "x": 352840.89,
+        "y": 269585.663
+      },
+      "normalizedPosition": {
+        "x": 0.2836595260997184,
+        "y": 0.8421915026533873
+      },
+      "modelPosition": {
+        "x": -2.163404739002816,
+        "z": 1.3036244471659197
+      },
+      "lastHoledElevation": 3400,
+      "coverElevation": 3600,
+      "lastHoledLayerIndex": 42,
+      "coverLayerIndex": 43,
+      "sheetCountBelowCover": 43,
+      "shaftHeightMm": 55.471,
+      "holeDiameterMm": 2.3,
+      "presentLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "holeLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "id": "W2",
+      "panel": "W",
+      "region": "mountains",
+      "sourcePosition": {
+        "x": 407240.89,
+        "y": 306985.663
+      },
+      "normalizedPosition": {
+        "x": 0.3510904094442902,
+        "y": 0.9638796491216653
+      },
+      "modelPosition": {
+        "x": -1.489095905557098,
+        "z": 1.7672117701598509
+      },
+      "lastHoledElevation": 2600,
+      "coverElevation": 2800,
+      "lastHoledLayerIndex": 38,
+      "coverLayerIndex": 39,
+      "sheetCountBelowCover": 39,
+      "shaftHeightMm": 50.283,
+      "holeDiameterMm": 2.3,
+      "presentLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "holeLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "id": "E2",
+      "panel": "E",
+      "region": "piedmont",
+      "sourcePosition": {
+        "x": 565751.5,
+        "y": 279392.936
+      },
+      "normalizedPosition": {
+        "x": 0.5475703809844908,
+        "y": 0.8741013655752693
+      },
+      "modelPosition": {
+        "x": 0.4757038098449087,
+        "z": 1.4251893518702154
+      },
+      "lastHoledElevation": 550,
+      "coverElevation": 600,
+      "lastHoledLayerIndex": 15,
+      "coverLayerIndex": 16,
+      "sheetCountBelowCover": 16,
+      "shaftHeightMm": 20.452,
+      "holeDiameterMm": 2.3,
+      "presentLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "holeLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "E1",
+      "panel": "E",
+      "region": "piedmont",
+      "sourcePosition": {
+        "x": 638001.5,
+        "y": 207142.936
+      },
+      "normalizedPosition": {
+        "x": 0.6371270229265004,
+        "y": 0.6390219917160956
+      },
+      "modelPosition": {
+        "x": 1.3712702292650034,
+        "z": 0.5296229324501207
+      },
+      "lastHoledElevation": 200,
+      "coverElevation": 250,
+      "lastHoledLayerIndex": 8,
+      "coverLayerIndex": 9,
+      "sheetCountBelowCover": 9,
+      "shaftHeightMm": 11.373,
+      "holeDiameterMm": 2.3,
+      "presentLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "holeLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "E3",
+      "panel": "E",
+      "region": "piedmont",
+      "sourcePosition": {
+        "x": 710251.5,
+        "y": 279392.936
+      },
+      "normalizedPosition": {
+        "x": 0.7266836648685098,
+        "y": 0.8741013655752693
+      },
+      "modelPosition": {
+        "x": 2.266836648685098,
+        "z": 1.4251893518702154
+      },
+      "lastHoledElevation": 125,
+      "coverElevation": 150,
+      "lastHoledLayerIndex": 5,
+      "coverLayerIndex": 6,
+      "sheetCountBelowCover": 6,
+      "shaftHeightMm": 7.482,
+      "holeDiameterMm": 2.3,
+      "presentLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "holeLayerIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "profile": {
+    "path": "assets/images/nc-topo-profile.svg",
+    "order": [
+      "W3",
+      "W1",
+      "W2",
+      "E2",
+      "E1",
+      "E3"
+    ],
+    "left": 95.0,
+    "right": 1510.0,
+    "top": 305.0,
+    "bottom": 715.0,
+    "bandHeight": 7.592592592592593,
+    "layerCount": 54,
+    "viewBox": [
+      0,
+      0,
+      1600,
+      920
+    ],
+    "sectionLengthMeters": 493772.4463534156,
+    "plan": {
+      "x": 1015.0,
+      "y": 88.0,
+      "width": 510.0,
+      "height": 176.0
+    },
+    "regionIntervals": [
+      {
+        "start": 0.0,
+        "end": 161419.46640728318,
+        "region": "mountains"
+      },
+      {
+        "start": 161419.46640728318,
+        "end": 493772.4463534156,
+        "region": "piedmont"
+      }
+    ]
+  },
+  "build": {
+    "totalVertices": 466902,
+    "totalTriangles": 488869,
+    "glbBytes": 13384260,
+    "nodeCount": 54,
+    "meshCount": 54,
+    "accessorCount": 162,
+    "bufferViewCount": 162
+  },
+  "sources": {
+    "master": "C:\\Users\\caden\\Documents\\Codex\\2026-09-28\\i-m-building-a-laser-cut\\outputs\\NC_Topo_Master\\geo\\nc_topo.gpkg",
+    "registeredLowLayers": "C:\\Users\\caden\\Documents\\Codex\\2026-09-28\\i-m-building-a-laser-cut\\outputs\\NC_Topo_Master\\CPCC_25_50_registered_fixed_seam_package\\NC_low_three_registered_fixed_seam.gpkg",
+    "registrationAudit": "C:\\Users\\caden\\Documents\\Codex\\2026-09-28\\i-m-building-a-laser-cut\\outputs\\NC_Topo_Master\\QGIS_registration_smoothing_audit.gpkg",
+    "pinSchedule": "C:\\Users\\caden\\Documents\\Codex\\2026-09-28\\i-m-building-a-laser-cut\\outputs\\NC_Topo_Master\\3D_Print_Registration_Pins\\Permanent_Elevator_Posts\\permanent_elevator_post_schedule.csv"
+  }
+}

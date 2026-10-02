@@ -1,0 +1,735 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="920" viewBox="0 0 1600 920" role="img" aria-labelledby="title desc">
+<title id="title">North Carolina topographic sheet and registration-pin profile</title>
+<desc id="desc">A true unwrapped west-to-east section through W3, W1, W2, E2, E1, and E3. Every horizontal band is the actual intersection of one solid QGIS sheet with the bent section line.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a1116"/><stop offset="1" stop-color="#101b22"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<style>
+.title{font:700 29px 'Segoe UI',sans-serif;fill:#f3f7f8}.sub{font:15px 'Segoe UI',sans-serif;fill:#9fb1b9}.pin{font:700 15px 'Segoe UI',sans-serif;fill:#eef5f6}.detail{font:12px 'Segoe UI',sans-serif;fill:#aabac0}.axis{font:12px 'Segoe UI',sans-serif;fill:#82979f}.legend{font:14px 'Segoe UI',sans-serif;fill:#c4d0d4}.fine{font:11px 'Segoe UI',sans-serif;fill:#779099}.guide{stroke:#29404b;stroke-width:1;stroke-dasharray:4 6}.plan-label{font:700 10px 'Segoe UI',sans-serif;fill:#f7fafb;paint-order:stroke;stroke:#0b1419;stroke-width:3px}.cover{fill:none;stroke:#f4fafb;stroke-width:2}.band{shape-rendering:geometricPrecision}
+</style>
+<linearGradient id="layerGradient0" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#ad453b"/>
+<stop offset="30.26079%" stop-color="#ad453b"/>
+<stop offset="32.69106%" stop-color="#b87036"/>
+<stop offset="35.12133%" stop-color="#c29a30"/>
+<stop offset="100.00000%" stop-color="#c29a30"/>
+</linearGradient>
+<linearGradient id="layerGradient1" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#ad453b"/>
+<stop offset="30.26079%" stop-color="#ad453b"/>
+<stop offset="32.69106%" stop-color="#b87036"/>
+<stop offset="35.12133%" stop-color="#c29b30"/>
+<stop offset="100.00000%" stop-color="#c29b30"/>
+</linearGradient>
+<linearGradient id="layerGradient2" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#ae453b"/>
+<stop offset="30.26079%" stop-color="#ae453b"/>
+<stop offset="32.69106%" stop-color="#b87036"/>
+<stop offset="35.12133%" stop-color="#c39b31"/>
+<stop offset="100.00000%" stop-color="#c39b31"/>
+</linearGradient>
+<linearGradient id="layerGradient3" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#ae453b"/>
+<stop offset="30.26079%" stop-color="#ae453b"/>
+<stop offset="32.69106%" stop-color="#b87036"/>
+<stop offset="35.12133%" stop-color="#c39c31"/>
+<stop offset="100.00000%" stop-color="#c39c31"/>
+</linearGradient>
+<linearGradient id="layerGradient4" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#ae453b"/>
+<stop offset="30.26079%" stop-color="#ae453b"/>
+<stop offset="32.69106%" stop-color="#b97036"/>
+<stop offset="35.12133%" stop-color="#c49c31"/>
+<stop offset="100.00000%" stop-color="#c49c31"/>
+</linearGradient>
+<linearGradient id="layerGradient5" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#ae453c"/>
+<stop offset="30.26079%" stop-color="#ae453c"/>
+<stop offset="32.69106%" stop-color="#b97137"/>
+<stop offset="35.12133%" stop-color="#c49d32"/>
+<stop offset="100.00000%" stop-color="#c49d32"/>
+</linearGradient>
+<linearGradient id="layerGradient6" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#ae453c"/>
+<stop offset="30.26079%" stop-color="#ae453c"/>
+<stop offset="32.69106%" stop-color="#ba7137"/>
+<stop offset="35.12133%" stop-color="#c59d32"/>
+<stop offset="100.00000%" stop-color="#c59d32"/>
+</linearGradient>
+<linearGradient id="layerGradient7" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#af463c"/>
+<stop offset="30.26079%" stop-color="#af463c"/>
+<stop offset="32.69106%" stop-color="#ba7237"/>
+<stop offset="35.12133%" stop-color="#c59e32"/>
+<stop offset="100.00000%" stop-color="#c59e32"/>
+</linearGradient>
+<linearGradient id="layerGradient8" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#af463c"/>
+<stop offset="30.26079%" stop-color="#af463c"/>
+<stop offset="32.69106%" stop-color="#ba7238"/>
+<stop offset="35.12133%" stop-color="#c69e33"/>
+<stop offset="100.00000%" stop-color="#c69e33"/>
+</linearGradient>
+<linearGradient id="layerGradient9" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#af463c"/>
+<stop offset="30.26079%" stop-color="#af463c"/>
+<stop offset="32.69106%" stop-color="#ba7238"/>
+<stop offset="35.12133%" stop-color="#c69f33"/>
+<stop offset="100.00000%" stop-color="#c69f33"/>
+</linearGradient>
+<linearGradient id="layerGradient10" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b0463c"/>
+<stop offset="30.26079%" stop-color="#b0463c"/>
+<stop offset="32.69106%" stop-color="#bc7338"/>
+<stop offset="35.12133%" stop-color="#c7a034"/>
+<stop offset="100.00000%" stop-color="#c7a034"/>
+</linearGradient>
+<linearGradient id="layerGradient11" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b0473c"/>
+<stop offset="30.26079%" stop-color="#b0473c"/>
+<stop offset="32.69106%" stop-color="#bc7438"/>
+<stop offset="35.12133%" stop-color="#c8a135"/>
+<stop offset="100.00000%" stop-color="#c8a135"/>
+</linearGradient>
+<linearGradient id="layerGradient12" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b1473d"/>
+<stop offset="30.26079%" stop-color="#b1473d"/>
+<stop offset="32.69106%" stop-color="#bd7439"/>
+<stop offset="35.12133%" stop-color="#c9a235"/>
+<stop offset="100.00000%" stop-color="#c9a235"/>
+</linearGradient>
+<linearGradient id="layerGradient13" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b1473d"/>
+<stop offset="30.26079%" stop-color="#b1473d"/>
+<stop offset="32.69106%" stop-color="#be753a"/>
+<stop offset="35.12133%" stop-color="#caa336"/>
+<stop offset="100.00000%" stop-color="#caa336"/>
+</linearGradient>
+<linearGradient id="layerGradient14" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b1473d"/>
+<stop offset="30.26079%" stop-color="#b1473d"/>
+<stop offset="32.69106%" stop-color="#be763a"/>
+<stop offset="35.12133%" stop-color="#cba437"/>
+<stop offset="100.00000%" stop-color="#cba437"/>
+</linearGradient>
+<linearGradient id="layerGradient15" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b2483d"/>
+<stop offset="30.26079%" stop-color="#b2483d"/>
+<stop offset="32.69106%" stop-color="#bf763a"/>
+<stop offset="35.12133%" stop-color="#cca538"/>
+<stop offset="100.00000%" stop-color="#cca538"/>
+</linearGradient>
+<linearGradient id="layerGradient16" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b2483d"/>
+<stop offset="30.26079%" stop-color="#b2483d"/>
+<stop offset="32.69106%" stop-color="#c0773a"/>
+<stop offset="35.12133%" stop-color="#cda638"/>
+<stop offset="100.00000%" stop-color="#cda638"/>
+</linearGradient>
+<linearGradient id="layerGradient17" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b3483d"/>
+<stop offset="30.26079%" stop-color="#b3483d"/>
+<stop offset="32.69106%" stop-color="#c0783b"/>
+<stop offset="35.12133%" stop-color="#cea739"/>
+<stop offset="100.00000%" stop-color="#cea739"/>
+</linearGradient>
+<linearGradient id="layerGradient18" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b3483e"/>
+<stop offset="30.26079%" stop-color="#b3483e"/>
+<stop offset="32.69106%" stop-color="#c0783c"/>
+<stop offset="35.12133%" stop-color="#cea83a"/>
+<stop offset="100.00000%" stop-color="#cea83a"/>
+</linearGradient>
+<linearGradient id="layerGradient19" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b3493e"/>
+<stop offset="30.26079%" stop-color="#b3493e"/>
+<stop offset="32.69106%" stop-color="#c1793c"/>
+<stop offset="35.12133%" stop-color="#cfa93a"/>
+<stop offset="100.00000%" stop-color="#cfa93a"/>
+</linearGradient>
+<linearGradient id="layerGradient20" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b4493e"/>
+<stop offset="30.26079%" stop-color="#b4493e"/>
+<stop offset="32.69106%" stop-color="#c27a3c"/>
+<stop offset="35.12133%" stop-color="#d0aa3b"/>
+<stop offset="100.00000%" stop-color="#d0aa3b"/>
+</linearGradient>
+<linearGradient id="layerGradient21" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b4493e"/>
+<stop offset="30.26079%" stop-color="#b4493e"/>
+<stop offset="32.69106%" stop-color="#c27a3d"/>
+<stop offset="35.12133%" stop-color="#d1ab3c"/>
+<stop offset="100.00000%" stop-color="#d1ab3c"/>
+</linearGradient>
+<linearGradient id="layerGradient22" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b54a3e"/>
+<stop offset="30.26079%" stop-color="#b54a3e"/>
+<stop offset="32.69106%" stop-color="#c47b3e"/>
+<stop offset="35.12133%" stop-color="#d2ac3d"/>
+<stop offset="100.00000%" stop-color="#d2ac3d"/>
+</linearGradient>
+<linearGradient id="layerGradient23" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b54a3f"/>
+<stop offset="30.26079%" stop-color="#b54a3f"/>
+<stop offset="32.69106%" stop-color="#c47c3e"/>
+<stop offset="35.12133%" stop-color="#d3ad3d"/>
+<stop offset="100.00000%" stop-color="#d3ad3d"/>
+</linearGradient>
+<linearGradient id="layerGradient24" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b64a3f"/>
+<stop offset="30.26079%" stop-color="#b64a3f"/>
+<stop offset="32.69106%" stop-color="#c57c3e"/>
+<stop offset="35.12133%" stop-color="#d4ae3e"/>
+<stop offset="100.00000%" stop-color="#d4ae3e"/>
+</linearGradient>
+<linearGradient id="layerGradient25" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b64a3f"/>
+<stop offset="30.26079%" stop-color="#b64a3f"/>
+<stop offset="32.69106%" stop-color="#c67c3f"/>
+<stop offset="35.12133%" stop-color="#d5af3f"/>
+<stop offset="100.00000%" stop-color="#d5af3f"/>
+</linearGradient>
+<linearGradient id="layerGradient26" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b64b3f"/>
+<stop offset="30.26079%" stop-color="#b64b3f"/>
+<stop offset="32.69106%" stop-color="#c67e3f"/>
+<stop offset="35.12133%" stop-color="#d6b03f"/>
+<stop offset="100.00000%" stop-color="#d6b03f"/>
+</linearGradient>
+<linearGradient id="layerGradient27" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b74b3f"/>
+<stop offset="30.26079%" stop-color="#b74b3f"/>
+<stop offset="32.69106%" stop-color="#c67e40"/>
+<stop offset="35.12133%" stop-color="#d6b040"/>
+<stop offset="100.00000%" stop-color="#d6b040"/>
+</linearGradient>
+<linearGradient id="layerGradient28" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b74b3f"/>
+<stop offset="30.26079%" stop-color="#b74b3f"/>
+<stop offset="32.69106%" stop-color="#c77e40"/>
+<stop offset="35.12133%" stop-color="#d7b141"/>
+<stop offset="100.00000%" stop-color="#d7b141"/>
+</linearGradient>
+<linearGradient id="layerGradient29" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b84b40"/>
+<stop offset="30.26079%" stop-color="#b84b40"/>
+<stop offset="32.69106%" stop-color="#c87e41"/>
+<stop offset="35.12133%" stop-color="#d8b242"/>
+<stop offset="100.00000%" stop-color="#d8b242"/>
+</linearGradient>
+<linearGradient id="layerGradient30" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b84c40"/>
+<stop offset="30.26079%" stop-color="#b84c40"/>
+<stop offset="32.69106%" stop-color="#c88041"/>
+<stop offset="35.12133%" stop-color="#d9b342"/>
+<stop offset="100.00000%" stop-color="#d9b342"/>
+</linearGradient>
+<linearGradient id="layerGradient31" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b84c40"/>
+<stop offset="30.26079%" stop-color="#b84c40"/>
+<stop offset="32.69106%" stop-color="#c98042"/>
+<stop offset="35.12133%" stop-color="#dab443"/>
+<stop offset="100.00000%" stop-color="#dab443"/>
+</linearGradient>
+<linearGradient id="layerGradient32" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#b94c40"/>
+<stop offset="30.26079%" stop-color="#b94c40"/>
+<stop offset="32.69106%" stop-color="#ca8042"/>
+<stop offset="35.12133%" stop-color="#dbb544"/>
+<stop offset="100.00000%" stop-color="#dbb544"/>
+</linearGradient>
+<linearGradient id="layerGradient33" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#bb4d41"/>
+<stop offset="30.26079%" stop-color="#bb4d41"/>
+<stop offset="32.69106%" stop-color="#cc8344"/>
+<stop offset="35.12133%" stop-color="#deb946"/>
+<stop offset="100.00000%" stop-color="#deb946"/>
+</linearGradient>
+<linearGradient id="layerGradient34" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#bc4e42"/>
+<stop offset="30.26079%" stop-color="#bc4e42"/>
+<stop offset="32.69106%" stop-color="#cf8646"/>
+<stop offset="35.12133%" stop-color="#e2bd49"/>
+<stop offset="100.00000%" stop-color="#e2bd49"/>
+</linearGradient>
+<linearGradient id="layerGradient35" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#be5042"/>
+<stop offset="30.26079%" stop-color="#be5042"/>
+<stop offset="32.69106%" stop-color="#d28847"/>
+<stop offset="35.12133%" stop-color="#e5c14c"/>
+<stop offset="100.00000%" stop-color="#e5c14c"/>
+</linearGradient>
+<linearGradient id="layerGradient36" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#c05143"/>
+<stop offset="30.26079%" stop-color="#c05143"/>
+<stop offset="32.69106%" stop-color="#d48b49"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient37" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#c15244"/>
+<stop offset="30.26079%" stop-color="#c15244"/>
+<stop offset="32.69106%" stop-color="#d58c4a"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient38" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#c35345"/>
+<stop offset="30.26079%" stop-color="#c35345"/>
+<stop offset="32.69106%" stop-color="#d68c4a"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient39" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#c55445"/>
+<stop offset="30.26079%" stop-color="#c55445"/>
+<stop offset="32.69106%" stop-color="#d78c4a"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient40" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#c65546"/>
+<stop offset="30.26079%" stop-color="#c65546"/>
+<stop offset="32.69106%" stop-color="#d88d4a"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient41" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#c85647"/>
+<stop offset="30.26079%" stop-color="#c85647"/>
+<stop offset="32.69106%" stop-color="#d88e4b"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient42" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#ca5747"/>
+<stop offset="30.26079%" stop-color="#ca5747"/>
+<stop offset="32.69106%" stop-color="#da8e4b"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient43" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#cb5848"/>
+<stop offset="30.26079%" stop-color="#cb5848"/>
+<stop offset="32.69106%" stop-color="#da8e4c"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient44" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#cd5949"/>
+<stop offset="30.26079%" stop-color="#cd5949"/>
+<stop offset="32.69106%" stop-color="#db8f4c"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient45" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#cf5a4a"/>
+<stop offset="30.26079%" stop-color="#cf5a4a"/>
+<stop offset="32.69106%" stop-color="#dc904c"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient46" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#d05b4a"/>
+<stop offset="30.26079%" stop-color="#d05b4a"/>
+<stop offset="32.69106%" stop-color="#dc904c"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient47" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#d25d4b"/>
+<stop offset="30.26079%" stop-color="#d25d4b"/>
+<stop offset="32.69106%" stop-color="#de914d"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient48" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#d45e4c"/>
+<stop offset="30.26079%" stop-color="#d45e4c"/>
+<stop offset="32.69106%" stop-color="#de924e"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient49" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#d55f4d"/>
+<stop offset="30.26079%" stop-color="#d55f4d"/>
+<stop offset="32.69106%" stop-color="#df924e"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient50" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#d7604d"/>
+<stop offset="30.26079%" stop-color="#d7604d"/>
+<stop offset="32.69106%" stop-color="#e0924e"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient51" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#d9614e"/>
+<stop offset="30.26079%" stop-color="#d9614e"/>
+<stop offset="32.69106%" stop-color="#e1934e"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient52" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#da624f"/>
+<stop offset="30.26079%" stop-color="#da624f"/>
+<stop offset="32.69106%" stop-color="#e2944f"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+<linearGradient id="layerGradient53" gradientUnits="userSpaceOnUse" x1="95.00" x2="1510.00" y1="0" y2="0">
+<stop offset="0.00000%" stop-color="#dc634f"/>
+<stop offset="30.26079%" stop-color="#dc634f"/>
+<stop offset="32.69106%" stop-color="#e2944f"/>
+<stop offset="35.12133%" stop-color="#e9c54f"/>
+<stop offset="100.00000%" stop-color="#e9c54f"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="920" rx="24" fill="url(#bg)"/>
+<text class="title" x="72" y="60">Registration profile · W3 → W1 → W2 → E2 → E1 → E3</text>
+<text class="sub" x="72" y="91">Actual sheet intersections unwrapped by cumulative section distance</text>
+<rect x="1015.0" y="88.0" width="510.0" height="176.0" rx="12" fill="#0c171d" stroke="#2b424d"/>
+<path d="M1277.1,178.3L1277.1,178.2L1277.2,178.3L1277.1,178.3ZM1347.0,157.8L1346.3,158.6L1346.0,158.6L1346.0,158.9L1346.6,160.2L1347.9,160.9L1348.6,161.8L1348.2,162.4L1347.6,162.8L1347.8,163.0L1348.2,162.6L1348.9,162.3L1349.7,163.2L1350.0,162.6L1349.1,161.9L1350.0,161.0L1350.4,159.8L1350.1,159.7L1349.7,160.1L1349.4,159.9L1349.2,159.4L1349.5,158.7L1348.8,159.0L1348.7,158.6L1349.9,156.6L1352.1,156.5L1352.2,155.7L1352.9,155.7L1353.6,154.6L1354.7,154.5L1355.3,154.0L1354.6,153.5L1354.3,152.6L1353.7,152.1L1353.7,151.6L1353.9,151.3L1354.9,151.5L1355.1,151.1L1355.0,150.9L1355.2,150.9L1355.3,150.5L1355.8,150.1L1354.7,149.3L1354.2,149.3L1354.3,149.5L1353.5,150.0L1353.2,149.9L1353.5,149.2L1354.2,148.8L1353.9,147.4L1352.9,147.6L1353.0,148.1L1352.8,148.0L1352.6,148.5L1352.6,147.8L1352.3,147.8L1351.9,147.1L1352.8,147.2L1353.4,146.8L1354.4,146.7L1355.0,145.7L1354.5,144.7L1354.3,144.7L1354.5,145.0L1354.4,145.5L1353.6,145.2L1352.6,145.6L1352.8,145.9L1353.7,146.0L1353.7,146.3L1351.9,146.5L1351.5,146.8L1351.3,147.5L1352.1,148.3L1352.1,148.7L1351.9,148.9L1351.5,148.2L1351.2,148.0L1351.0,148.2L1350.3,147.7L1350.1,148.1L1350.8,148.5L1350.9,148.8L1351.7,149.3L1351.7,149.8L1351.2,149.8L1350.8,150.1L1350.7,149.1L1349.9,148.7L1350.0,149.1L1349.5,149.1L1349.6,148.4L1349.4,148.2L1349.1,148.6L1348.9,148.6L1348.8,148.3L1349.1,148.0L1348.8,148.0L1348.9,147.5L1349.4,147.6L1349.8,147.3L1349.9,146.5L1350.1,146.4L1350.4,146.7L1350.8,145.8L1350.0,145.7L1350.2,145.5L1350.0,145.3L1350.6,145.1L1350.6,144.9L1350.3,144.7L1350.1,144.9L1349.8,144.5L1349.5,144.4L1349.5,144.0L1350.2,143.8L1349.5,143.1L1349.8,142.9L1348.7,142.8L1348.6,142.3L1348.9,141.9L1349.4,142.0L1349.5,141.2L1349.9,140.8L1350.0,141.0L1350.6,140.7L1350.5,140.3L1351.0,140.2L1351.1,141.0L1350.5,141.3L1350.0,141.3L1349.8,142.1L1350.7,141.7L1350.4,142.3L1350.9,142.6L1350.4,142.7L1350.7,142.9L1350.5,143.2L1350.8,143.6L1351.3,142.7L1351.7,142.7L1352.2,141.9L1352.6,142.0L1352.6,142.5L1352.3,142.8L1352.6,143.0L1351.7,143.5L1351.6,143.9L1352.7,143.3L1353.1,143.5L1352.6,144.3L1352.1,144.5L1351.9,145.1L1352.5,145.0L1353.6,143.8L1355.1,143.4L1356.2,144.0L1358.1,144.5L1358.8,145.0L1359.4,145.8L1359.3,145.0L1359.0,144.6L1358.7,144.6L1358.5,144.2L1357.5,144.0L1357.8,143.0L1357.5,142.2L1357.6,142.1L1357.7,142.4L1358.1,142.3L1358.4,142.8L1358.4,142.0L1359.4,141.9L1360.3,140.8L1360.5,140.1L1360.2,139.6L1360.6,139.2L1361.2,139.1L1361.2,139.7L1361.6,139.2L1361.5,138.8L1362.2,139.2L1362.4,138.8L1362.7,138.8L1363.0,138.3L1363.1,136.4L1363.4,136.1L1365.1,136.0L1365.9,135.3L1367.5,134.8L1366.0,134.4L1365.8,133.9L1363.8,132.5L1363.0,131.7L1362.8,131.7L1362.5,131.2L1361.8,130.9L1362.0,129.9L1362.5,129.9L1362.5,130.2L1363.7,129.6L1362.3,129.5L1361.7,128.6L1362.3,127.8L1362.3,126.7L1362.7,126.6L1363.3,126.0L1363.9,126.0L1364.3,125.7L1365.6,125.8L1366.4,125.2L1366.6,125.3L1366.5,125.6L1366.9,125.5L1367.1,125.9L1367.5,125.8L1367.0,124.3L1366.7,124.6L1366.0,124.4L1365.9,125.1L1364.3,125.3L1364.2,124.5L1364.7,124.8L1364.9,124.6L1363.4,122.3L1363.4,121.3L1363.6,120.5L1364.1,121.3L1364.5,121.2L1364.7,120.7L1364.9,120.7L1364.6,120.2L1365.3,120.4L1365.6,120.8L1365.7,120.4L1366.0,120.6L1366.1,120.0L1366.6,119.7L1367.3,120.1L1367.2,120.6L1367.6,120.6L1367.3,118.9L1367.0,118.8L1367.3,119.3L1367.1,119.5L1366.4,118.8L1365.5,118.7L1365.2,118.0L1364.8,118.7L1364.7,118.0L1364.8,117.5L1365.7,118.0L1365.9,118.4L1366.5,118.3L1368.6,118.5L1369.0,118.8L1368.9,119.2L1369.3,119.3L1369.1,118.2L1368.9,118.2L1368.8,117.8L1368.9,116.7L1368.7,116.8L1368.4,115.8L1368.3,116.1L1368.0,115.7L1367.6,115.6L1367.8,115.8L1367.8,116.0L1366.8,115.9L1367.4,116.2L1367.3,116.4L1366.7,116.5L1367.4,117.0L1367.2,117.5L1366.4,117.9L1366.2,117.4L1366.5,116.4L1366.1,116.5L1366.0,116.1L1365.6,116.0L1365.6,116.4L1364.7,116.5L1364.6,115.1L1364.2,114.0L1363.6,114.4L1364.0,115.6L1363.6,115.7L1363.3,115.5L1363.3,114.9L1362.7,114.9L1363.1,114.4L1362.9,113.8L1364.3,113.1L1364.4,113.8L1364.8,114.0L1364.5,114.4L1365.6,114.3L1365.7,115.0L1364.9,114.6L1365.1,115.5L1365.4,115.7L1365.8,115.6L1366.0,115.0L1366.3,115.6L1367.1,114.5L1369.3,115.0L1369.5,115.4L1369.8,115.4L1369.7,116.1L1370.4,116.9L1370.1,114.6L1369.7,114.8L1369.3,113.9L1369.4,113.5L1368.5,112.9L1367.7,112.8L1367.9,112.0L1368.1,112.5L1369.6,112.9L1370.5,113.7L1371.0,114.5L1371.5,114.7L1371.7,114.5L1371.7,114.5L1371.1,114.2L1370.8,113.5L1369.5,112.4L1369.4,112.1L1367.9,111.1L1367.2,109.2L1366.9,109.1L1366.4,109.4L1365.8,109.3L1365.3,110.1L1365.4,111.4L1364.8,111.3L1365.0,109.7L1365.3,109.4L1365.0,109.1L1365.2,108.6L1365.9,108.9L1366.2,108.9L1366.6,107.8L1367.0,107.9L1367.7,107.5L1368.0,107.7L1368.3,107.4L1369.5,107.6L1369.5,107.8L1369.7,107.7L1369.9,108.0L1370.2,107.9L1370.5,107.6L1371.0,108.2L1371.2,108.8L1372.2,109.3L1372.4,109.8L1372.2,110.1L1371.3,110.0L1369.4,108.2L1368.4,107.7L1368.1,108.0L1366.8,108.2L1366.7,108.7L1367.2,108.6L1367.7,109.1L1368.4,108.1L1368.9,108.5L1369.4,108.4L1369.8,108.8L1369.8,109.2L1368.7,109.1L1368.6,109.3L1369.5,109.5L1369.2,109.8L1368.9,109.9L1368.3,109.6L1367.6,109.6L1367.6,109.9L1368.3,110.2L1369.2,110.2L1369.6,110.1L1369.8,109.6L1370.2,109.6L1370.3,109.8L1369.9,109.8L1369.9,110.1L1370.2,110.5L1370.2,111.2L1370.5,111.2L1370.7,110.6L1371.0,110.8L1371.0,111.1L1371.3,111.1L1371.4,110.7L1371.7,110.9L1371.9,110.5L1372.6,110.2L1372.6,110.2L1372.7,110.2L1373.1,110.9L1374.2,111.5L1374.3,112.3L1373.9,113.4L1372.3,112.6L1371.8,112.6L1372.9,113.0L1373.1,113.4L1372.6,113.4L1372.9,113.8L1373.2,113.7L1373.3,114.7L1373.6,115.4L1373.0,115.6L1372.7,115.1L1372.8,116.0L1373.9,115.6L1374.3,116.0L1374.3,114.4L1374.5,113.4L1375.3,112.6L1375.2,110.3L1373.5,109.6L1373.0,108.6L1373.1,108.2L1372.6,108.6L1371.8,108.3L1371.5,107.7L1371.4,106.3L1372.0,106.0L1371.9,105.6L1372.3,105.0L1372.9,104.7L1373.0,104.1L1373.4,104.2L1373.4,103.8L1374.1,103.6L1359.0,103.7L1390.2,103.3L1390.2,103.3L1391.7,103.1L1392.5,103.3L1403.0,103.1L1403.0,102.6L1449.4,101.5L1451.9,112.0L1451.9,112.0L1454.1,119.0L1456.8,125.2L1458.5,128.3L1458.7,128.7L1458.7,128.7L1459.0,128.7L1459.8,130.1L1464.0,138.6L1465.7,142.6L1465.6,142.9L1465.2,143.0L1464.2,142.4L1463.7,141.8L1463.4,140.9L1463.6,140.6L1462.9,139.9L1462.2,138.3L1461.2,137.3L1461.3,136.7L1461.6,136.4L1461.5,135.4L1460.2,133.5L1459.2,133.1L1459.0,132.5L1458.5,131.8L1457.8,131.9L1457.2,131.5L1456.5,131.5L1456.3,131.2L1456.3,130.2L1457.0,129.9L1457.2,129.3L1457.0,129.1L1456.3,129.4L1455.8,129.3L1455.9,127.7L1455.9,127.4L1455.8,126.9L1455.3,124.8L1455.5,124.3L1455.5,123.6L1454.4,120.3L1454.2,119.6L1453.7,119.4L1453.7,119.4L1453.6,119.6L1453.0,118.9L1452.8,118.4L1452.8,118.3L1452.4,118.0L1452.7,116.9L1452.5,116.0L1452.2,115.6L1451.3,115.5L1451.3,115.5L1450.5,114.1L1450.7,113.4L1451.7,113.9L1451.8,113.6L1451.7,112.6L1451.3,112.1L1451.4,111.6L1450.5,110.8L1450.5,110.8L1450.8,110.1L1450.8,109.8L1450.4,109.7L1450.4,109.7L1450.7,108.6L1450.1,108.4L1449.7,107.7L1449.1,107.8L1448.6,107.5L1448.0,105.3L1447.5,105.1L1447.0,105.3L1446.5,104.9L1445.3,104.7L1444.8,104.7L1444.6,105.1L1444.1,104.7L1444.4,103.8L1444.2,103.0L1443.7,102.9L1443.7,102.9L1443.4,102.4L1442.2,102.3L1442.4,103.6L1442.4,103.6L1441.7,103.9L1442.2,105.4L1443.1,107.3L1444.1,107.9L1444.9,107.8L1445.7,109.8L1446.1,110.1L1446.4,109.9L1446.2,109.3L1446.6,108.3L1446.6,108.3L1447.1,108.4L1447.2,109.8L1447.5,110.4L1447.2,111.9L1448.5,114.2L1449.1,116.1L1449.9,116.0L1450.3,116.3L1450.0,116.6L1450.1,117.2L1449.7,117.7L1449.8,118.2L1450.0,118.2L1450.0,118.2L1450.1,119.1L1450.8,119.8L1451.1,119.8L1451.6,120.8L1451.7,121.2L1451.7,121.2L1451.2,120.6L1451.0,121.1L1451.5,122.4L1451.9,122.7L1451.9,123.6L1452.3,123.9L1452.8,125.0L1453.1,125.1L1453.1,125.1L1453.0,126.2L1453.6,127.2L1453.3,127.6L1451.2,126.1L1451.2,126.1L1450.1,124.7L1450.2,122.9L1449.7,121.6L1448.5,120.6L1448.7,120.3L1448.1,120.1L1448.2,119.7L1447.4,118.3L1446.3,117.6L1445.8,117.5L1445.7,117.2L1445.4,117.3L1446.4,119.5L1445.9,120.9L1446.6,121.5L1446.7,121.8L1448.0,122.5L1447.5,122.7L1443.3,121.6L1442.9,120.8L1442.2,120.3L1441.6,119.0L1440.5,118.9L1440.3,118.3L1439.5,117.8L1439.3,117.0L1438.1,116.1L1437.1,116.2L1437.1,116.2L1436.6,116.0L1436.2,115.5L1435.2,115.8L1435.2,115.8L1434.4,115.6L1434.2,115.9L1434.8,116.1L1434.9,116.4L1435.5,116.4L1435.5,116.4L1436.3,117.6L1437.1,117.6L1437.6,117.8L1437.6,117.8L1438.8,120.3L1440.5,121.0L1441.5,123.4L1441.3,124.0L1436.8,125.3L1436.8,125.3L1435.9,125.2L1435.0,124.6L1434.0,123.4L1433.8,122.9L1433.1,122.6L1433.0,122.0L1431.8,121.7L1431.8,122.3L1433.2,123.5L1434.1,125.3L1435.7,126.2L1434.7,126.9L1433.8,126.8L1432.5,126.4L1432.5,126.4L1431.4,125.7L1430.4,125.4L1429.8,124.9L1428.2,124.6L1427.6,124.7L1426.8,123.4L1425.4,122.4L1425.1,122.5L1424.6,121.9L1423.9,121.8L1423.9,121.8L1423.7,122.3L1423.7,122.3L1424.7,123.1L1424.8,123.5L1425.2,123.6L1426.3,124.4L1427.2,125.6L1427.7,125.9L1428.8,125.7L1429.1,126.3L1430.8,126.7L1430.7,127.1L1429.5,127.7L1429.3,127.4L1428.8,127.4L1427.2,127.9L1426.0,127.9L1426.1,128.6L1426.1,128.6L1425.9,128.7L1426.0,128.7L1426.2,128.8L1424.4,130.4L1424.0,131.3L1422.6,131.7L1421.5,132.3L1418.5,132.2L1417.3,130.8L1417.1,129.8L1416.2,130.7L1415.3,130.9L1414.1,130.4L1413.3,129.1L1413.2,128.7L1413.5,128.7L1413.6,128.3L1413.4,127.7L1413.6,126.8L1413.5,126.6L1412.9,126.7L1412.6,125.3L1412.1,124.6L1412.1,124.6L1412.1,121.7L1412.5,120.4L1413.2,119.7L1414.1,117.7L1412.9,117.0L1413.0,117.8L1411.9,119.2L1411.8,120.0L1411.4,119.8L1411.1,120.1L1411.1,120.1L1410.7,121.1L1410.8,121.9L1410.6,123.0L1410.8,125.5L1411.9,127.4L1411.8,128.7L1412.0,128.7L1412.5,129.9L1413.1,130.3L1413.2,131.9L1414.0,132.2L1414.2,133.2L1413.4,134.3L1412.6,134.8L1412.1,136.1L1413.0,135.5L1415.0,136.2L1417.2,135.9L1418.3,135.6L1419.8,135.6L1420.9,135.4L1422.6,134.5L1423.2,134.4L1424.0,134.0L1426.6,133.1L1427.5,133.8L1428.0,134.7L1427.7,135.1L1428.1,135.7L1429.0,135.2L1429.9,135.4L1432.3,133.5L1435.2,132.6L1436.3,132.5L1436.8,132.2L1437.8,132.1L1438.5,132.4L1441.7,132.3L1443.5,133.4L1444.2,134.4L1443.8,135.5L1444.2,136.3L1443.0,137.8L1442.8,139.1L1442.1,140.0L1442.0,141.0L1442.7,142.5L1442.5,145.0L1442.9,146.3L1442.4,147.5L1442.5,147.9L1443.1,148.2L1443.5,149.0L1443.1,150.9L1443.3,151.1L1444.0,150.7L1444.5,149.4L1444.7,148.6L1444.6,146.9L1445.1,145.9L1445.3,144.3L1444.8,142.1L1445.5,140.7L1445.0,139.4L1445.3,138.9L1445.0,137.9L1445.5,137.3L1446.1,137.1L1446.8,136.0L1447.8,135.2L1446.7,134.2L1446.7,133.9L1449.0,132.8L1450.2,132.6L1451.9,133.1L1453.1,133.6L1453.4,134.4L1454.4,135.1L1454.5,135.9L1455.1,136.3L1455.1,136.7L1455.3,137.3L1456.0,137.7L1456.0,139.6L1456.7,140.3L1457.0,141.0L1456.8,141.4L1457.0,142.1L1456.7,142.6L1456.8,143.5L1456.5,143.9L1456.8,144.4L1456.7,145.1L1457.3,145.7L1457.2,146.3L1457.3,147.0L1457.7,147.4L1457.8,148.3L1457.0,149.1L1456.6,149.1L1456.3,148.1L1455.4,147.9L1454.9,148.7L1455.6,149.2L1455.5,149.8L1455.7,150.2L1456.1,150.6L1456.6,150.6L1456.8,150.9L1457.1,152.1L1456.5,152.5L1456.3,153.2L1454.9,153.8L1455.3,154.4L1455.2,154.7L1452.9,155.3L1452.4,155.3L1452.4,155.0L1453.3,154.2L1452.8,154.1L1452.4,154.4L1451.6,154.6L1451.3,153.9L1450.6,153.1L1450.7,152.0L1450.4,151.9L1450.0,153.8L1450.5,154.5L1450.6,155.1L1450.0,155.2L1449.5,155.8L1448.9,155.9L1449.5,156.2L1449.2,156.9L1447.8,157.4L1447.3,157.8L1447.4,158.0L1447.1,158.5L1446.6,158.4L1446.4,158.6L1447.1,159.0L1447.1,159.6L1445.9,160.2L1445.5,161.7L1444.9,162.5L1445.0,163.3L1444.5,164.2L1443.9,164.3L1443.4,163.3L1442.9,163.1L1443.2,163.7L1442.4,164.5L1442.5,165.1L1442.0,165.3L1442.6,165.4L1442.9,165.7L1442.4,166.6L1441.5,166.7L1441.3,167.2L1440.5,167.6L1439.4,167.4L1439.5,168.0L1438.7,168.9L1438.4,168.9L1438.1,168.3L1437.6,168.1L1436.4,168.6L1436.1,168.2L1435.5,168.5L1434.9,167.4L1434.2,167.1L1434.0,167.1L1434.3,167.8L1434.1,168.3L1433.5,168.6L1432.9,168.4L1431.6,167.8L1431.5,167.1L1430.7,166.8L1430.6,166.1L1430.0,165.8L1429.6,166.2L1430.2,167.5L1430.3,168.5L1428.5,169.0L1428.2,168.4L1428.3,167.7L1428.1,167.7L1427.7,168.2L1426.9,168.4L1426.8,167.6L1426.2,167.3L1426.5,166.5L1427.0,166.4L1428.9,167.1L1428.7,166.3L1428.0,166.3L1427.8,165.7L1427.4,165.3L1427.4,164.8L1427.9,164.4L1427.5,163.8L1426.8,164.0L1426.0,165.3L1426.1,165.7L1425.9,166.1L1425.4,165.9L1425.2,166.1L1424.9,166.0L1424.7,165.5L1424.4,165.6L1424.1,165.3L1424.6,166.7L1424.3,167.1L1423.3,166.8L1422.4,165.8L1422.2,165.9L1421.4,165.5L1420.9,164.8L1421.2,163.7L1420.4,163.6L1419.8,162.8L1420.1,162.3L1420.5,162.2L1419.8,161.4L1419.8,160.5L1419.0,160.1L1418.7,159.5L1419.9,159.2L1421.2,159.2L1422.2,159.5L1423.2,159.4L1424.0,158.7L1424.0,157.7L1424.5,157.1L1424.2,156.9L1423.8,157.2L1423.6,157.8L1423.0,158.2L1422.4,158.1L1422.0,158.4L1421.5,158.3L1421.1,158.5L1420.6,158.3L1420.2,158.6L1419.5,158.1L1418.4,158.0L1416.9,159.4L1417.8,160.5L1418.7,160.9L1418.3,162.5L1418.4,163.0L1418.9,163.4L1419.1,164.5L1419.7,165.7L1419.8,166.1L1419.5,166.4L1416.3,165.6L1415.8,165.3L1415.5,164.7L1414.8,164.9L1413.4,164.3L1412.1,164.4L1411.2,164.8L1410.7,164.4L1409.0,163.7L1408.5,163.1L1408.0,163.3L1405.8,162.7L1404.6,162.8L1402.3,161.5L1401.2,161.5L1399.8,159.8L1398.3,158.6L1398.2,158.6L1399.6,160.0L1399.6,160.7L1398.8,160.5L1400.3,161.5L1401.1,161.7L1401.7,162.5L1402.1,163.7L1403.8,162.9L1404.2,163.4L1405.8,164.1L1407.5,164.2L1408.6,165.1L1408.7,165.6L1409.6,166.0L1410.8,166.0L1411.0,166.4L1412.3,166.8L1413.2,166.8L1414.0,167.4L1414.4,167.5L1415.0,168.2L1416.0,168.6L1417.9,168.4L1418.4,169.1L1419.7,169.1L1423.8,169.9L1424.1,170.4L1423.9,170.7L1423.4,170.7L1423.6,171.3L1423.5,171.8L1423.8,171.8L1423.8,171.5L1424.1,171.4L1424.7,171.9L1424.4,172.2L1424.8,173.1L1423.9,172.9L1424.3,173.9L1423.3,174.2L1423.8,175.1L1423.5,175.6L1421.8,174.9L1420.6,174.9L1421.5,175.2L1422.5,175.9L1422.6,176.2L1422.2,177.3L1421.6,177.4L1421.4,177.0L1421.0,177.2L1419.4,176.5L1418.9,176.8L1418.9,177.3L1417.5,178.1L1417.5,178.5L1418.2,178.3L1419.3,178.7L1419.2,178.0L1419.6,177.7L1420.2,177.7L1421.2,178.8L1421.7,178.8L1421.9,179.2L1421.0,180.6L1420.4,182.1L1419.4,182.4L1419.2,183.5L1417.4,184.5L1416.0,185.8L1414.5,186.6L1414.1,187.5L1412.0,188.2L1411.4,189.1L1410.5,189.3L1409.9,189.8L1409.0,189.4L1407.3,188.1L1406.5,187.7L1405.2,186.5L1405.0,186.4L1404.7,186.6L1403.8,186.1L1403.8,185.6L1403.2,185.5L1402.9,184.9L1402.1,184.9L1401.3,184.4L1400.2,182.4L1399.8,182.3L1399.8,181.8L1399.2,180.7L1398.2,180.0L1399.4,181.6L1399.5,182.7L1400.3,183.3L1400.4,184.0L1401.6,185.3L1402.1,187.4L1404.0,189.1L1405.8,189.9L1406.1,190.4L1407.0,190.4L1407.9,191.0L1408.8,190.7L1409.5,190.8L1411.9,192.0L1412.4,191.6L1412.4,191.2L1413.3,191.3L1414.1,189.9L1415.4,189.8L1415.4,189.1L1416.3,188.3L1417.6,187.9L1419.9,188.5L1419.7,187.8L1420.5,187.3L1423.0,186.8L1423.7,187.9L1424.0,187.9L1423.4,186.9L1423.8,186.4L1423.6,186.0L1424.1,184.7L1424.8,184.6L1424.2,184.0L1424.6,183.0L1425.0,182.9L1425.8,183.4L1425.9,183.8L1426.5,183.9L1426.7,185.3L1427.2,185.7L1427.1,185.9L1426.5,186.0L1426.4,186.5L1426.6,187.1L1427.1,187.1L1427.3,188.5L1427.0,189.0L1427.2,189.6L1427.5,189.1L1427.9,189.0L1428.3,189.8L1428.5,189.7L1428.7,188.8L1428.6,188.4L1428.9,188.1L1429.6,188.5L1429.8,188.2L1430.8,188.7L1431.2,188.5L1431.5,188.9L1430.0,186.4L1429.2,185.5L1429.2,185.1L1429.6,184.9L1432.9,186.3L1435.0,186.8L1435.3,187.2L1435.1,187.8L1434.7,188.4L1434.3,188.6L1433.0,187.5L1432.6,187.6L1433.2,188.7L1433.8,189.2L1433.8,190.3L1433.0,190.7L1432.8,191.5L1431.2,190.9L1431.0,191.0L1431.3,191.4L1431.2,191.9L1432.0,192.0L1432.2,192.2L1431.5,193.5L1430.8,194.2L1429.7,194.3L1428.9,195.3L1428.4,195.2L1428.1,194.7L1428.4,193.9L1428.2,193.7L1427.8,196.8L1427.4,196.9L1427.1,196.7L1426.8,197.3L1426.2,197.6L1425.7,199.1L1424.6,200.9L1424.3,200.9L1424.1,200.5L1423.5,200.9L1424.0,201.5L1424.0,202.3L1423.3,202.9L1422.4,202.8L1422.2,202.9L1423.0,203.1L1423.2,203.4L1422.8,204.1L1423.0,204.4L1422.8,204.9L1419.9,203.9L1419.8,203.3L1419.9,202.9L1421.2,203.1L1421.3,203.6L1421.6,203.8L1421.6,203.2L1421.9,202.9L1421.5,202.7L1420.3,202.8L1420.0,202.2L1420.2,201.7L1419.7,200.8L1420.1,200.2L1419.5,200.1L1419.0,199.2L1418.7,199.3L1418.7,201.0L1418.5,201.4L1418.6,202.4L1418.3,202.6L1418.9,203.3L1418.6,203.9L1415.9,203.4L1415.9,203.8L1416.2,204.2L1415.9,204.5L1412.1,204.4L1408.2,204.9L1401.6,206.2L1396.9,207.6L1396.7,207.3L1396.9,206.7L1400.6,205.4L1400.9,205.6L1403.6,205.2L1406.1,204.4L1408.3,204.2L1409.3,203.6L1411.9,203.8L1412.6,203.7L1412.8,203.2L1413.3,203.2L1413.6,203.7L1414.5,203.6L1414.6,203.3L1408.4,202.7L1405.8,202.9L1403.8,203.8L1402.6,204.0L1401.1,204.9L1400.8,204.8L1400.7,205.1L1400.3,205.1L1399.9,205.5L1399.4,205.3L1397.1,206.1L1395.7,205.4L1395.4,205.7L1395.4,206.1L1394.6,206.3L1394.0,207.1L1392.2,208.3L1390.6,210.1L1395.8,207.1L1396.5,207.3L1396.1,207.9L1393.4,208.8L1391.0,210.3L1386.8,213.8L1385.1,214.8L1385.0,214.5L1380.0,217.5L1379.2,218.0L1377.1,219.7L1376.0,220.5L1376.0,220.5L1375.1,221.2L1371.3,224.6L1370.8,225.2L1369.6,226.5L1368.0,228.3L1367.3,229.5L1364.1,234.3L1362.2,238.7L1362.1,238.7L1361.8,238.9L1361.8,238.9L1362.0,239.2L1360.2,244.9L1358.5,249.1L1358.2,252.0L1356.6,251.3L1356.1,250.8L1356.1,250.8L1356.9,249.5L1356.9,249.4L1356.9,248.7L1356.6,248.5L1356.3,248.4L1355.6,248.7L1355.8,249.3L1355.5,249.5L1350.9,248.3L1348.3,248.1L1345.9,248.2L1345.5,248.0L1338.7,248.9L1333.2,250.8L1331.6,251.6L1280.1,199.3L1280.1,199.3L1278.1,199.3L1271.3,199.2L1262.4,198.9L1270.1,199.1L1270.4,198.6L1269.9,198.4L1270.2,197.9L1269.9,197.7L1270.4,197.4L1270.0,197.3L1270.0,197.0L1270.6,196.8L1270.8,196.5L1271.1,196.8L1271.6,196.9L1271.3,196.2L1272.0,196.3L1272.1,195.8L1272.4,195.4L1272.8,195.9L1272.8,197.1L1273.0,196.8L1273.0,195.8L1273.4,196.2L1273.3,195.6L1273.9,195.5L1272.9,195.3L1273.3,194.8L1273.9,194.7L1273.3,194.2L1272.7,194.8L1272.8,194.2L1272.6,193.5L1274.2,193.2L1275.1,193.8L1274.9,193.0L1275.5,192.8L1275.1,192.4L1276.0,192.3L1275.9,191.9L1276.7,190.7L1277.2,190.4L1277.2,190.4L1277.3,190.3L1278.3,190.5L1277.6,190.1L1278.1,190.0L1279.1,189.4L1278.7,189.3L1278.7,188.9L1279.5,187.9L1278.9,187.6L1279.4,186.6L1279.1,186.3L1278.8,185.5L1278.5,185.7L1278.4,186.6L1277.6,186.2L1277.9,186.6L1277.7,186.8L1278.1,187.1L1278.5,187.0L1278.2,189.3L1278.1,188.5L1277.4,188.1L1277.8,188.9L1277.7,189.8L1276.8,189.9L1276.9,188.9L1276.5,188.6L1276.7,189.2L1276.3,189.4L1276.4,190.2L1275.9,190.0L1276.2,190.4L1275.8,191.2L1275.4,190.8L1275.5,191.5L1275.1,191.8L1274.6,191.2L1274.9,192.1L1274.5,191.9L1274.5,192.4L1273.9,191.7L1273.5,192.2L1274.0,192.4L1273.8,192.8L1273.5,192.6L1273.1,193.0L1272.8,192.7L1272.7,193.1L1272.6,192.7L1272.3,192.7L1272.7,192.3L1272.3,192.2L1272.3,191.9L1273.3,191.4L1273.0,191.3L1273.2,191.0L1273.1,190.9L1272.5,191.5L1271.8,191.4L1272.6,189.9L1273.3,190.3L1273.7,190.2L1273.8,190.9L1274.1,190.5L1274.4,190.6L1274.5,190.0L1273.9,190.1L1273.8,189.2L1274.1,188.8L1274.4,189.1L1275.1,188.9L1274.4,188.5L1274.4,187.9L1274.8,188.0L1274.8,187.7L1275.4,187.7L1275.7,187.9L1276.5,187.2L1276.3,187.7L1276.9,186.9L1277.0,186.7L1276.9,186.9L1276.8,186.0L1276.6,187.0L1276.4,186.4L1276.1,186.8L1275.2,187.2L1275.5,186.7L1275.5,185.5L1275.0,186.6L1274.9,185.8L1274.5,186.9L1274.0,186.7L1274.4,185.6L1273.9,185.7L1273.8,185.3L1274.1,185.3L1273.3,184.5L1273.8,184.3L1274.3,184.8L1274.4,184.1L1275.5,184.0L1275.4,183.8L1276.1,183.5L1276.3,182.8L1277.1,183.0L1277.6,182.3L1276.5,182.6L1276.6,181.7L1275.8,182.2L1275.7,182.5L1275.3,182.5L1275.4,182.9L1274.8,182.7L1274.6,183.1L1274.4,182.9L1274.8,182.1L1275.3,182.1L1275.4,181.7L1275.8,181.5L1275.5,181.3L1275.7,181.0L1275.5,180.7L1276.7,180.0L1275.9,179.6L1277.0,179.2L1276.9,178.7L1277.2,178.3L1276.9,178.1L1276.2,178.3L1276.1,178.2L1276.7,177.2L1277.3,177.1L1277.4,176.5L1277.1,176.3L1277.5,175.8L1277.5,175.8L1277.2,175.3L1277.2,175.3L1277.2,175.3L1276.8,175.6L1276.5,175.5L1276.0,176.7L1275.1,176.1L1275.5,175.6L1275.7,174.8L1276.4,174.5L1275.9,174.3L1276.3,173.8L1275.6,174.1L1275.7,173.6L1275.4,173.8L1275.2,173.6L1276.2,173.1L1276.0,172.7L1275.5,172.9L1275.2,172.6L1276.1,172.3L1276.1,172.0L1275.3,172.2L1275.2,171.9L1276.0,171.2L1276.6,170.7L1276.6,170.7L1276.6,170.7L1277.4,171.7L1277.4,171.1L1277.7,171.0L1277.8,170.5L1277.8,170.5L1277.8,170.5L1278.2,170.6L1278.7,170.3L1278.7,171.0L1279.7,170.4L1279.9,170.9L1280.0,170.6L1280.3,170.6L1280.3,170.0L1280.8,170.2L1281.3,169.6L1281.1,170.2L1281.6,170.1L1281.6,170.5L1281.2,171.1L1281.7,171.0L1281.8,171.7L1282.2,171.4L1282.4,170.2L1282.8,170.1L1282.6,169.5L1283.0,169.4L1283.1,168.9L1283.1,168.9L1283.2,168.9L1283.2,168.9L1283.4,168.8L1283.6,169.3L1283.9,168.9L1284.2,169.2L1284.9,169.1L1285.5,169.3L1285.5,169.5L1285.4,169.7L1285.4,169.7L1285.4,169.6L1285.4,169.8L1285.0,169.9L1284.9,169.9L1284.9,169.9L1284.4,170.5L1284.6,170.4L1284.6,170.7L1285.2,170.7L1285.1,171.3L1284.5,171.3L1284.3,171.7L1283.7,171.0L1283.8,171.6L1283.1,171.4L1283.5,171.9L1284.1,172.0L1283.2,172.6L1283.1,172.7L1283.4,173.2L1283.7,173.1L1283.8,173.5L1284.1,172.9L1284.8,172.6L1284.8,172.2L1285.4,172.6L1285.7,171.9L1286.1,171.8L1286.8,170.9L1287.0,171.1L1287.5,170.6L1287.3,171.7L1286.4,172.2L1286.0,172.9L1285.9,172.9L1288.2,172.2L1288.0,171.6L1288.6,171.7L1288.8,171.5L1288.3,170.5L1288.8,170.2L1289.1,171.0L1289.5,170.1L1289.6,170.4L1289.9,170.4L1289.8,170.9L1289.8,171.0L1290.3,170.6L1290.5,171.2L1290.8,171.0L1291.0,171.4L1291.1,171.2L1291.4,171.2L1291.2,170.8L1291.6,170.7L1291.4,170.1L1291.2,170.0L1291.0,170.0L1291.0,170.0L1291.0,170.0L1290.9,169.3L1291.3,168.8L1291.3,168.8L1291.3,168.8L1291.8,169.2L1292.1,170.0L1292.2,169.2L1292.6,169.0L1292.4,168.4L1293.1,168.7L1293.0,169.3L1293.4,169.1L1293.9,169.3L1294.7,168.3L1294.9,168.6L1295.7,168.7L1296.3,168.4L1296.4,168.0L1296.5,168.1L1296.8,168.0L1297.1,168.4L1297.6,167.6L1297.3,167.4L1297.3,167.0L1296.9,167.0L1297.0,166.6L1298.2,165.8L1298.4,166.2L1298.0,166.7L1298.2,167.2L1299.6,166.8L1299.8,166.4L1299.1,166.6L1299.0,166.4L1300.4,165.4L1300.1,165.2L1300.2,164.9L1300.0,164.6L1300.4,164.4L1300.5,163.9L1302.2,164.3L1302.8,164.1L1304.1,163.1L1304.5,163.3L1305.5,163.0L1305.9,163.3L1305.8,162.6L1307.0,162.6L1307.7,161.1L1308.4,161.6L1307.8,162.2L1308.9,161.9L1310.5,160.9L1310.6,161.3L1309.4,162.2L1309.4,162.6L1310.0,162.3L1310.3,162.6L1309.8,163.2L1309.3,163.4L1309.4,164.2L1309.9,163.5L1310.2,163.8L1311.1,163.6L1310.9,164.2L1311.5,164.0L1312.5,164.1L1311.7,164.8L1312.2,165.0L1312.6,164.7L1312.9,165.2L1313.2,164.6L1313.6,164.7L1313.7,164.1L1315.0,163.7L1314.7,164.1L1314.9,164.4L1314.7,165.6L1315.7,164.5L1316.5,164.4L1316.7,165.0L1317.4,164.9L1317.4,165.2L1316.8,165.5L1317.8,165.4L1318.2,165.9L1317.6,166.1L1318.3,166.3L1317.9,166.6L1318.3,166.6L1318.9,167.1L1319.2,167.8L1319.8,167.0L1321.1,167.3L1322.2,169.0L1323.5,170.3L1323.2,170.6L1322.6,170.5L1322.6,170.8L1322.9,171.0L1324.0,170.8L1324.9,173.1L1324.3,170.8L1322.2,168.4L1321.8,167.7L1321.0,166.9L1319.1,166.3L1318.7,165.7L1318.8,165.2L1319.5,165.2L1319.3,164.8L1319.3,164.1L1319.8,162.9L1320.3,162.7L1320.2,162.2L1321.6,160.8L1321.2,158.4L1320.8,160.5L1320.5,160.6L1319.9,158.9L1320.3,158.4L1320.2,157.4L1320.0,157.4L1319.6,157.8L1319.6,157.0L1318.6,156.1L1318.8,156.7L1318.6,157.0L1319.2,158.6L1318.8,158.6L1318.7,158.8L1319.4,159.5L1319.1,159.7L1318.9,160.6L1318.7,160.1L1318.1,160.3L1318.3,159.3L1317.9,158.6L1317.1,159.1L1317.4,159.9L1317.0,159.9L1316.4,160.8L1316.6,161.3L1317.0,161.0L1316.7,161.5L1316.3,161.4L1316.4,161.8L1316.1,162.0L1316.5,162.4L1316.2,162.8L1315.7,162.3L1315.4,162.5L1315.2,162.1L1315.4,161.9L1315.3,161.2L1315.7,161.5L1315.7,161.0L1316.2,160.8L1316.3,160.0L1316.0,160.4L1316.0,159.9L1316.7,159.3L1316.3,159.0L1315.6,159.4L1316.0,158.7L1314.8,159.7L1315.1,160.5L1314.7,160.5L1314.7,160.9L1314.0,160.3L1313.7,160.3L1313.5,161.0L1313.7,161.9L1313.4,161.8L1313.4,161.2L1312.8,160.6L1313.0,160.1L1314.2,159.8L1315.3,158.7L1314.9,158.5L1314.9,158.1L1315.1,157.6L1315.5,157.5L1315.5,157.2L1316.6,157.5L1316.4,157.0L1316.9,156.9L1317.0,156.2L1317.3,156.1L1317.3,155.2L1316.0,156.1L1315.8,156.0L1318.5,152.5L1318.5,152.8L1319.3,152.8L1318.3,153.4L1318.3,153.7L1319.1,154.2L1318.6,154.7L1319.3,154.6L1319.7,153.8L1320.2,153.8L1320.5,153.3L1321.2,153.4L1321.4,153.7L1322.4,153.9L1323.1,154.3L1322.0,154.4L1321.8,154.7L1321.2,154.5L1321.2,155.1L1320.2,155.2L1320.3,155.8L1322.1,155.1L1322.6,155.3L1322.5,156.1L1323.1,155.1L1323.6,155.9L1324.5,155.5L1324.7,155.8L1324.4,155.9L1324.4,156.3L1325.5,156.8L1326.5,157.9L1328.0,158.2L1329.1,157.9L1329.0,158.8L1329.4,158.7L1329.2,158.4L1329.5,158.2L1330.0,158.7L1329.9,159.2L1330.4,158.9L1330.6,159.1L1331.0,159.2L1331.5,159.9L1330.4,160.0L1331.2,160.2L1331.2,160.5L1331.7,160.4L1331.9,160.1L1332.1,160.7L1332.6,160.5L1333.9,160.5L1335.1,161.2L1335.5,161.0L1335.6,160.6L1336.0,160.9L1336.0,160.3L1336.5,160.4L1336.4,161.0L1336.9,160.8L1337.3,161.4L1338.3,162.0L1338.4,162.5L1339.0,163.0L1339.2,162.9L1339.1,161.5L1339.7,161.0L1340.0,160.5L1340.4,160.3L1340.1,159.9L1341.1,158.2L1341.9,157.7L1341.6,157.0L1341.9,156.0L1341.1,156.5L1341.1,156.1L1341.4,155.5L1340.7,155.4L1340.1,154.6L1340.5,153.9L1341.0,154.4L1342.8,155.2L1342.9,155.5L1343.9,155.6L1344.0,155.9L1344.7,156.0L1345.5,156.6L1346.5,156.5L1346.9,157.0L1346.7,157.5L1347.0,157.6L1347.0,157.8ZM1286.2,172.9L1286.8,172.5L1288.2,172.2L1286.2,172.9ZM1291.0,171.4L1291.0,171.4L1291.0,171.4L1291.0,171.4ZM1285.2,170.7L1285.1,171.3L1285.1,171.3L1285.2,170.7ZM1282.3,170.3L1282.3,170.2L1282.2,171.4L1282.1,171.4L1282.3,170.3ZM1279.7,170.4L1279.7,170.4L1278.7,171.0L1279.7,170.4ZM1283.5,168.9L1283.6,169.3L1283.4,168.9L1283.5,168.9ZM1422.8,207.8L1422.3,207.7L1421.7,207.0L1420.7,206.3L1417.1,205.2L1416.2,204.5L1417.0,204.3L1419.7,205.3L1420.0,205.2L1421.5,206.1L1422.2,206.4L1422.8,206.8L1422.9,207.4L1423.8,205.6L1423.7,205.0L1424.8,203.5L1424.9,203.0L1426.3,201.7L1426.4,200.3L1426.9,199.9L1427.6,199.9L1427.5,199.2L1428.0,198.8L1428.1,198.5L1428.9,198.3L1429.8,196.7L1431.0,195.8L1431.3,195.9L1431.3,196.2L1428.5,199.8L1424.3,206.1L1422.6,209.9L1422.3,209.9L1421.7,209.0L1421.4,207.8L1421.8,207.4L1421.9,208.3L1422.5,208.4L1422.8,207.8ZM1444.4,183.2L1444.4,183.8L1442.5,185.0L1431.9,195.6L1431.5,195.8L1431.2,195.8L1431.3,195.2L1432.7,194.0L1433.0,193.1L1433.3,192.9L1433.6,193.2L1435.8,190.9L1438.2,187.9L1439.0,187.5L1439.5,186.4L1441.9,184.1L1442.4,182.8L1443.5,182.6L1444.4,183.2ZM1452.6,177.3L1455.3,176.2L1455.6,175.9L1455.8,175.8L1456.2,176.0L1455.7,176.6L1449.6,179.9L1447.6,181.3L1446.1,182.8L1446.0,183.1L1445.5,183.3L1445.1,182.8L1446.3,181.3L1446.2,180.2L1446.8,179.8L1447.8,180.1L1452.6,177.3ZM1466.9,173.8L1465.5,173.4L1463.6,173.6L1461.6,174.2L1458.4,175.6L1457.8,175.7L1457.5,175.6L1457.7,175.2L1459.0,174.5L1459.7,173.4L1460.2,173.3L1460.3,173.8L1460.7,174.0L1461.8,173.4L1462.7,172.4L1463.6,171.9L1463.8,171.1L1464.6,171.4L1466.3,170.8L1466.9,170.9L1467.1,169.9L1467.1,166.4L1467.7,165.5L1467.9,164.6L1468.2,159.3L1468.0,157.2L1468.5,156.5L1468.7,154.5L1468.5,151.8L1467.3,149.1L1467.1,147.8L1466.7,147.3L1466.2,145.7L1466.2,144.9L1465.6,143.7L1465.8,143.4L1466.2,143.4L1467.2,145.1L1468.1,147.6L1469.5,154.3L1468.8,159.4L1468.7,164.0L1467.5,171.9L1467.1,173.6L1466.9,173.8ZM1457.1,134.5L1458.4,134.7L1459.9,135.6L1459.8,136.3L1460.5,136.3L1462.0,139.1L1462.2,141.4L1461.7,142.0L1460.8,141.5L1459.4,141.2L1459.1,140.8L1459.0,140.6L1459.6,140.1L1459.5,138.6L1457.9,137.0L1457.7,136.2L1456.7,135.7L1456.5,134.9L1457.1,134.5ZM1372.9,115.9L1372.8,116.0L1372.8,115.9L1372.9,115.9ZM1372.8,108.4L1372.7,108.6L1372.6,108.5L1372.8,108.4Z" fill="#3281b5" fill-opacity=".66" fill-rule="evenodd"/>
+<path d="M1167.4,161.1L1167.5,161.1L1167.6,161.1L1168.3,161.4L1168.7,161.3L1169.0,160.6L1170.4,159.8L1172.9,157.1L1174.1,154.9L1175.2,154.8L1175.2,154.2L1174.5,153.4L1172.9,152.5L1171.6,153.1L1169.3,155.4L1168.4,155.5L1166.5,155.2L1166.6,154.7L1167.6,153.6L1168.3,152.1L1169.6,150.3L1170.4,149.5L1172.4,148.6L1173.2,147.7L1173.7,147.7L1176.6,144.7L1177.7,144.6L1179.5,144.0L1183.0,140.4L1185.0,140.2L1185.6,139.9L1187.6,137.9L1189.1,137.6L1190.4,137.0L1197.5,131.6L1198.4,130.6L1201.4,128.9L1203.4,128.2L1204.9,127.3L1205.4,125.8L1207.5,124.4L1207.7,122.3L1208.5,121.7L1209.9,121.8L1210.5,119.9L1212.5,119.2L1214.5,117.0L1215.7,116.3L1218.7,115.6L1219.6,114.0L1220.8,113.0L1223.9,112.6L1223.9,112.4L1225.1,111.9L1225.6,111.1L1227.2,110.4L1227.8,109.7L1227.5,109.3L1224.4,108.9L1224.3,108.6L1224.9,108.4L1228.5,108.2L1229.0,107.8L1229.2,107.0L1228.9,105.9L1228.2,105.5L1227.7,104.6L1226.6,104.5L1226.2,103.9L1227.2,103.0L1227.6,103.1L1228.4,104.1L1228.9,104.2L1230.7,102.5L1229.3,102.5L1225.6,102.2L1229.3,102.4L1230.0,102.4L1229.9,102.4L1235.2,102.4L1253.3,103.6L1288.1,104.1L1331.5,104.1L1359.0,103.7L1374.1,103.6L1373.4,103.8L1373.4,104.2L1373.0,104.1L1372.9,104.7L1372.3,105.0L1371.9,105.6L1371.9,105.7L1372.0,106.0L1371.4,106.3L1371.4,106.4L1371.5,106.8L1371.5,107.2L1371.5,107.7L1371.5,107.7L1371.8,108.3L1372.6,108.6L1372.6,108.5L1372.7,108.6L1372.8,108.4L1373.1,108.2L1373.0,108.6L1373.5,109.6L1375.2,110.3L1375.3,112.6L1374.5,113.4L1374.3,114.4L1374.3,116.0L1373.9,115.6L1372.9,115.9L1372.8,115.9L1372.7,115.1L1373.0,115.6L1373.6,115.4L1373.3,114.7L1373.2,113.7L1372.9,113.8L1372.6,113.4L1373.1,113.4L1372.9,113.0L1371.8,112.6L1372.3,112.6L1373.9,113.4L1374.3,112.3L1374.3,112.3L1374.3,112.1L1374.2,111.9L1374.2,111.5L1374.1,111.4L1373.1,110.9L1372.7,110.2L1372.6,110.2L1372.6,110.2L1371.9,110.5L1371.7,110.9L1371.4,110.7L1371.3,111.1L1371.0,111.1L1371.0,110.8L1370.7,110.6L1370.5,111.2L1370.2,111.2L1370.2,110.5L1369.9,110.1L1369.9,109.8L1370.3,109.8L1370.2,109.6L1369.8,109.6L1369.6,110.1L1369.2,110.2L1368.3,110.2L1367.6,109.9L1367.6,109.6L1368.3,109.6L1368.9,109.9L1369.2,109.8L1369.5,109.5L1368.6,109.3L1368.7,109.1L1369.8,109.2L1369.8,108.8L1369.4,108.4L1368.9,108.5L1368.4,108.1L1367.7,109.1L1367.2,108.6L1366.7,108.7L1366.8,108.2L1368.1,108.0L1368.4,107.7L1369.4,108.2L1371.3,110.0L1372.2,110.1L1372.4,109.8L1372.2,109.3L1371.2,108.8L1371.0,108.2L1370.5,107.6L1370.5,107.6L1370.2,107.9L1370.1,107.9L1370.0,107.9L1370.0,107.9L1369.9,108.0L1369.7,107.7L1369.5,107.8L1369.5,107.6L1368.3,107.4L1368.0,107.7L1367.7,107.5L1367.0,107.9L1366.6,107.8L1366.2,108.9L1365.9,108.9L1365.2,108.6L1365.0,109.1L1365.3,109.4L1365.0,109.7L1364.9,111.2L1364.8,111.3L1365.4,111.4L1365.3,110.1L1365.8,109.3L1366.4,109.4L1366.9,109.1L1367.2,109.2L1367.9,111.1L1369.4,112.1L1369.5,112.4L1370.8,113.5L1371.1,114.2L1371.7,114.5L1371.5,114.7L1371.0,114.5L1370.5,113.7L1369.6,112.9L1368.1,112.5L1367.9,112.0L1367.7,112.8L1368.5,112.9L1369.4,113.5L1369.3,113.9L1369.7,114.8L1370.1,114.6L1370.4,116.8L1370.4,116.9L1369.7,116.1L1369.8,115.4L1369.5,115.4L1369.3,115.0L1367.1,114.5L1366.3,115.6L1366.0,115.0L1365.8,115.6L1365.4,115.7L1365.1,115.5L1364.9,114.6L1365.7,115.0L1365.6,114.3L1364.5,114.4L1364.8,114.0L1364.4,113.8L1364.3,113.1L1362.9,113.8L1363.1,114.4L1362.7,114.9L1363.3,114.9L1363.3,115.5L1363.6,115.7L1364.0,115.6L1363.6,114.4L1364.2,114.0L1364.6,115.1L1364.7,116.5L1365.6,116.4L1365.6,116.0L1366.0,116.1L1366.1,116.5L1366.5,116.4L1366.2,117.4L1366.4,117.9L1367.2,117.5L1367.4,117.0L1366.7,116.5L1367.3,116.4L1367.4,116.2L1366.8,115.9L1367.8,116.0L1367.8,115.8L1367.6,115.6L1368.0,115.7L1368.3,116.1L1368.4,115.8L1368.7,116.8L1368.9,116.7L1368.8,117.8L1368.9,118.2L1369.1,118.2L1369.3,119.3L1368.9,119.2L1369.0,118.8L1368.6,118.5L1366.5,118.3L1365.9,118.4L1365.7,118.0L1364.8,117.5L1364.7,118.0L1364.8,118.7L1365.2,118.0L1365.5,118.7L1366.4,118.8L1367.1,119.5L1367.3,119.3L1367.0,118.8L1367.3,118.9L1367.6,120.6L1367.2,120.6L1367.3,120.1L1366.6,119.7L1366.1,120.0L1366.0,120.6L1365.7,120.4L1365.6,120.8L1365.3,120.4L1364.6,120.2L1364.9,120.7L1364.7,120.7L1364.5,121.2L1364.1,121.3L1363.6,120.5L1363.4,121.3L1363.4,122.3L1364.9,124.6L1364.7,124.8L1364.2,124.5L1364.3,125.3L1365.9,125.1L1366.0,124.4L1366.7,124.6L1367.0,124.3L1367.5,125.8L1367.1,125.9L1366.9,125.5L1366.5,125.6L1366.6,125.3L1366.4,125.2L1365.6,125.8L1364.3,125.7L1363.9,126.0L1363.3,126.0L1362.7,126.6L1362.3,126.7L1362.3,127.8L1361.7,128.6L1362.3,129.5L1363.7,129.6L1362.5,130.2L1362.5,129.9L1362.0,129.9L1361.8,130.9L1362.5,131.2L1362.8,131.7L1363.0,131.7L1363.8,132.5L1365.8,133.9L1366.0,134.4L1367.5,134.8L1365.9,135.3L1365.1,136.0L1363.4,136.1L1363.1,136.4L1363.0,138.3L1362.7,138.8L1362.4,138.8L1362.2,139.2L1361.5,138.8L1361.6,139.2L1361.2,139.7L1361.2,139.1L1360.6,139.2L1360.2,139.6L1360.5,140.1L1360.3,140.8L1359.4,141.9L1358.4,142.0L1358.4,142.8L1358.1,142.3L1357.7,142.4L1357.6,142.1L1357.5,142.2L1357.8,143.0L1357.5,144.0L1358.5,144.2L1358.7,144.6L1359.0,144.6L1359.3,145.0L1359.4,145.8L1358.8,145.0L1358.1,144.5L1356.2,144.0L1355.1,143.4L1353.6,143.8L1352.5,145.0L1351.9,145.1L1352.1,144.5L1352.6,144.3L1353.1,143.5L1352.7,143.3L1351.6,143.9L1351.7,143.5L1352.6,143.0L1352.3,142.8L1352.6,142.5L1352.6,142.0L1352.2,141.9L1351.7,142.7L1351.3,142.7L1350.8,143.6L1350.5,143.2L1350.7,142.9L1350.4,142.7L1350.9,142.6L1350.4,142.3L1350.7,141.7L1349.8,142.1L1350.0,141.3L1350.5,141.3L1351.1,141.0L1351.0,140.2L1350.5,140.3L1350.6,140.7L1350.0,141.0L1349.9,140.8L1349.5,141.2L1349.4,142.0L1348.9,141.9L1348.6,142.3L1348.6,142.3L1348.7,142.8L1349.8,142.9L1349.5,143.1L1350.2,143.8L1349.5,144.0L1349.5,144.4L1349.8,144.5L1350.1,144.9L1350.3,144.7L1350.6,144.9L1350.6,145.1L1350.0,145.3L1350.2,145.5L1350.0,145.7L1350.8,145.8L1350.4,146.7L1350.1,146.4L1349.9,146.5L1349.8,147.3L1349.4,147.6L1348.9,147.5L1348.8,148.0L1349.1,148.0L1348.8,148.3L1348.9,148.6L1349.1,148.6L1349.4,148.2L1349.6,148.4L1349.5,149.1L1350.0,149.1L1349.9,148.7L1350.7,149.1L1350.8,150.1L1351.2,149.8L1351.7,149.8L1351.7,149.3L1350.9,148.8L1350.8,148.5L1350.1,148.1L1350.3,147.7L1351.0,148.2L1351.2,148.0L1351.5,148.2L1351.9,148.9L1352.1,148.7L1352.1,148.3L1351.3,147.5L1351.5,146.8L1351.9,146.5L1353.7,146.3L1353.7,146.0L1352.8,145.9L1352.6,145.6L1353.6,145.2L1354.4,145.5L1354.5,145.0L1354.3,144.7L1354.5,144.7L1355.0,145.7L1354.4,146.7L1353.4,146.8L1352.8,147.2L1351.9,147.1L1352.3,147.8L1352.6,147.8L1352.6,148.5L1352.8,148.0L1353.0,148.1L1352.9,147.6L1353.9,147.4L1354.2,148.8L1353.5,149.2L1353.2,149.9L1353.5,150.0L1354.3,149.5L1354.2,149.3L1354.7,149.3L1355.8,150.1L1355.3,150.5L1355.2,150.9L1355.0,150.9L1355.1,151.1L1354.9,151.5L1353.9,151.3L1353.7,151.6L1353.7,152.1L1354.3,152.6L1354.6,153.5L1355.3,154.0L1354.7,154.5L1353.6,154.6L1352.9,155.7L1352.2,155.7L1352.1,156.5L1349.9,156.6L1348.7,158.6L1348.8,159.0L1349.5,158.7L1349.2,159.4L1349.4,159.9L1349.7,160.1L1350.1,159.7L1350.4,159.8L1350.0,161.0L1349.1,161.9L1350.0,162.6L1349.7,163.2L1348.9,162.3L1348.2,162.6L1347.8,163.0L1347.6,162.8L1348.2,162.4L1348.6,161.8L1347.9,160.9L1346.6,160.2L1346.0,158.9L1346.0,158.6L1346.3,158.6L1347.0,157.8L1347.0,157.6L1346.7,157.5L1346.9,157.0L1346.5,156.5L1345.5,156.6L1344.7,156.0L1344.0,155.9L1343.9,155.6L1342.9,155.5L1342.8,155.2L1341.0,154.4L1340.5,153.9L1340.1,154.6L1340.7,155.4L1341.4,155.5L1341.1,156.1L1341.1,156.5L1341.9,156.0L1341.6,157.0L1341.9,157.7L1341.1,158.2L1340.1,159.9L1340.4,160.3L1340.0,160.5L1339.7,161.0L1339.1,161.5L1339.2,162.9L1339.0,163.0L1338.4,162.5L1338.3,162.0L1337.3,161.4L1336.9,160.8L1336.4,161.0L1336.5,160.4L1336.0,160.3L1336.0,160.9L1335.6,160.6L1335.5,161.0L1335.1,161.2L1333.9,160.5L1332.6,160.5L1332.1,160.7L1331.9,160.1L1331.7,160.4L1331.2,160.5L1331.2,160.2L1330.4,160.0L1331.5,159.9L1331.0,159.2L1330.6,159.1L1330.4,158.9L1329.9,159.2L1330.0,158.7L1329.5,158.2L1329.2,158.4L1329.4,158.7L1329.0,158.8L1329.1,157.9L1328.0,158.2L1326.5,157.9L1325.5,156.8L1324.4,156.3L1324.4,155.9L1324.7,155.8L1324.5,155.5L1323.6,155.9L1323.1,155.1L1322.5,156.1L1322.6,155.3L1322.1,155.1L1320.3,155.8L1320.2,155.2L1321.2,155.1L1321.2,154.5L1321.8,154.7L1322.0,154.4L1323.1,154.3L1322.4,153.9L1321.4,153.7L1321.2,153.4L1320.5,153.3L1320.2,153.8L1319.7,153.8L1319.3,154.6L1318.6,154.7L1319.1,154.2L1318.3,153.7L1318.3,153.4L1319.3,152.8L1318.5,152.8L1318.5,152.5L1315.8,156.0L1316.0,156.1L1317.3,155.2L1317.3,156.1L1317.0,156.2L1316.9,156.9L1316.4,157.0L1316.6,157.5L1315.5,157.2L1315.5,157.5L1315.1,157.6L1314.9,158.1L1314.9,158.5L1315.3,158.7L1314.2,159.8L1313.0,160.1L1312.8,160.6L1313.4,161.2L1313.4,161.8L1313.7,161.9L1313.5,161.0L1313.7,160.3L1314.0,160.3L1314.7,160.9L1314.7,160.5L1315.1,160.5L1314.8,159.7L1316.0,158.7L1315.6,159.4L1316.3,159.0L1316.7,159.3L1316.0,159.9L1316.0,160.4L1316.3,160.0L1316.2,160.8L1315.7,161.0L1315.7,161.5L1315.3,161.2L1315.4,161.9L1315.2,162.1L1315.4,162.5L1315.7,162.3L1316.2,162.8L1316.5,162.4L1316.1,162.0L1316.4,161.8L1316.3,161.4L1316.7,161.5L1317.0,161.0L1316.6,161.3L1316.4,160.8L1317.0,159.9L1317.4,159.9L1317.1,159.1L1317.9,158.6L1318.3,159.3L1318.1,160.3L1318.7,160.1L1318.9,160.6L1319.1,159.7L1319.4,159.5L1318.7,158.8L1318.8,158.6L1319.2,158.6L1318.6,157.0L1318.8,156.7L1318.6,156.1L1319.6,157.0L1319.6,157.8L1320.0,157.4L1320.2,157.4L1320.3,158.4L1319.9,158.9L1320.5,160.6L1320.8,160.5L1321.2,158.4L1321.6,160.8L1320.2,162.2L1320.3,162.7L1319.8,162.9L1319.3,164.1L1319.3,164.8L1319.5,165.2L1318.8,165.2L1318.7,165.7L1319.1,166.3L1321.0,166.9L1321.8,167.7L1322.2,168.4L1324.3,170.8L1324.9,173.1L1324.0,170.8L1322.9,171.0L1322.6,170.8L1322.6,170.5L1323.2,170.6L1323.5,170.3L1322.2,169.0L1321.1,167.3L1319.8,167.0L1319.2,167.8L1318.9,167.1L1318.3,166.6L1317.9,166.6L1318.3,166.3L1317.6,166.1L1318.2,165.9L1317.8,165.4L1316.8,165.5L1317.4,165.2L1317.4,164.9L1316.7,165.0L1316.5,164.4L1315.7,164.5L1314.7,165.6L1314.9,164.4L1314.7,164.1L1315.0,163.7L1313.7,164.1L1313.6,164.7L1313.2,164.6L1312.9,165.2L1312.6,164.7L1312.2,165.0L1311.7,164.8L1312.5,164.1L1311.5,164.0L1310.9,164.2L1311.1,163.6L1310.2,163.8L1309.9,163.5L1309.4,164.2L1309.3,163.4L1309.8,163.2L1310.3,162.6L1310.0,162.3L1309.4,162.6L1309.4,162.2L1310.6,161.3L1310.5,160.9L1308.9,161.9L1307.8,162.2L1308.4,161.6L1307.7,161.1L1307.0,162.6L1305.8,162.6L1305.9,163.3L1305.5,163.0L1304.5,163.3L1304.1,163.1L1302.8,164.1L1302.2,164.3L1300.5,163.9L1300.4,164.4L1300.0,164.6L1300.2,164.9L1300.1,165.2L1300.4,165.4L1299.0,166.4L1299.1,166.6L1299.8,166.4L1299.6,166.8L1298.2,167.2L1298.0,166.7L1298.4,166.2L1298.2,165.8L1297.0,166.6L1296.9,167.0L1297.3,167.0L1297.3,167.4L1297.6,167.6L1297.1,168.4L1296.8,168.0L1296.5,168.1L1296.4,168.0L1296.3,168.4L1295.7,168.7L1294.9,168.6L1294.7,168.3L1293.9,169.3L1293.4,169.1L1293.0,169.3L1293.1,168.7L1292.4,168.4L1292.6,169.0L1292.2,169.2L1292.1,170.0L1291.8,169.2L1291.3,168.8L1291.3,168.8L1291.3,168.8L1290.9,169.3L1290.9,169.4L1290.9,169.6L1291.0,169.8L1291.0,170.0L1291.0,170.0L1291.0,170.0L1291.2,170.0L1291.4,170.1L1291.4,170.1L1291.5,170.3L1291.6,170.6L1291.6,170.7L1291.3,170.8L1291.2,170.8L1291.2,170.8L1291.4,171.2L1291.3,171.2L1291.1,171.2L1291.0,171.4L1291.0,171.4L1290.8,171.0L1290.5,171.2L1290.3,170.6L1289.8,170.9L1289.9,170.4L1289.6,170.4L1289.5,170.1L1289.1,170.9L1289.1,171.0L1288.8,170.2L1288.3,170.5L1288.8,171.5L1288.6,171.7L1288.0,171.6L1288.2,172.2L1286.8,172.5L1286.2,172.9L1286.0,172.9L1286.4,172.2L1287.3,171.7L1287.5,170.6L1287.0,171.1L1286.8,170.9L1286.1,171.8L1285.7,171.9L1285.4,172.6L1284.8,172.2L1284.8,172.6L1284.1,172.9L1283.8,173.4L1283.8,173.5L1283.7,173.1L1283.4,173.2L1283.1,172.7L1283.2,172.6L1284.1,172.0L1283.5,171.9L1283.1,171.4L1283.8,171.6L1283.7,171.0L1284.3,171.7L1284.5,171.3L1285.1,171.3L1285.1,171.3L1285.1,171.3L1285.2,170.7L1284.6,170.7L1284.6,170.4L1284.4,170.5L1284.9,169.9L1285.0,169.9L1285.4,169.8L1285.4,169.7L1285.4,169.7L1285.5,169.5L1285.5,169.3L1285.5,169.3L1284.9,169.1L1284.2,169.2L1283.9,168.9L1283.6,169.3L1283.5,168.9L1283.4,168.9L1283.4,168.8L1283.2,168.9L1283.2,168.9L1283.1,168.9L1283.1,168.9L1283.0,169.4L1282.6,169.5L1282.6,169.5L1282.8,170.1L1282.4,170.2L1282.3,170.2L1282.3,170.3L1282.1,171.4L1282.1,171.5L1281.9,171.6L1281.8,171.7L1281.8,171.7L1281.7,171.0L1281.2,171.1L1281.6,170.5L1281.6,170.1L1281.1,170.2L1281.3,169.6L1280.8,170.2L1280.3,170.0L1280.3,170.6L1280.0,170.6L1279.9,170.9L1279.7,170.4L1279.7,170.4L1279.7,170.4L1278.7,171.0L1278.7,170.3L1278.2,170.6L1277.8,170.5L1277.8,170.5L1277.8,170.5L1277.7,171.0L1277.4,171.1L1277.4,171.7L1276.6,170.7L1276.6,170.7L1276.6,170.7L1276.0,171.2L1275.2,171.9L1275.2,171.9L1275.3,172.2L1276.1,172.0L1276.1,172.3L1275.2,172.6L1275.5,172.9L1276.0,172.7L1276.2,173.1L1275.2,173.6L1275.4,173.8L1275.7,173.6L1275.6,174.1L1276.3,173.8L1275.9,174.3L1276.4,174.5L1275.7,174.8L1275.5,175.6L1275.5,175.6L1275.4,175.7L1275.4,175.7L1275.1,176.1L1275.1,176.1L1276.0,176.7L1276.5,175.5L1276.5,175.5L1276.8,175.6L1277.2,175.3L1277.2,175.3L1277.5,175.8L1277.1,176.3L1277.4,176.5L1277.3,177.1L1276.7,177.2L1276.1,178.2L1276.2,178.3L1276.9,178.1L1276.9,178.1L1277.1,178.2L1277.1,178.3L1276.9,178.7L1277.0,179.2L1275.9,179.5L1275.9,179.6L1276.7,180.0L1275.5,180.7L1275.7,181.0L1275.5,181.3L1275.8,181.5L1275.4,181.7L1275.3,182.1L1274.8,182.1L1274.4,182.9L1274.6,183.1L1274.8,182.7L1275.4,182.9L1275.3,182.5L1275.7,182.5L1275.8,182.2L1276.6,181.7L1276.5,182.6L1277.6,182.3L1277.1,183.0L1276.3,182.8L1276.1,183.5L1275.4,183.8L1275.5,184.0L1274.4,184.1L1274.3,184.8L1273.8,184.3L1273.3,184.5L1274.1,185.3L1273.8,185.3L1273.9,185.7L1274.4,185.6L1274.0,186.7L1274.5,186.9L1274.9,185.8L1275.0,186.6L1275.5,185.5L1275.5,186.7L1275.2,187.2L1276.1,186.8L1276.4,186.4L1276.6,187.0L1276.8,186.0L1276.9,186.9L1276.9,186.9L1276.3,187.7L1276.5,187.2L1275.7,187.9L1275.4,187.7L1274.8,187.7L1274.8,188.0L1274.4,187.9L1274.4,188.5L1275.1,188.9L1274.4,189.1L1274.1,188.8L1273.8,189.2L1273.9,190.1L1274.5,190.0L1274.4,190.6L1274.4,190.6L1274.1,190.5L1273.8,190.9L1273.7,190.2L1273.3,190.3L1272.6,189.9L1271.8,191.4L1272.5,191.5L1273.1,190.9L1273.2,191.0L1273.0,191.3L1273.3,191.4L1272.3,191.9L1272.3,192.2L1272.7,192.3L1272.3,192.7L1272.6,192.7L1272.7,193.1L1272.8,192.7L1273.1,193.0L1273.5,192.6L1273.8,192.8L1274.0,192.4L1273.5,192.2L1273.9,191.7L1274.5,192.4L1274.5,191.9L1274.9,192.1L1274.6,191.2L1275.1,191.8L1275.5,191.5L1275.4,190.8L1275.8,191.2L1276.2,190.4L1275.9,190.0L1276.4,190.2L1276.3,189.4L1276.7,189.2L1276.5,188.6L1276.9,188.9L1276.8,189.9L1277.7,189.8L1277.8,188.9L1277.4,188.1L1278.1,188.5L1278.2,189.3L1278.5,187.0L1278.1,187.1L1277.7,186.8L1277.9,186.6L1277.6,186.2L1278.4,186.6L1278.5,186.0L1278.5,185.7L1278.8,185.5L1278.8,185.5L1278.8,185.5L1278.9,185.6L1279.1,186.3L1279.4,186.6L1278.9,187.6L1279.5,187.9L1279.2,188.3L1278.9,188.7L1278.8,188.9L1278.7,188.9L1278.7,189.3L1279.1,189.4L1279.0,189.4L1278.1,190.0L1277.7,190.1L1277.6,190.1L1277.6,190.1L1278.3,190.5L1277.3,190.3L1277.2,190.4L1277.2,190.4L1276.7,190.7L1275.9,191.8L1275.9,191.9L1276.0,192.3L1275.1,192.4L1275.5,192.8L1274.9,193.0L1275.1,193.8L1274.2,193.2L1272.6,193.5L1272.8,194.2L1272.7,194.8L1273.3,194.2L1273.9,194.7L1273.3,194.8L1272.9,195.3L1273.9,195.5L1273.3,195.6L1273.4,196.2L1273.0,195.8L1273.0,196.8L1272.8,197.1L1272.8,195.9L1272.4,195.4L1272.1,195.8L1272.0,196.3L1271.3,196.2L1271.6,196.9L1271.1,196.8L1270.8,196.5L1270.6,196.8L1270.0,197.0L1270.0,197.3L1270.4,197.4L1269.9,197.7L1270.2,197.9L1269.9,198.4L1270.4,198.6L1270.1,199.1L1262.4,198.9L1271.3,199.2L1278.1,199.3L1271.3,199.2L1229.3,197.9L1230.2,191.5L1223.4,182.0L1218.6,185.3L1218.6,185.3L1217.9,184.4L1217.8,183.8L1218.2,182.5L1219.0,181.9L1218.8,180.9L1218.2,180.6L1218.2,180.6L1218.6,179.6L1167.6,175.8L1163.9,175.4L1164.6,174.7L1163.7,174.0L1164.0,173.1L1166.7,171.8L1167.0,171.1L1167.9,170.3L1167.9,170.2L1167.7,169.6L1166.0,169.3L1164.6,169.1L1163.9,169.6L1163.8,169.6L1163.7,169.7L1163.3,169.4L1163.4,168.8L1165.3,166.2L1165.5,165.3L1167.2,163.5L1167.3,161.2L1167.4,161.2L1167.4,161.1ZM1325.2,154.9L1325.2,154.8L1325.1,154.7L1325.2,154.9ZM1325.1,155.1L1325.2,155.0L1325.2,154.9L1325.1,155.1ZM1325.1,154.5L1325.1,154.5L1325.0,154.5L1325.1,154.5ZM1324.9,154.4L1324.8,154.4L1324.9,154.4L1324.9,154.4L1324.9,154.4ZM1324.5,154.4L1324.4,154.5L1324.5,154.4L1324.5,154.4ZM1324.4,154.5L1324.4,154.5L1324.4,154.5L1324.4,154.5ZM1324.2,154.8L1324.2,154.9L1324.2,154.7L1324.2,154.8ZM1324.3,155.1L1324.3,155.1L1324.2,155.0L1324.3,155.1ZM1324.4,155.3L1324.3,155.2L1324.4,155.2L1324.4,155.3ZM1324.5,155.3L1324.5,155.3L1324.5,155.3L1324.5,155.3ZM1324.6,155.3L1324.6,155.3L1324.6,155.3L1324.6,155.3ZM1324.7,155.4L1324.7,155.4L1324.7,155.4L1324.7,155.4ZM1324.8,155.3L1324.8,155.3L1324.8,155.3L1324.8,155.3ZM1324.9,155.3L1324.9,155.3L1325.0,155.3L1324.9,155.3ZM1325.1,155.2L1325.0,155.3L1325.1,155.2L1325.1,155.2ZM1289.5,119.1L1289.5,119.1L1289.4,118.9L1289.5,119.1ZM1289.4,119.3L1289.4,119.3L1289.5,119.1L1289.4,119.3ZM1289.3,118.8L1289.3,118.8L1289.3,118.8L1289.3,118.8ZM1289.1,118.7L1289.1,118.7L1289.2,118.7L1289.2,118.7L1289.1,118.7ZM1288.7,118.7L1288.7,118.7L1288.8,118.7L1288.7,118.7ZM1288.7,118.8L1288.6,118.8L1288.6,118.8L1288.7,118.8ZM1288.5,119.1L1288.5,119.1L1288.5,119.0L1288.5,119.1ZM1288.5,119.3L1288.5,119.3L1288.5,119.3L1288.5,119.3ZM1288.7,119.5L1288.6,119.4L1288.7,119.5L1288.7,119.5ZM1288.7,119.5L1288.7,119.6L1288.8,119.6L1288.7,119.5ZM1288.9,119.6L1288.9,119.6L1288.9,119.6L1288.9,119.6ZM1289.0,119.6L1289.0,119.6L1289.0,119.6L1289.0,119.6ZM1289.0,119.6L1289.1,119.6L1289.1,119.6L1289.0,119.6ZM1289.2,119.6L1289.2,119.6L1289.2,119.5L1289.2,119.6ZM1289.4,119.4L1289.3,119.5L1289.4,119.4L1289.4,119.4ZM1360.9,119.1L1360.9,119.1L1360.9,118.9L1360.9,119.1ZM1360.9,119.3L1360.9,119.3L1360.9,119.1L1360.9,119.3ZM1360.8,118.8L1360.8,118.8L1360.8,118.8L1360.8,118.8ZM1360.6,118.7L1360.6,118.7L1360.7,118.7L1360.6,118.7L1360.6,118.7ZM1360.2,118.7L1360.2,118.7L1360.3,118.7L1360.2,118.7ZM1360.1,118.8L1360.1,118.8L1360.1,118.8L1360.1,118.8ZM1360.0,119.1L1360.0,119.1L1360.0,119.0L1360.0,119.1ZM1360.0,119.3L1360.0,119.3L1360.0,119.3L1360.0,119.3ZM1360.2,119.5L1360.1,119.4L1360.1,119.5L1360.2,119.5ZM1360.2,119.5L1360.2,119.6L1360.3,119.6L1360.2,119.5ZM1360.3,119.6L1360.3,119.6L1360.4,119.6L1360.3,119.6ZM1360.4,119.6L1360.4,119.6L1360.5,119.6L1360.4,119.6ZM1360.5,119.6L1360.5,119.6L1360.6,119.6L1360.5,119.6ZM1360.6,119.6L1360.7,119.6L1360.7,119.5L1360.6,119.6ZM1360.8,119.4L1360.7,119.5L1360.8,119.4L1360.8,119.4Z" fill="#c29a30" fill-opacity=".66" fill-rule="evenodd"/>
+<path d="M1149.6,132.7L1151.0,132.9L1151.2,133.3L1152.0,133.6L1152.4,133.0L1154.4,132.3L1155.4,131.3L1156.4,130.8L1158.8,126.7L1161.3,125.0L1162.1,125.1L1164.3,124.0L1164.7,124.4L1165.2,124.5L1165.6,124.1L1166.1,124.3L1166.1,124.3L1167.3,122.9L1167.7,122.8L1168.6,123.4L1168.8,123.3L1169.3,123.8L1169.5,123.6L1170.6,123.4L1171.1,124.6L1171.0,125.1L1171.4,125.9L1171.4,125.9L1172.4,125.8L1173.5,125.9L1174.4,125.6L1174.7,124.8L1175.6,125.2L1181.5,115.4L1182.8,114.8L1183.8,113.7L1184.5,113.2L1185.8,112.8L1186.7,112.2L1186.7,112.3L1186.8,113.0L1187.3,113.0L1187.9,113.6L1188.8,113.7L1189.2,113.4L1190.5,113.8L1190.6,113.5L1190.4,113.4L1189.9,112.9L1189.9,112.9L1189.7,112.0L1189.3,111.4L1189.6,110.7L1189.2,110.5L1189.0,109.6L1190.0,109.0L1190.2,108.6L1190.0,108.4L1190.3,108.2L1190.3,107.1L1190.3,107.1L1191.2,106.6L1191.2,106.6L1191.1,104.3L1190.7,102.8L1191.1,102.8L1191.6,102.0L1191.6,101.0L1192.2,101.0L1192.2,100.0L1205.5,101.1L1225.6,102.2L1229.3,102.5L1230.7,102.5L1228.9,104.2L1228.4,104.1L1227.6,103.1L1227.2,103.0L1226.2,103.9L1226.6,104.5L1227.7,104.6L1228.2,105.5L1228.9,105.9L1229.2,107.0L1229.0,107.8L1228.5,108.2L1224.9,108.4L1224.3,108.6L1224.4,108.9L1227.5,109.3L1227.8,109.7L1227.2,110.4L1225.6,111.1L1225.1,111.9L1223.9,112.4L1223.9,112.6L1220.8,113.0L1219.6,114.0L1218.7,115.6L1215.7,116.3L1214.5,117.0L1212.5,119.2L1210.5,119.9L1209.9,121.8L1208.5,121.7L1207.7,122.3L1207.5,124.4L1205.4,125.8L1204.9,127.3L1203.4,128.2L1201.4,128.9L1198.4,130.6L1197.5,131.6L1190.4,137.0L1189.1,137.6L1187.6,137.9L1185.6,139.9L1185.0,140.2L1183.0,140.4L1179.5,144.0L1177.7,144.6L1176.6,144.7L1173.7,147.7L1173.2,147.7L1172.4,148.6L1170.4,149.5L1169.6,150.3L1168.3,152.1L1167.6,153.6L1166.6,154.7L1166.5,155.2L1168.4,155.5L1169.3,155.4L1171.6,153.1L1172.9,152.5L1174.5,153.4L1175.2,154.2L1175.2,154.8L1174.1,154.9L1172.9,157.1L1170.4,159.8L1169.0,160.6L1168.7,161.3L1168.3,161.4L1167.6,161.1L1167.5,161.1L1167.4,161.1L1167.4,161.2L1167.3,161.2L1167.2,163.5L1165.5,165.3L1165.3,166.2L1163.4,168.8L1163.3,169.4L1163.7,169.7L1163.8,169.6L1163.9,169.6L1164.6,169.1L1166.0,169.3L1167.7,169.6L1167.9,170.2L1167.9,170.3L1167.0,171.1L1166.7,171.8L1164.0,173.1L1163.7,174.0L1164.6,174.7L1163.9,175.4L1163.2,175.3L1162.2,175.6L1161.4,175.8L1161.0,176.1L1161.0,176.1L1160.2,175.7L1160.1,175.6L1159.9,175.6L1159.3,175.7L1158.8,176.2L1158.4,175.7L1158.5,175.3L1158.5,175.3L1158.3,174.6L1157.9,174.3L1157.4,174.9L1156.7,175.2L1156.3,176.3L1155.7,177.0L1155.0,177.0L1155.0,177.0L1155.2,176.6L1154.8,176.2L1153.8,176.4L1153.7,176.5L1153.1,177.0L1152.9,176.8L1152.3,177.0L1151.7,177.4L1151.4,177.4L1151.4,177.4L1151.4,177.1L1150.9,176.9L1150.5,177.1L1150.6,177.5L1149.8,177.9L1148.5,178.2L1147.9,178.2L1147.1,178.8L1146.8,178.9L1146.6,178.5L1145.6,179.2L1145.3,179.1L1145.3,179.1L1145.1,179.2L1145.1,178.7L1144.8,178.6L1144.2,179.2L1144.5,179.7L1144.5,179.7L1144.0,180.4L1143.9,180.1L1143.2,180.5L1142.7,180.4L1142.1,181.2L1141.5,181.2L1141.5,181.5L1141.2,181.8L1140.3,182.0L1140.1,181.8L1140.4,181.0L1139.9,180.8L1125.3,184.8L1125.3,184.8L1110.6,184.5L1102.2,184.3L1102.2,184.6L1102.2,184.6L1070.5,182.9L1070.5,182.9L1072.6,170.0L1072.9,170.0L1075.7,167.8L1075.7,167.8L1076.3,168.0L1076.7,169.2L1077.2,169.5L1078.1,169.2L1078.1,169.2L1079.3,169.2L1080.0,169.5L1080.1,169.1L1080.4,169.0L1081.3,169.3L1082.1,168.6L1083.4,168.1L1083.4,168.1L1084.2,167.2L1084.4,167.0L1084.8,166.8L1084.7,166.0L1084.3,165.8L1084.3,165.8L1084.7,164.7L1084.4,164.5L1084.3,163.9L1085.0,163.6L1085.7,162.7L1085.8,161.6L1085.3,161.1L1085.2,160.4L1085.5,160.5L1086.6,159.1L1087.5,158.5L1087.6,158.2L1087.9,158.2L1088.1,157.7L1088.6,157.9L1089.2,157.4L1090.3,157.2L1090.8,156.1L1091.9,154.9L1094.3,154.7L1095.4,153.8L1096.4,153.4L1096.8,152.8L1096.8,152.8L1097.8,152.9L1098.4,152.6L1099.0,152.9L1099.7,152.5L1101.1,152.5L1102.7,152.8L1104.2,152.2L1104.8,152.5L1105.2,153.1L1106.0,153.0L1109.1,153.3L1109.7,153.0L1110.0,152.2L1111.1,151.4L1111.5,150.7L1112.6,150.8L1113.8,150.2L1113.8,150.2L1114.1,149.6L1115.1,149.4L1115.9,148.3L1115.9,148.3L1116.6,148.0L1117.2,148.2L1117.2,148.2L1117.6,148.6L1118.3,148.5L1118.7,147.6L1120.1,146.7L1120.5,145.2L1121.0,144.8L1122.2,145.0L1123.3,144.8L1123.5,144.7L1124.7,142.9L1126.5,142.9L1128.6,141.7L1130.3,141.9L1131.8,142.7L1132.2,142.7L1133.5,141.9L1134.4,140.0L1134.6,139.9L1134.8,139.9L1134.8,139.9L1135.0,139.4L1135.7,139.1L1135.7,139.1L1135.6,137.6L1135.6,137.6L1136.5,137.4L1136.7,137.2L1136.3,136.8L1136.5,136.3L1136.0,135.1L1136.0,135.1L1136.1,134.6L1136.1,134.6L1135.8,134.3L1136.6,134.4L1136.8,133.5L1137.9,133.1L1138.9,133.4L1139.8,134.3L1139.8,134.3L1140.1,134.9L1140.9,134.6L1140.9,134.0L1141.7,133.3L1141.9,132.6L1142.3,132.2L1141.9,131.9L1141.9,131.3L1142.3,130.7L1143.5,130.4L1145.1,129.5L1145.1,129.2L1146.3,128.7L1146.5,128.3L1146.6,128.3L1148.7,127.3L1148.7,127.3L1149.5,127.9L1149.5,128.0L1149.5,128.4L1150.6,129.1L1149.5,130.7L1149.6,131.3L1150.0,131.6L1150.0,131.6L1149.6,132.7L1149.6,132.7ZM1162.3,145.9L1162.3,145.8L1162.3,145.8L1162.3,146.0L1162.3,145.9ZM1162.2,145.5L1162.2,145.5L1162.1,145.5L1162.2,145.5ZM1162.0,145.4L1162.1,145.4L1162.0,145.4L1162.0,145.4ZM1161.6,145.4L1161.5,145.5L1161.6,145.4L1161.6,145.4ZM1161.5,145.5L1161.5,145.5L1161.5,145.5L1161.5,145.5ZM1161.4,145.7L1161.4,145.6L1161.4,145.7L1161.4,145.7ZM1161.3,145.8L1161.3,145.8L1161.3,145.8L1161.3,145.8ZM1161.3,145.9L1161.3,145.9L1161.3,145.9L1161.3,145.9ZM1161.4,146.0L1161.4,145.9L1161.4,146.0L1161.4,146.0ZM1161.5,146.2L1161.5,146.2L1161.5,146.2L1161.5,146.2ZM1161.6,146.3L1161.5,146.2L1161.6,146.3L1161.6,146.3ZM1161.8,146.3L1161.8,146.3L1161.9,146.3L1161.8,146.3ZM1162.0,146.3L1162.0,146.3L1162.1,146.3L1162.0,146.3ZM1162.1,146.2L1162.2,146.2L1162.2,146.2L1162.1,146.2ZM1184.2,124.0L1184.2,124.1L1184.2,124.0L1184.2,123.9L1184.2,124.0ZM1184.0,123.7L1184.0,123.6L1184.0,123.6L1184.0,123.7ZM1183.9,123.6L1184.0,123.6L1183.9,123.6L1183.9,123.6ZM1183.4,123.6L1183.4,123.6L1183.5,123.6L1183.4,123.6ZM1183.3,123.6L1183.3,123.6L1183.3,123.6L1183.3,123.6ZM1183.2,123.9L1183.2,123.8L1183.2,123.8L1183.2,123.9ZM1183.2,123.9L1183.2,123.9L1183.2,124.0L1183.2,123.9ZM1183.2,124.0L1183.2,124.0L1183.2,124.1L1183.2,124.0ZM1183.2,124.2L1183.2,124.1L1183.2,124.2L1183.2,124.2ZM1183.3,124.3L1183.3,124.3L1183.3,124.3L1183.3,124.3ZM1183.5,124.4L1183.4,124.4L1183.5,124.4L1183.5,124.4ZM1183.7,124.5L1183.7,124.5L1183.7,124.5L1183.7,124.5ZM1183.9,124.4L1183.9,124.4L1183.9,124.4L1183.9,124.4ZM1184.0,124.3L1184.0,124.3L1184.0,124.3L1184.0,124.3ZM1211.1,105.5L1211.1,105.4L1211.1,105.5L1211.1,105.6L1211.1,105.5ZM1210.9,105.2L1210.9,105.1L1210.9,105.1L1210.9,105.2ZM1210.8,105.1L1210.9,105.1L1210.8,105.1L1210.8,105.1ZM1210.3,105.1L1210.3,105.1L1210.4,105.1L1210.3,105.1ZM1210.3,105.1L1210.2,105.1L1210.2,105.1L1210.3,105.1ZM1210.1,105.4L1210.1,105.3L1210.1,105.3L1210.1,105.4ZM1210.1,105.4L1210.1,105.4L1210.1,105.5L1210.1,105.4ZM1210.1,105.5L1210.1,105.5L1210.1,105.6L1210.1,105.5ZM1210.1,105.7L1210.1,105.6L1210.1,105.7L1210.1,105.7ZM1210.2,105.8L1210.2,105.8L1210.2,105.8L1210.2,105.8ZM1210.4,105.9L1210.3,105.9L1210.4,105.9L1210.4,105.9ZM1210.6,106.0L1210.6,106.0L1210.6,106.0L1210.6,106.0ZM1210.8,105.9L1210.8,105.9L1210.8,105.9L1210.8,105.9ZM1210.9,105.8L1210.9,105.8L1210.9,105.8L1210.9,105.8ZM1230.0,102.4L1229.3,102.4L1225.6,102.2L1229.3,102.4L1229.9,102.4L1229.9,102.4L1230.0,102.4Z" fill="#ad453b" fill-opacity=".66" fill-rule="evenodd"/>
+<path d="M1420.0,205.2L1421.5,206.1L1422.2,206.4L1422.8,206.8L1422.9,207.4L1423.8,205.6L1423.7,205.0L1424.8,203.5L1424.9,203.0L1426.3,201.7L1426.4,200.3L1426.9,199.9L1427.6,199.9L1427.5,199.2L1428.0,198.8L1428.1,198.5L1428.9,198.3L1429.8,196.7L1431.0,195.8L1431.3,195.9L1431.3,196.2L1428.5,199.8L1424.3,206.1L1422.6,209.9L1422.3,209.9L1421.7,209.0L1421.4,207.8L1421.8,207.4L1421.9,208.3L1422.5,208.4L1422.8,207.8L1422.3,207.7L1421.7,207.0L1420.7,206.3L1417.1,205.2L1416.2,204.5L1417.0,204.3L1419.7,205.3L1420.0,205.2ZM1433.6,193.2L1435.8,190.9L1438.2,187.9L1439.0,187.5L1439.5,186.4L1441.9,184.1L1442.4,182.8L1443.5,182.6L1444.4,183.2L1444.4,183.8L1442.5,185.0L1431.9,195.6L1431.5,195.8L1431.2,195.8L1431.3,195.2L1432.7,194.0L1433.0,193.1L1433.3,192.9L1433.6,193.2ZM1455.3,176.2L1455.6,175.9L1455.8,175.8L1456.2,176.0L1455.7,176.6L1449.6,179.9L1447.6,181.3L1446.1,182.8L1446.0,183.1L1445.5,183.3L1445.1,182.8L1446.3,181.3L1446.2,180.2L1446.8,179.8L1447.8,180.1L1452.6,177.3L1455.3,176.2ZM1080.4,169.0L1081.3,169.3L1082.1,168.6L1083.4,168.1L1084.2,167.2L1084.8,166.8L1084.7,166.0L1084.3,165.8L1084.7,164.7L1084.4,164.5L1084.3,163.9L1085.0,163.6L1085.7,162.7L1085.8,161.6L1085.3,161.1L1085.2,160.4L1085.5,160.5L1086.6,159.1L1087.5,158.5L1087.6,158.2L1087.9,158.2L1088.1,157.7L1088.6,157.9L1089.2,157.4L1090.3,157.2L1090.8,156.1L1091.9,154.9L1094.3,154.7L1095.4,153.8L1096.4,153.4L1096.8,152.8L1097.8,152.9L1098.4,152.6L1099.0,152.9L1099.7,152.5L1101.1,152.5L1102.7,152.8L1104.2,152.2L1104.8,152.5L1105.2,153.1L1106.0,153.0L1109.1,153.3L1109.7,153.0L1110.0,152.2L1111.1,151.4L1111.5,150.7L1112.6,150.8L1113.8,150.2L1114.1,149.6L1115.1,149.4L1115.9,148.3L1116.6,148.0L1117.2,148.2L1117.6,148.6L1118.3,148.5L1118.7,147.6L1120.1,146.7L1120.5,145.2L1121.0,144.8L1122.2,145.0L1123.5,144.7L1124.7,142.9L1126.5,142.9L1128.6,141.7L1130.3,141.9L1131.8,142.7L1132.2,142.7L1133.5,141.9L1134.4,140.0L1134.8,139.9L1135.0,139.4L1135.7,139.1L1135.6,137.6L1136.5,137.4L1136.7,137.2L1136.3,136.8L1136.5,136.3L1136.0,135.1L1136.1,134.6L1135.8,134.3L1136.6,134.4L1136.8,133.5L1137.9,133.1L1138.9,133.4L1139.8,134.3L1140.1,134.9L1140.9,134.6L1140.9,134.0L1141.7,133.3L1141.9,132.6L1142.3,132.2L1141.9,131.9L1141.9,131.3L1142.3,130.7L1143.5,130.4L1145.1,129.5L1145.1,129.2L1146.3,128.7L1146.6,128.3L1148.7,127.3L1149.5,127.9L1149.5,128.4L1150.6,129.1L1149.5,130.7L1149.6,131.3L1150.0,131.6L1149.6,132.7L1151.0,132.9L1151.2,133.3L1152.0,133.6L1152.4,133.0L1154.4,132.3L1155.4,131.3L1156.4,130.8L1158.8,126.7L1161.3,125.0L1162.1,125.1L1164.3,124.0L1164.7,124.4L1165.2,124.5L1165.6,124.1L1166.1,124.3L1167.3,122.9L1167.7,122.8L1168.6,123.4L1168.8,123.3L1169.3,123.8L1169.5,123.6L1170.6,123.4L1171.1,124.6L1171.0,125.1L1171.4,125.9L1172.4,125.8L1173.5,125.9L1174.4,125.6L1174.7,124.8L1175.6,125.2L1181.5,115.4L1182.8,114.8L1183.8,113.7L1184.5,113.2L1185.8,112.8L1186.7,112.2L1186.8,113.0L1187.3,113.0L1187.9,113.6L1188.8,113.7L1189.2,113.4L1190.5,113.8L1190.6,113.5L1189.9,112.9L1189.7,112.0L1189.3,111.4L1189.6,110.7L1189.2,110.5L1189.0,109.6L1190.0,109.0L1190.2,108.6L1190.0,108.4L1190.3,108.2L1190.3,107.1L1191.2,106.6L1191.1,104.3L1190.7,102.8L1191.1,102.8L1191.6,102.0L1191.6,101.0L1192.2,101.0L1192.2,100.0L1205.5,101.1L1229.3,102.4L1235.2,102.4L1253.3,103.6L1288.1,104.1L1331.5,104.1L1390.2,103.3L1391.7,103.1L1392.5,103.3L1403.0,103.1L1403.0,102.6L1449.4,101.5L1451.9,112.0L1454.1,119.0L1456.8,125.2L1458.7,128.7L1459.0,128.7L1459.8,130.1L1464.0,138.6L1465.7,142.6L1465.6,142.9L1465.2,143.0L1464.2,142.4L1463.7,141.8L1463.4,140.9L1463.6,140.6L1462.9,139.9L1462.2,138.3L1461.2,137.3L1461.3,136.7L1461.6,136.4L1461.5,135.4L1460.2,133.5L1459.2,133.1L1459.0,132.5L1458.5,131.8L1457.8,131.9L1457.2,131.5L1456.5,131.5L1456.3,131.2L1456.3,130.2L1457.0,129.9L1457.2,129.3L1457.0,129.1L1456.3,129.4L1455.8,129.3L1455.9,127.4L1455.3,124.8L1455.5,124.3L1455.5,123.6L1454.4,120.3L1454.2,119.6L1453.7,119.4L1453.6,119.6L1453.0,118.9L1452.8,118.3L1452.4,118.0L1452.7,116.9L1452.5,116.0L1452.2,115.6L1451.3,115.5L1450.5,114.1L1450.7,113.4L1451.7,113.9L1451.8,113.6L1451.7,112.6L1451.3,112.1L1451.4,111.6L1450.5,110.8L1450.8,110.1L1450.8,109.8L1450.4,109.7L1450.7,108.6L1450.1,108.4L1449.7,107.7L1449.1,107.8L1448.6,107.5L1448.0,105.3L1447.5,105.1L1447.0,105.3L1446.5,104.9L1445.3,104.7L1444.8,104.7L1444.6,105.1L1444.1,104.7L1444.4,103.8L1444.2,103.0L1443.7,102.9L1443.4,102.4L1442.2,102.3L1442.4,103.6L1441.7,103.9L1442.2,105.4L1443.1,107.3L1444.1,107.9L1444.9,107.8L1445.7,109.8L1446.1,110.1L1446.4,109.9L1446.2,109.3L1446.6,108.3L1447.1,108.4L1447.2,109.8L1447.5,110.4L1447.2,111.9L1448.5,114.2L1449.1,116.1L1449.9,116.0L1450.3,116.3L1450.0,116.6L1450.1,117.2L1449.7,117.7L1449.8,118.2L1450.0,118.2L1450.1,119.1L1450.8,119.8L1451.1,119.8L1451.6,120.8L1451.7,121.2L1451.2,120.6L1451.0,121.1L1451.5,122.4L1451.9,122.7L1451.9,123.6L1452.3,123.9L1452.8,125.0L1453.1,125.1L1453.0,126.2L1453.6,127.2L1453.3,127.6L1451.2,126.1L1450.1,124.7L1450.2,122.9L1449.7,121.6L1448.5,120.6L1448.7,120.3L1448.1,120.1L1448.2,119.7L1447.4,118.3L1446.3,117.6L1445.8,117.5L1445.7,117.2L1445.4,117.3L1446.4,119.5L1445.9,120.9L1446.6,121.5L1446.7,121.8L1448.0,122.5L1447.5,122.7L1443.3,121.6L1442.9,120.8L1442.2,120.3L1441.6,119.0L1440.5,118.9L1440.3,118.3L1439.5,117.8L1439.3,117.0L1438.1,116.1L1437.1,116.2L1436.6,116.0L1436.2,115.5L1435.2,115.8L1434.4,115.6L1434.2,115.9L1434.8,116.1L1434.9,116.4L1435.5,116.4L1436.3,117.6L1437.1,117.6L1437.6,117.8L1438.8,120.3L1440.5,121.0L1441.5,123.4L1441.3,124.0L1436.8,125.3L1435.9,125.2L1435.0,124.6L1434.0,123.4L1433.8,122.9L1433.1,122.6L1433.0,122.0L1431.8,121.7L1431.8,122.3L1433.2,123.5L1434.1,125.3L1435.7,126.2L1434.7,126.9L1433.8,126.8L1432.5,126.4L1431.4,125.7L1430.4,125.4L1429.8,124.9L1428.2,124.6L1427.6,124.7L1426.8,123.4L1425.4,122.4L1425.1,122.5L1424.6,121.9L1423.9,121.8L1423.7,122.3L1424.7,123.1L1424.8,123.5L1425.2,123.6L1426.3,124.4L1427.2,125.6L1427.7,125.9L1428.8,125.7L1429.1,126.3L1430.8,126.7L1430.7,127.1L1429.5,127.7L1429.3,127.4L1428.8,127.4L1427.2,127.9L1426.0,127.9L1426.1,128.6L1425.9,128.7L1426.2,128.8L1424.4,130.4L1424.0,131.3L1422.6,131.7L1421.5,132.3L1418.5,132.2L1417.3,130.8L1417.1,129.8L1416.2,130.7L1415.3,130.9L1414.1,130.4L1413.3,129.1L1413.2,128.7L1413.5,128.7L1413.6,128.3L1413.4,127.7L1413.6,126.8L1413.5,126.6L1412.9,126.7L1412.6,125.3L1412.1,124.6L1412.1,121.7L1412.5,120.4L1413.2,119.7L1414.1,117.7L1412.9,117.0L1413.0,117.8L1411.9,119.2L1411.8,120.0L1411.4,119.8L1411.1,120.1L1410.7,121.1L1410.8,121.9L1410.6,123.0L1410.8,125.5L1411.9,127.4L1411.8,128.7L1412.0,128.7L1412.5,129.9L1413.1,130.3L1413.2,131.9L1414.0,132.2L1414.2,133.2L1413.4,134.3L1412.6,134.8L1412.1,136.1L1413.0,135.5L1415.0,136.2L1417.2,135.9L1418.3,135.6L1419.8,135.6L1420.9,135.4L1422.6,134.5L1423.2,134.4L1424.0,134.0L1426.6,133.1L1427.5,133.8L1428.0,134.7L1427.7,135.1L1428.1,135.7L1429.0,135.2L1429.9,135.4L1432.3,133.5L1435.2,132.6L1436.3,132.5L1436.8,132.2L1437.8,132.1L1438.5,132.4L1441.7,132.3L1443.5,133.4L1444.2,134.4L1443.8,135.5L1444.2,136.3L1443.0,137.8L1442.8,139.1L1442.1,140.0L1442.0,141.0L1442.7,142.5L1442.5,145.0L1442.9,146.3L1442.4,147.5L1442.5,147.9L1443.1,148.2L1443.5,149.0L1443.1,150.9L1443.3,151.1L1444.0,150.7L1444.5,149.4L1444.7,148.6L1444.6,146.9L1445.1,145.9L1445.3,144.3L1444.8,142.1L1445.5,140.7L1445.0,139.4L1445.3,138.9L1445.0,137.9L1445.5,137.3L1446.1,137.1L1446.8,136.0L1447.8,135.2L1446.7,134.2L1446.7,133.9L1449.0,132.8L1450.2,132.6L1451.9,133.1L1453.1,133.6L1453.4,134.4L1454.4,135.1L1454.5,135.9L1455.1,136.3L1455.1,136.7L1455.3,137.3L1456.0,137.7L1456.0,139.6L1456.7,140.3L1457.0,141.0L1456.8,141.4L1457.0,142.1L1456.7,142.6L1456.8,143.5L1456.5,143.9L1456.8,144.4L1456.7,145.1L1457.3,145.7L1457.2,146.3L1457.3,147.0L1457.7,147.4L1457.8,148.3L1457.0,149.1L1456.6,149.1L1456.3,148.1L1455.4,147.9L1454.9,148.7L1455.6,149.2L1455.5,149.8L1455.7,150.2L1456.1,150.6L1456.6,150.6L1456.8,150.9L1457.1,152.1L1456.5,152.5L1456.3,153.2L1454.9,153.8L1455.3,154.4L1455.2,154.7L1452.9,155.3L1452.4,155.3L1452.4,155.0L1453.3,154.2L1452.8,154.1L1452.4,154.4L1451.6,154.6L1451.3,153.9L1450.6,153.1L1450.7,152.0L1450.4,151.9L1450.0,153.8L1450.5,154.5L1450.6,155.1L1450.0,155.2L1449.5,155.8L1448.9,155.9L1449.5,156.2L1449.2,156.9L1447.8,157.4L1447.3,157.8L1447.4,158.0L1447.1,158.5L1446.6,158.4L1446.4,158.6L1447.1,159.0L1447.1,159.6L1445.9,160.2L1445.5,161.7L1444.9,162.5L1445.0,163.3L1444.5,164.2L1443.9,164.3L1443.4,163.3L1442.9,163.1L1443.2,163.7L1442.4,164.5L1442.5,165.1L1442.0,165.3L1442.6,165.4L1442.9,165.7L1442.4,166.6L1441.5,166.7L1441.3,167.2L1440.5,167.6L1439.4,167.4L1439.5,168.0L1438.7,168.9L1438.4,168.9L1438.1,168.3L1437.6,168.1L1436.4,168.6L1436.1,168.2L1435.5,168.5L1434.9,167.4L1434.2,167.1L1434.0,167.1L1434.3,167.8L1434.1,168.3L1433.5,168.6L1432.9,168.4L1431.6,167.8L1431.5,167.1L1430.7,166.8L1430.6,166.1L1430.0,165.8L1429.6,166.2L1430.2,167.5L1430.3,168.5L1428.5,169.0L1428.2,168.4L1428.3,167.7L1428.1,167.7L1427.7,168.2L1426.9,168.4L1426.8,167.6L1426.2,167.3L1426.5,166.5L1427.0,166.4L1428.9,167.1L1428.7,166.3L1428.0,166.3L1427.8,165.7L1427.4,165.3L1427.4,164.8L1427.9,164.4L1427.5,163.8L1426.8,164.0L1426.0,165.3L1426.1,165.7L1425.9,166.1L1425.4,165.9L1425.2,166.1L1424.9,166.0L1424.7,165.5L1424.4,165.6L1424.1,165.3L1424.6,166.7L1424.3,167.1L1423.3,166.8L1422.4,165.8L1422.2,165.9L1421.4,165.5L1420.9,164.8L1421.2,163.7L1420.4,163.6L1419.8,162.8L1420.1,162.3L1420.5,162.2L1419.8,161.4L1419.8,160.5L1419.0,160.1L1418.7,159.5L1419.9,159.2L1421.2,159.2L1422.2,159.5L1423.2,159.4L1424.0,158.7L1424.0,157.7L1424.5,157.1L1424.2,156.9L1423.8,157.2L1423.6,157.8L1423.0,158.2L1422.4,158.1L1422.0,158.4L1421.5,158.3L1421.1,158.5L1420.6,158.3L1420.2,158.6L1419.5,158.1L1418.4,158.0L1416.9,159.4L1417.8,160.5L1418.7,160.9L1418.3,162.5L1418.4,163.0L1418.9,163.4L1419.1,164.5L1419.7,165.7L1419.8,166.1L1419.5,166.4L1416.3,165.6L1415.8,165.3L1415.5,164.7L1414.8,164.9L1413.4,164.3L1412.1,164.4L1411.2,164.8L1410.7,164.4L1409.0,163.7L1408.5,163.1L1408.0,163.3L1405.8,162.7L1404.6,162.8L1402.3,161.5L1401.2,161.5L1399.8,159.8L1398.3,158.6L1398.2,158.6L1399.6,160.0L1399.6,160.7L1398.8,160.5L1400.3,161.5L1401.1,161.7L1401.7,162.5L1402.1,163.7L1403.8,162.9L1404.2,163.4L1405.8,164.1L1407.5,164.2L1408.6,165.1L1408.7,165.6L1409.6,166.0L1410.8,166.0L1411.0,166.4L1412.3,166.8L1413.2,166.8L1414.0,167.4L1414.4,167.5L1415.0,168.2L1416.0,168.6L1417.9,168.4L1418.4,169.1L1419.7,169.1L1423.8,169.9L1424.1,170.4L1423.9,170.7L1423.4,170.7L1423.6,171.3L1423.5,171.8L1423.8,171.8L1423.8,171.5L1424.1,171.4L1424.7,171.9L1424.4,172.2L1424.8,173.1L1423.9,172.9L1424.3,173.9L1423.3,174.2L1423.8,175.1L1423.5,175.6L1421.8,174.9L1420.6,174.9L1421.5,175.2L1422.5,175.9L1422.6,176.2L1422.2,177.3L1421.6,177.4L1421.4,177.0L1421.0,177.2L1419.4,176.5L1418.9,176.8L1418.9,177.3L1417.5,178.1L1417.5,178.5L1418.2,178.3L1419.3,178.7L1419.2,178.0L1419.6,177.7L1420.2,177.7L1421.2,178.8L1421.7,178.8L1421.9,179.2L1421.0,180.6L1420.4,182.1L1419.4,182.4L1419.2,183.5L1417.4,184.5L1416.0,185.8L1414.5,186.6L1414.1,187.5L1412.0,188.2L1411.4,189.1L1410.5,189.3L1409.9,189.8L1409.0,189.4L1407.3,188.1L1406.5,187.7L1405.2,186.5L1405.0,186.4L1404.7,186.6L1403.8,186.1L1403.8,185.6L1403.2,185.5L1402.9,184.9L1402.1,184.9L1401.3,184.4L1400.2,182.4L1399.8,182.3L1399.8,181.8L1399.2,180.7L1398.2,180.0L1399.4,181.6L1399.5,182.7L1400.3,183.3L1400.4,184.0L1401.6,185.3L1402.1,187.4L1404.0,189.1L1405.8,189.9L1406.1,190.4L1407.0,190.4L1407.9,191.0L1408.8,190.7L1409.5,190.8L1411.9,192.0L1412.4,191.6L1412.4,191.2L1413.3,191.3L1414.1,189.9L1415.4,189.8L1415.4,189.1L1416.3,188.3L1417.6,187.9L1419.9,188.5L1419.7,187.8L1420.5,187.3L1423.0,186.8L1423.7,187.9L1424.0,187.9L1423.4,186.9L1423.8,186.4L1423.6,186.0L1424.1,184.7L1424.8,184.6L1424.2,184.0L1424.6,183.0L1425.0,182.9L1425.8,183.4L1425.9,183.8L1426.5,183.9L1426.7,185.3L1427.2,185.7L1427.1,185.9L1426.5,186.0L1426.4,186.5L1426.6,187.1L1427.1,187.1L1427.3,188.5L1427.0,189.0L1427.2,189.6L1427.5,189.1L1427.9,189.0L1428.3,189.8L1428.5,189.7L1428.7,188.8L1428.6,188.4L1428.9,188.1L1429.6,188.5L1429.8,188.2L1430.8,188.7L1431.2,188.5L1431.5,188.9L1430.0,186.4L1429.2,185.5L1429.2,185.1L1429.6,184.9L1432.9,186.3L1435.0,186.8L1435.3,187.2L1435.1,187.8L1434.7,188.4L1434.3,188.6L1433.0,187.5L1432.6,187.6L1433.2,188.7L1433.8,189.2L1433.8,190.3L1433.0,190.7L1432.8,191.5L1431.2,190.9L1431.0,191.0L1431.3,191.4L1431.2,191.9L1432.0,192.0L1432.2,192.2L1431.5,193.5L1430.8,194.2L1429.7,194.3L1428.9,195.3L1428.4,195.2L1428.1,194.7L1428.4,193.9L1428.2,193.7L1427.8,196.8L1427.4,196.9L1427.1,196.7L1426.8,197.3L1426.2,197.6L1425.7,199.1L1424.6,200.9L1424.3,200.9L1424.1,200.5L1423.5,200.9L1424.0,201.5L1424.0,202.3L1423.3,202.9L1422.4,202.8L1422.2,202.9L1423.0,203.1L1423.2,203.4L1422.8,204.1L1423.0,204.4L1422.8,204.9L1419.9,203.9L1419.8,203.3L1419.9,202.9L1421.2,203.1L1421.3,203.6L1421.6,203.8L1421.6,203.2L1421.9,202.9L1421.5,202.7L1420.3,202.8L1420.0,202.2L1420.2,201.7L1419.7,200.8L1420.1,200.2L1419.5,200.1L1419.0,199.2L1418.7,199.3L1418.7,201.0L1418.5,201.4L1418.6,202.4L1418.3,202.6L1418.9,203.3L1418.6,203.9L1415.9,203.4L1415.9,203.8L1416.2,204.2L1415.9,204.5L1412.1,204.4L1408.2,204.9L1401.6,206.2L1396.9,207.6L1396.7,207.3L1396.9,206.7L1400.6,205.4L1400.9,205.6L1403.6,205.2L1406.1,204.4L1408.3,204.2L1409.3,203.6L1411.9,203.8L1412.6,203.7L1412.8,203.2L1413.3,203.2L1413.6,203.7L1414.5,203.6L1414.6,203.3L1408.4,202.7L1405.8,202.9L1403.8,203.8L1402.6,204.0L1401.1,204.9L1400.8,204.8L1400.7,205.1L1400.3,205.1L1399.9,205.5L1399.4,205.3L1397.1,206.1L1395.7,205.4L1395.4,205.7L1395.4,206.1L1394.6,206.3L1394.0,207.1L1392.2,208.3L1390.6,210.1L1395.8,207.1L1396.5,207.3L1396.1,207.9L1393.4,208.8L1391.0,210.3L1386.8,213.8L1385.1,214.8L1385.0,214.5L1379.2,218.0L1375.1,221.2L1371.3,224.6L1368.0,228.3L1364.1,234.3L1362.2,238.7L1361.8,238.9L1362.0,239.2L1360.2,244.9L1358.5,249.1L1358.2,252.0L1356.6,251.3L1356.1,250.8L1356.9,249.5L1356.9,248.7L1356.6,248.5L1356.3,248.4L1355.6,248.7L1355.8,249.3L1355.5,249.5L1350.9,248.3L1348.3,248.1L1345.9,248.2L1345.5,248.0L1338.7,248.9L1333.2,250.8L1331.6,251.6L1280.1,199.3L1271.3,199.2L1229.3,197.9L1230.2,191.5L1223.4,182.0L1218.6,185.3L1217.9,184.4L1217.8,183.8L1218.2,182.5L1219.0,181.9L1218.8,180.9L1218.2,180.6L1218.6,179.6L1167.6,175.8L1163.2,175.3L1161.4,175.8L1161.0,176.1L1160.1,175.6L1159.3,175.7L1158.8,176.2L1158.4,175.7L1158.5,175.3L1158.3,174.6L1157.9,174.3L1157.4,174.9L1156.7,175.2L1156.3,176.3L1155.7,177.0L1155.0,177.0L1155.2,176.6L1154.8,176.2L1153.8,176.4L1153.1,177.0L1152.9,176.8L1152.3,177.0L1151.7,177.4L1151.4,177.4L1151.4,177.1L1150.9,176.9L1150.5,177.1L1150.6,177.5L1149.8,177.9L1148.5,178.2L1147.9,178.2L1147.1,178.8L1146.8,178.9L1146.6,178.5L1145.6,179.2L1145.3,179.1L1145.1,179.2L1145.1,178.7L1144.8,178.6L1144.2,179.2L1144.5,179.7L1144.0,180.4L1143.9,180.1L1143.2,180.5L1142.7,180.4L1142.1,181.2L1141.5,181.2L1141.5,181.5L1141.2,181.8L1140.3,182.0L1140.1,181.8L1140.4,181.0L1139.9,180.8L1125.3,184.8L1102.2,184.3L1102.2,184.6L1070.5,182.9L1072.6,170.0L1072.9,170.0L1075.7,167.8L1076.3,168.0L1076.7,169.2L1077.2,169.5L1078.1,169.2L1079.3,169.2L1080.0,169.5L1080.1,169.1L1080.4,169.0ZM1325.2,154.9L1325.2,154.8L1325.1,154.7L1325.2,154.9ZM1325.1,155.1L1325.2,155.0L1325.2,154.9L1325.1,155.1ZM1325.1,154.5L1325.1,154.5L1325.0,154.5L1325.1,154.5ZM1324.9,154.4L1324.9,154.4L1324.8,154.4L1324.9,154.4L1324.9,154.4ZM1324.5,154.4L1324.4,154.5L1324.5,154.4L1324.5,154.4ZM1324.4,154.5L1324.4,154.5L1324.4,154.5L1324.4,154.5ZM1324.2,154.8L1324.2,154.9L1324.2,154.7L1324.2,154.8ZM1324.3,155.1L1324.3,155.1L1324.2,155.0L1324.3,155.1ZM1324.4,155.3L1324.3,155.2L1324.4,155.2L1324.4,155.3ZM1324.5,155.3L1324.5,155.3L1324.5,155.3L1324.5,155.3ZM1324.6,155.3L1324.6,155.3L1324.6,155.3L1324.6,155.3ZM1324.7,155.4L1324.7,155.4L1324.7,155.4L1324.7,155.4ZM1324.8,155.3L1324.8,155.3L1324.8,155.3L1324.8,155.3ZM1324.9,155.3L1324.9,155.3L1325.0,155.3L1324.9,155.3ZM1325.1,155.2L1325.0,155.3L1325.1,155.2L1325.1,155.2ZM1162.3,146.0L1162.3,145.9L1162.3,145.8L1162.3,145.8L1162.3,146.0ZM1162.2,145.5L1162.2,145.5L1162.1,145.5L1162.2,145.5ZM1162.0,145.4L1162.1,145.4L1162.0,145.4L1162.0,145.4ZM1161.6,145.4L1161.5,145.5L1161.6,145.4L1161.6,145.4ZM1161.5,145.5L1161.5,145.5L1161.5,145.5L1161.5,145.5ZM1161.4,145.7L1161.4,145.6L1161.4,145.7L1161.4,145.7ZM1161.3,145.8L1161.3,145.8L1161.3,145.8L1161.3,145.8ZM1161.3,145.9L1161.3,145.9L1161.3,145.9L1161.3,145.9ZM1161.4,146.0L1161.4,145.9L1161.4,146.0L1161.4,146.0ZM1161.5,146.2L1161.5,146.2L1161.5,146.2L1161.5,146.2ZM1161.6,146.3L1161.5,146.2L1161.6,146.3L1161.6,146.3ZM1161.8,146.3L1161.8,146.3L1161.9,146.3L1161.8,146.3ZM1162.0,146.3L1162.0,146.3L1162.1,146.3L1162.0,146.3ZM1162.1,146.2L1162.2,146.2L1162.2,146.2L1162.1,146.2ZM1184.2,124.1L1184.2,124.0L1184.2,123.9L1184.2,124.0L1184.2,124.1ZM1184.0,123.7L1184.0,123.6L1184.0,123.6L1184.0,123.7ZM1183.9,123.6L1184.0,123.6L1183.9,123.6L1183.9,123.6ZM1183.4,123.6L1183.4,123.6L1183.5,123.6L1183.4,123.6ZM1183.3,123.6L1183.3,123.6L1183.3,123.6L1183.3,123.6ZM1183.2,123.9L1183.2,123.8L1183.2,123.8L1183.2,123.9ZM1183.2,123.9L1183.2,123.9L1183.2,124.0L1183.2,123.9ZM1183.2,124.0L1183.2,124.0L1183.2,124.1L1183.2,124.0ZM1183.2,124.2L1183.2,124.1L1183.2,124.2L1183.2,124.2ZM1183.3,124.3L1183.3,124.3L1183.3,124.3L1183.3,124.3ZM1183.5,124.4L1183.4,124.4L1183.5,124.4L1183.5,124.4ZM1183.7,124.5L1183.7,124.5L1183.7,124.5L1183.7,124.5ZM1183.9,124.4L1183.9,124.4L1183.9,124.4L1183.9,124.4ZM1184.0,124.3L1184.0,124.3L1184.0,124.3L1184.0,124.3ZM1289.5,119.1L1289.5,119.1L1289.4,118.9L1289.5,119.1ZM1289.4,119.3L1289.4,119.3L1289.5,119.1L1289.4,119.3ZM1289.3,118.8L1289.3,118.8L1289.3,118.8L1289.3,118.8ZM1289.2,118.7L1289.1,118.7L1289.1,118.7L1289.2,118.7L1289.2,118.7ZM1288.7,118.7L1288.7,118.7L1288.8,118.7L1288.7,118.7ZM1288.7,118.8L1288.6,118.8L1288.6,118.8L1288.7,118.8ZM1288.5,119.1L1288.5,119.1L1288.5,119.0L1288.5,119.1ZM1288.5,119.3L1288.5,119.3L1288.5,119.3L1288.5,119.3ZM1288.7,119.5L1288.6,119.4L1288.7,119.5L1288.7,119.5ZM1288.7,119.5L1288.7,119.6L1288.8,119.6L1288.7,119.5ZM1288.9,119.6L1288.9,119.6L1288.9,119.6L1288.9,119.6ZM1289.0,119.6L1289.0,119.6L1289.0,119.6L1289.0,119.6ZM1289.0,119.6L1289.1,119.6L1289.1,119.6L1289.0,119.6ZM1289.2,119.6L1289.2,119.6L1289.2,119.5L1289.2,119.6ZM1289.4,119.4L1289.3,119.5L1289.4,119.4L1289.4,119.4ZM1360.9,119.1L1360.9,119.1L1360.9,118.9L1360.9,119.1ZM1360.9,119.3L1360.9,119.3L1360.9,119.1L1360.9,119.3ZM1360.8,118.8L1360.8,118.8L1360.8,118.8L1360.8,118.8ZM1360.6,118.7L1360.6,118.7L1360.6,118.7L1360.7,118.7L1360.6,118.7ZM1360.2,118.7L1360.2,118.7L1360.3,118.7L1360.2,118.7ZM1360.1,118.8L1360.1,118.8L1360.1,118.8L1360.1,118.8ZM1360.0,119.1L1360.0,119.1L1360.0,119.0L1360.0,119.1ZM1360.0,119.3L1360.0,119.3L1360.0,119.3L1360.0,119.3ZM1360.2,119.5L1360.1,119.4L1360.1,119.5L1360.2,119.5ZM1360.2,119.5L1360.2,119.6L1360.3,119.6L1360.2,119.5ZM1360.3,119.6L1360.3,119.6L1360.4,119.6L1360.3,119.6ZM1360.4,119.6L1360.4,119.6L1360.5,119.6L1360.4,119.6ZM1360.5,119.6L1360.5,119.6L1360.6,119.6L1360.5,119.6ZM1360.6,119.6L1360.7,119.6L1360.7,119.5L1360.6,119.6ZM1360.8,119.4L1360.7,119.5L1360.8,119.4L1360.8,119.4ZM1211.1,105.6L1211.1,105.5L1211.1,105.4L1211.1,105.5L1211.1,105.6ZM1210.9,105.2L1210.9,105.1L1210.9,105.1L1210.9,105.2ZM1210.8,105.1L1210.9,105.1L1210.8,105.1L1210.8,105.1ZM1210.3,105.1L1210.3,105.1L1210.4,105.1L1210.3,105.1ZM1210.3,105.1L1210.2,105.1L1210.2,105.1L1210.3,105.1ZM1210.1,105.4L1210.1,105.3L1210.1,105.3L1210.1,105.4ZM1210.1,105.4L1210.1,105.4L1210.1,105.5L1210.1,105.4ZM1210.1,105.5L1210.1,105.5L1210.1,105.6L1210.1,105.5ZM1210.1,105.7L1210.1,105.6L1210.1,105.7L1210.1,105.7ZM1210.2,105.8L1210.2,105.8L1210.2,105.8L1210.2,105.8ZM1210.4,105.9L1210.3,105.9L1210.4,105.9L1210.4,105.9ZM1210.6,106.0L1210.6,106.0L1210.6,106.0L1210.6,106.0ZM1210.8,105.9L1210.8,105.9L1210.8,105.9L1210.8,105.9ZM1210.9,105.8L1210.9,105.8L1210.9,105.8L1210.9,105.8ZM1462.7,172.4L1463.6,171.9L1463.8,171.1L1464.6,171.4L1466.3,170.8L1466.9,170.9L1467.1,169.9L1467.1,166.4L1467.7,165.5L1467.9,164.6L1468.2,159.3L1468.0,157.2L1468.5,156.5L1468.7,154.5L1468.5,151.8L1467.3,149.1L1467.1,147.8L1466.7,147.3L1466.2,145.7L1466.2,144.9L1465.6,143.7L1465.8,143.4L1466.2,143.4L1467.2,145.1L1468.1,147.6L1469.5,154.3L1468.8,159.4L1468.7,164.0L1467.5,171.9L1467.1,173.6L1466.9,173.8L1465.5,173.4L1463.6,173.6L1461.6,174.2L1458.4,175.6L1457.8,175.7L1457.5,175.6L1457.7,175.2L1459.0,174.5L1459.7,173.4L1460.2,173.3L1460.3,173.8L1460.7,174.0L1461.8,173.4L1462.7,172.4ZM1461.7,142.0L1460.8,141.5L1459.4,141.2L1459.1,140.8L1459.0,140.6L1459.6,140.1L1459.5,138.6L1457.9,137.0L1457.7,136.2L1456.7,135.7L1456.5,134.9L1457.1,134.5L1458.4,134.7L1459.9,135.6L1459.8,136.3L1460.5,136.3L1462.0,139.1L1462.2,141.4L1461.7,142.0Z" fill="none" stroke="#90a8b2" stroke-width="1.1" fill-rule="evenodd"/>
+<polyline points="1161.8,145.8 1183.7,124.0 1210.6,105.5 1289.0,119.1 1324.7,154.9 1360.4,119.1" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+<circle cx="1161.8" cy="145.8" r="3.5" fill="#f7fafb" stroke="#f59e0b" stroke-width="1.5"/>
+<text class="plan-label" x="1161.8" y="137.8" text-anchor="middle">W3</text>
+<circle cx="1183.7" cy="124.0" r="3.5" fill="#f7fafb" stroke="#f59e0b" stroke-width="1.5"/>
+<text class="plan-label" x="1183.7" y="138.0" text-anchor="middle">W1</text>
+<circle cx="1210.6" cy="105.5" r="3.5" fill="#f7fafb" stroke="#f59e0b" stroke-width="1.5"/>
+<text class="plan-label" x="1210.6" y="97.5" text-anchor="middle">W2</text>
+<circle cx="1289.0" cy="119.1" r="3.5" fill="#f7fafb" stroke="#f59e0b" stroke-width="1.5"/>
+<text class="plan-label" x="1289.0" y="133.1" text-anchor="middle">E2</text>
+<circle cx="1324.7" cy="154.9" r="3.5" fill="#f7fafb" stroke="#f59e0b" stroke-width="1.5"/>
+<text class="plan-label" x="1324.7" y="146.9" text-anchor="middle">E1</text>
+<circle cx="1360.4" cy="119.1" r="3.5" fill="#f7fafb" stroke="#f59e0b" stroke-width="1.5"/>
+<text class="plan-label" x="1360.4" y="133.1" text-anchor="middle">E3</text>
+<text class="fine" x="1029.0" y="106.0">PLAN · actual section trace</text>
+<line class="guide" x1="90" y1="305.00" x2="1515" y2="305.00"/>
+<line class="guide" x1="90" y1="715.00" x2="1515" y2="715.00"/>
+<text class="axis" x="82" y="309.00" text-anchor="end">5,600 ft</text>
+<text class="axis" x="82" y="719.00" text-anchor="end">base</text>
+<rect class="band" x="97.812" y="707.757" width="173.516" height="6.893" fill="url(#layerGradient0)"/>
+<rect class="band" x="276.929" y="707.757" width="183.582" height="6.893" fill="url(#layerGradient0)"/>
+<rect class="band" x="466.115" y="707.757" width="455.460" height="6.893" fill="url(#layerGradient0)"/>
+<rect class="band" x="927.186" y="707.757" width="287.197" height="6.893" fill="url(#layerGradient0)"/>
+<rect class="band" x="1220.002" y="707.757" width="287.197" height="6.893" fill="url(#layerGradient0)"/>
+<rect class="band" x="97.812" y="700.165" width="173.516" height="6.893" fill="url(#layerGradient1)"/>
+<rect class="band" x="276.929" y="700.165" width="183.582" height="6.893" fill="url(#layerGradient1)"/>
+<rect class="band" x="466.115" y="700.165" width="455.460" height="6.893" fill="url(#layerGradient1)"/>
+<rect class="band" x="927.186" y="700.165" width="287.197" height="6.893" fill="url(#layerGradient1)"/>
+<rect class="band" x="1220.002" y="700.165" width="287.197" height="6.893" fill="url(#layerGradient1)"/>
+<rect class="band" x="97.812" y="692.572" width="173.516" height="6.893" fill="url(#layerGradient2)"/>
+<rect class="band" x="276.929" y="692.572" width="183.582" height="6.893" fill="url(#layerGradient2)"/>
+<rect class="band" x="466.115" y="692.572" width="455.460" height="6.893" fill="url(#layerGradient2)"/>
+<rect class="band" x="927.186" y="692.572" width="287.197" height="6.893" fill="url(#layerGradient2)"/>
+<rect class="band" x="1220.002" y="692.572" width="287.197" height="6.893" fill="url(#layerGradient2)"/>
+<rect class="band" x="97.812" y="684.980" width="173.516" height="6.893" fill="url(#layerGradient3)"/>
+<rect class="band" x="276.929" y="684.980" width="183.582" height="6.893" fill="url(#layerGradient3)"/>
+<rect class="band" x="466.115" y="684.980" width="455.460" height="6.893" fill="url(#layerGradient3)"/>
+<rect class="band" x="927.186" y="684.980" width="287.197" height="6.893" fill="url(#layerGradient3)"/>
+<rect class="band" x="1220.002" y="684.980" width="287.197" height="6.893" fill="url(#layerGradient3)"/>
+<rect class="band" x="97.812" y="677.387" width="173.516" height="6.893" fill="url(#layerGradient4)"/>
+<rect class="band" x="276.929" y="677.387" width="183.582" height="6.893" fill="url(#layerGradient4)"/>
+<rect class="band" x="466.115" y="677.387" width="455.460" height="6.893" fill="url(#layerGradient4)"/>
+<rect class="band" x="927.186" y="677.387" width="287.197" height="6.893" fill="url(#layerGradient4)"/>
+<rect class="band" x="1220.002" y="677.387" width="287.197" height="6.893" fill="url(#layerGradient4)"/>
+<rect class="band" x="97.812" y="669.794" width="173.516" height="6.893" fill="url(#layerGradient5)"/>
+<rect class="band" x="276.929" y="669.794" width="183.582" height="6.893" fill="url(#layerGradient5)"/>
+<rect class="band" x="466.115" y="669.794" width="455.460" height="6.893" fill="url(#layerGradient5)"/>
+<rect class="band" x="927.186" y="669.794" width="287.197" height="6.893" fill="url(#layerGradient5)"/>
+<rect class="band" x="1220.002" y="669.794" width="287.197" height="6.893" fill="url(#layerGradient5)"/>
+<rect class="band" x="97.812" y="662.202" width="173.516" height="6.893" fill="url(#layerGradient6)"/>
+<rect class="band" x="276.929" y="662.202" width="183.582" height="6.893" fill="url(#layerGradient6)"/>
+<rect class="band" x="466.115" y="662.202" width="455.460" height="6.893" fill="url(#layerGradient6)"/>
+<rect class="band" x="927.186" y="662.202" width="287.197" height="6.893" fill="url(#layerGradient6)"/>
+<rect class="band" x="1220.002" y="662.202" width="252.667" height="6.893" fill="url(#layerGradient6)"/>
+<rect class="band" x="1478.422" y="662.202" width="28.777" height="6.893" fill="url(#layerGradient6)"/>
+<rect class="band" x="1507.235" y="662.202" width="2.765" height="6.893" fill="url(#layerGradient6)"/>
+<rect class="band" x="97.812" y="654.609" width="173.516" height="6.893" fill="url(#layerGradient7)"/>
+<rect class="band" x="276.929" y="654.609" width="183.582" height="6.893" fill="url(#layerGradient7)"/>
+<rect class="band" x="466.115" y="654.609" width="455.460" height="6.893" fill="url(#layerGradient7)"/>
+<rect class="band" x="927.186" y="654.609" width="287.197" height="6.893" fill="url(#layerGradient7)"/>
+<rect class="band" x="1220.002" y="654.609" width="250.731" height="6.893" fill="url(#layerGradient7)"/>
+<rect class="band" x="1480.750" y="654.609" width="24.182" height="6.893" fill="url(#layerGradient7)"/>
+<rect class="band" x="1509.210" y="654.609" width="0.790" height="6.893" fill="url(#layerGradient7)"/>
+<rect class="band" x="97.812" y="647.017" width="173.516" height="6.893" fill="url(#layerGradient8)"/>
+<rect class="band" x="276.929" y="647.017" width="183.582" height="6.893" fill="url(#layerGradient8)"/>
+<rect class="band" x="466.115" y="647.017" width="455.460" height="6.893" fill="url(#layerGradient8)"/>
+<rect class="band" x="927.186" y="647.017" width="287.197" height="6.893" fill="url(#layerGradient8)"/>
+<rect class="band" x="1220.002" y="647.017" width="52.044" height="6.893" fill="url(#layerGradient8)"/>
+<rect class="band" x="1276.230" y="647.017" width="103.738" height="6.893" fill="url(#layerGradient8)"/>
+<rect class="band" x="1384.379" y="647.017" width="60.638" height="6.893" fill="url(#layerGradient8)"/>
+<rect class="band" x="1453.739" y="647.017" width="11.113" height="6.893" fill="url(#layerGradient8)"/>
+<rect class="band" x="1484.737" y="647.017" width="14.353" height="6.893" fill="url(#layerGradient8)"/>
+<rect class="band" x="1502.036" y="647.017" width="1.272" height="6.893" fill="url(#layerGradient8)"/>
+<rect class="band" x="97.812" y="639.424" width="173.516" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="276.929" y="639.424" width="183.582" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="466.115" y="639.424" width="455.460" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="927.186" y="639.424" width="168.438" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="1101.522" y="639.424" width="1.140" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="1123.528" y="639.424" width="90.855" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="1214.398" y="639.424" width="5.589" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="1220.002" y="639.424" width="16.538" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="1241.592" y="639.424" width="15.721" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="1285.633" y="639.424" width="79.336" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="1398.089" y="639.424" width="19.137" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="1422.464" y="639.424" width="15.773" height="6.893" fill="url(#layerGradient9)"/>
+<rect class="band" x="97.812" y="631.831" width="173.516" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="276.929" y="631.831" width="183.582" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="466.115" y="631.831" width="455.460" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="927.186" y="631.831" width="161.917" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="1131.152" y="631.831" width="6.580" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="1145.098" y="631.831" width="60.974" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="1221.172" y="631.831" width="12.901" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="1250.652" y="631.831" width="6.332" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="1295.290" y="631.831" width="3.880" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="1306.331" y="631.831" width="19.785" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="1337.229" y="631.831" width="8.517" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="1347.156" y="631.831" width="9.738" height="6.893" fill="url(#layerGradient10)"/>
+<rect class="band" x="97.812" y="624.239" width="173.516" height="6.893" fill="url(#layerGradient11)"/>
+<rect class="band" x="276.929" y="624.239" width="183.582" height="6.893" fill="url(#layerGradient11)"/>
+<rect class="band" x="466.115" y="624.239" width="455.460" height="6.893" fill="url(#layerGradient11)"/>
+<rect class="band" x="927.186" y="624.239" width="160.638" height="6.893" fill="url(#layerGradient11)"/>
+<rect class="band" x="1149.086" y="624.239" width="47.068" height="6.893" fill="url(#layerGradient11)"/>
+<rect class="band" x="97.812" y="616.646" width="173.516" height="6.893" fill="url(#layerGradient12)"/>
+<rect class="band" x="276.929" y="616.646" width="183.582" height="6.893" fill="url(#layerGradient12)"/>
+<rect class="band" x="466.115" y="616.646" width="455.460" height="6.893" fill="url(#layerGradient12)"/>
+<rect class="band" x="927.186" y="616.646" width="151.642" height="6.893" fill="url(#layerGradient12)"/>
+<rect class="band" x="1081.788" y="616.646" width="4.913" height="6.893" fill="url(#layerGradient12)"/>
+<rect class="band" x="1153.043" y="616.646" width="28.913" height="6.893" fill="url(#layerGradient12)"/>
+<rect class="band" x="97.812" y="609.054" width="173.516" height="6.893" fill="url(#layerGradient13)"/>
+<rect class="band" x="276.929" y="609.054" width="183.582" height="6.893" fill="url(#layerGradient13)"/>
+<rect class="band" x="466.115" y="609.054" width="455.460" height="6.893" fill="url(#layerGradient13)"/>
+<rect class="band" x="927.186" y="609.054" width="149.736" height="6.893" fill="url(#layerGradient13)"/>
+<rect class="band" x="97.812" y="601.461" width="173.516" height="6.893" fill="url(#layerGradient14)"/>
+<rect class="band" x="276.929" y="601.461" width="183.582" height="6.893" fill="url(#layerGradient14)"/>
+<rect class="band" x="466.115" y="601.461" width="455.460" height="6.893" fill="url(#layerGradient14)"/>
+<rect class="band" x="927.186" y="601.461" width="137.553" height="6.893" fill="url(#layerGradient14)"/>
+<rect class="band" x="97.812" y="593.869" width="173.516" height="6.893" fill="url(#layerGradient15)"/>
+<rect class="band" x="276.929" y="593.869" width="183.582" height="6.893" fill="url(#layerGradient15)"/>
+<rect class="band" x="466.115" y="593.869" width="455.460" height="6.893" fill="url(#layerGradient15)"/>
+<rect class="band" x="927.186" y="593.869" width="58.838" height="6.893" fill="url(#layerGradient15)"/>
+<rect class="band" x="994.095" y="593.869" width="66.833" height="6.893" fill="url(#layerGradient15)"/>
+<rect class="band" x="97.812" y="586.276" width="173.516" height="6.893" fill="url(#layerGradient16)"/>
+<rect class="band" x="276.929" y="586.276" width="183.582" height="6.893" fill="url(#layerGradient16)"/>
+<rect class="band" x="466.115" y="586.276" width="313.710" height="6.893" fill="url(#layerGradient16)"/>
+<rect class="band" x="784.794" y="586.276" width="136.781" height="6.893" fill="url(#layerGradient16)"/>
+<rect class="band" x="921.654" y="586.276" width="5.496" height="6.893" fill="url(#layerGradient16)"/>
+<rect class="band" x="927.186" y="586.276" width="14.738" height="6.893" fill="url(#layerGradient16)"/>
+<rect class="band" x="960.414" y="586.276" width="22.253" height="6.893" fill="url(#layerGradient16)"/>
+<rect class="band" x="996.546" y="586.276" width="52.391" height="6.893" fill="url(#layerGradient16)"/>
+<rect class="band" x="97.812" y="578.683" width="173.516" height="6.893" fill="url(#layerGradient17)"/>
+<rect class="band" x="276.929" y="578.683" width="183.582" height="6.893" fill="url(#layerGradient17)"/>
+<rect class="band" x="466.115" y="578.683" width="292.245" height="6.893" fill="url(#layerGradient17)"/>
+<rect class="band" x="763.738" y="578.683" width="9.506" height="6.893" fill="url(#layerGradient17)"/>
+<rect class="band" x="785.951" y="578.683" width="135.624" height="6.893" fill="url(#layerGradient17)"/>
+<rect class="band" x="921.654" y="578.683" width="5.496" height="6.893" fill="url(#layerGradient17)"/>
+<rect class="band" x="927.186" y="578.683" width="7.263" height="6.893" fill="url(#layerGradient17)"/>
+<rect class="band" x="973.906" y="578.683" width="3.442" height="6.893" fill="url(#layerGradient17)"/>
+<rect class="band" x="1013.086" y="578.683" width="20.582" height="6.893" fill="url(#layerGradient17)"/>
+<rect class="band" x="1037.878" y="578.683" width="7.361" height="6.893" fill="url(#layerGradient17)"/>
+<rect class="band" x="97.812" y="571.091" width="173.516" height="6.893" fill="url(#layerGradient18)"/>
+<rect class="band" x="276.929" y="571.091" width="183.582" height="6.893" fill="url(#layerGradient18)"/>
+<rect class="band" x="466.115" y="571.091" width="290.825" height="6.893" fill="url(#layerGradient18)"/>
+<rect class="band" x="789.515" y="571.091" width="22.610" height="6.893" fill="url(#layerGradient18)"/>
+<rect class="band" x="820.779" y="571.091" width="61.720" height="6.893" fill="url(#layerGradient18)"/>
+<rect class="band" x="903.057" y="571.091" width="17.830" height="6.893" fill="url(#layerGradient18)"/>
+<rect class="band" x="97.812" y="563.498" width="173.516" height="6.893" fill="url(#layerGradient19)"/>
+<rect class="band" x="276.929" y="563.498" width="183.582" height="6.893" fill="url(#layerGradient19)"/>
+<rect class="band" x="466.115" y="563.498" width="289.079" height="6.893" fill="url(#layerGradient19)"/>
+<rect class="band" x="792.674" y="563.498" width="5.425" height="6.893" fill="url(#layerGradient19)"/>
+<rect class="band" x="803.114" y="563.498" width="3.649" height="6.893" fill="url(#layerGradient19)"/>
+<rect class="band" x="822.760" y="563.498" width="29.472" height="6.893" fill="url(#layerGradient19)"/>
+<rect class="band" x="861.793" y="563.498" width="0.737" height="6.893" fill="url(#layerGradient19)"/>
+<rect class="band" x="97.812" y="555.906" width="173.516" height="6.893" fill="url(#layerGradient20)"/>
+<rect class="band" x="276.929" y="555.906" width="183.582" height="6.893" fill="url(#layerGradient20)"/>
+<rect class="band" x="466.115" y="555.906" width="283.501" height="6.893" fill="url(#layerGradient20)"/>
+<rect class="band" x="824.993" y="555.906" width="17.516" height="6.893" fill="url(#layerGradient20)"/>
+<rect class="band" x="97.812" y="548.313" width="173.516" height="6.893" fill="url(#layerGradient21)"/>
+<rect class="band" x="276.929" y="548.313" width="183.582" height="6.893" fill="url(#layerGradient21)"/>
+<rect class="band" x="466.115" y="548.313" width="280.644" height="6.893" fill="url(#layerGradient21)"/>
+<rect class="band" x="97.812" y="540.720" width="173.516" height="6.893" fill="url(#layerGradient22)"/>
+<rect class="band" x="276.929" y="540.720" width="183.582" height="6.893" fill="url(#layerGradient22)"/>
+<rect class="band" x="466.115" y="540.720" width="278.115" height="6.893" fill="url(#layerGradient22)"/>
+<rect class="band" x="97.812" y="533.128" width="173.516" height="6.893" fill="url(#layerGradient23)"/>
+<rect class="band" x="276.929" y="533.128" width="183.582" height="6.893" fill="url(#layerGradient23)"/>
+<rect class="band" x="466.115" y="533.128" width="177.579" height="6.893" fill="url(#layerGradient23)"/>
+<rect class="band" x="646.020" y="533.128" width="87.442" height="6.893" fill="url(#layerGradient23)"/>
+<rect class="band" x="97.812" y="525.535" width="173.516" height="6.893" fill="url(#layerGradient24)"/>
+<rect class="band" x="276.929" y="525.535" width="183.582" height="6.893" fill="url(#layerGradient24)"/>
+<rect class="band" x="466.115" y="525.535" width="175.915" height="6.893" fill="url(#layerGradient24)"/>
+<rect class="band" x="648.942" y="525.535" width="6.956" height="6.893" fill="url(#layerGradient24)"/>
+<rect class="band" x="665.653" y="525.535" width="66.625" height="6.893" fill="url(#layerGradient24)"/>
+<rect class="band" x="97.812" y="517.943" width="173.516" height="6.893" fill="url(#layerGradient25)"/>
+<rect class="band" x="276.929" y="517.943" width="183.582" height="6.893" fill="url(#layerGradient25)"/>
+<rect class="band" x="466.115" y="517.943" width="143.187" height="6.893" fill="url(#layerGradient25)"/>
+<rect class="band" x="612.511" y="517.943" width="27.762" height="6.893" fill="url(#layerGradient25)"/>
+<rect class="band" x="670.186" y="517.943" width="51.711" height="6.893" fill="url(#layerGradient25)"/>
+<rect class="band" x="729.546" y="517.943" width="1.564" height="6.893" fill="url(#layerGradient25)"/>
+<rect class="band" x="97.812" y="510.350" width="173.516" height="6.893" fill="url(#layerGradient26)"/>
+<rect class="band" x="276.929" y="510.350" width="183.582" height="6.893" fill="url(#layerGradient26)"/>
+<rect class="band" x="466.115" y="510.350" width="135.721" height="6.893" fill="url(#layerGradient26)"/>
+<rect class="band" x="614.114" y="510.350" width="22.851" height="6.893" fill="url(#layerGradient26)"/>
+<rect class="band" x="674.409" y="510.350" width="5.362" height="6.893" fill="url(#layerGradient26)"/>
+<rect class="band" x="686.074" y="510.350" width="34.968" height="6.893" fill="url(#layerGradient26)"/>
+<rect class="band" x="97.812" y="502.757" width="173.516" height="6.893" fill="url(#layerGradient27)"/>
+<rect class="band" x="276.929" y="502.757" width="183.582" height="6.893" fill="url(#layerGradient27)"/>
+<rect class="band" x="466.115" y="502.757" width="119.469" height="6.893" fill="url(#layerGradient27)"/>
+<rect class="band" x="593.340" y="502.757" width="7.035" height="6.893" fill="url(#layerGradient27)"/>
+<rect class="band" x="615.382" y="502.757" width="18.189" height="6.893" fill="url(#layerGradient27)"/>
+<rect class="band" x="690.623" y="502.757" width="14.120" height="6.893" fill="url(#layerGradient27)"/>
+<rect class="band" x="707.121" y="502.757" width="13.352" height="6.893" fill="url(#layerGradient27)"/>
+<rect class="band" x="97.812" y="495.165" width="173.516" height="6.893" fill="url(#layerGradient28)"/>
+<rect class="band" x="276.929" y="495.165" width="183.582" height="6.893" fill="url(#layerGradient28)"/>
+<rect class="band" x="466.115" y="495.165" width="113.568" height="6.893" fill="url(#layerGradient28)"/>
+<rect class="band" x="616.598" y="495.165" width="14.998" height="6.893" fill="url(#layerGradient28)"/>
+<rect class="band" x="692.105" y="495.165" width="11.335" height="6.893" fill="url(#layerGradient28)"/>
+<rect class="band" x="711.654" y="495.165" width="8.440" height="6.893" fill="url(#layerGradient28)"/>
+<rect class="band" x="97.812" y="487.572" width="173.516" height="6.893" fill="url(#layerGradient29)"/>
+<rect class="band" x="276.929" y="487.572" width="183.582" height="6.893" fill="url(#layerGradient29)"/>
+<rect class="band" x="466.115" y="487.572" width="109.145" height="6.893" fill="url(#layerGradient29)"/>
+<rect class="band" x="713.005" y="487.572" width="6.126" height="6.893" fill="url(#layerGradient29)"/>
+<rect class="band" x="97.812" y="479.980" width="173.516" height="6.893" fill="url(#layerGradient30)"/>
+<rect class="band" x="276.929" y="479.980" width="183.582" height="6.893" fill="url(#layerGradient30)"/>
+<rect class="band" x="466.115" y="479.980" width="107.274" height="6.893" fill="url(#layerGradient30)"/>
+<rect class="band" x="713.588" y="479.980" width="4.022" height="6.893" fill="url(#layerGradient30)"/>
+<rect class="band" x="97.812" y="472.387" width="173.516" height="6.893" fill="url(#layerGradient31)"/>
+<rect class="band" x="276.929" y="472.387" width="183.582" height="6.893" fill="url(#layerGradient31)"/>
+<rect class="band" x="466.115" y="472.387" width="95.863" height="6.893" fill="url(#layerGradient31)"/>
+<rect class="band" x="568.186" y="472.387" width="0.685" height="6.893" fill="url(#layerGradient31)"/>
+<rect class="band" x="714.947" y="472.387" width="1.469" height="6.893" fill="url(#layerGradient31)"/>
+<rect class="band" x="97.812" y="464.794" width="173.516" height="6.893" fill="url(#layerGradient32)"/>
+<rect class="band" x="276.929" y="464.794" width="183.582" height="6.893" fill="url(#layerGradient32)"/>
+<rect class="band" x="466.115" y="464.794" width="94.059" height="6.893" fill="url(#layerGradient32)"/>
+<rect class="band" x="715.177" y="464.794" width="0.650" height="6.893" fill="url(#layerGradient32)"/>
+<rect class="band" x="97.812" y="457.202" width="173.516" height="6.893" fill="url(#layerGradient33)"/>
+<rect class="band" x="276.929" y="457.202" width="183.582" height="6.893" fill="url(#layerGradient33)"/>
+<rect class="band" x="466.115" y="457.202" width="80.265" height="6.893" fill="url(#layerGradient33)"/>
+<rect class="band" x="97.812" y="449.609" width="173.516" height="6.893" fill="url(#layerGradient34)"/>
+<rect class="band" x="276.929" y="449.609" width="183.582" height="6.893" fill="url(#layerGradient34)"/>
+<rect class="band" x="466.115" y="449.609" width="78.349" height="6.893" fill="url(#layerGradient34)"/>
+<rect class="band" x="97.812" y="442.017" width="173.516" height="6.893" fill="url(#layerGradient35)"/>
+<rect class="band" x="276.929" y="442.017" width="183.582" height="6.893" fill="url(#layerGradient35)"/>
+<rect class="band" x="466.115" y="442.017" width="76.570" height="6.893" fill="url(#layerGradient35)"/>
+<rect class="band" x="97.812" y="434.424" width="173.516" height="6.893" fill="url(#layerGradient36)"/>
+<rect class="band" x="276.929" y="434.424" width="183.582" height="6.893" fill="url(#layerGradient36)"/>
+<rect class="band" x="466.115" y="434.424" width="76.080" height="6.893" fill="url(#layerGradient36)"/>
+<rect class="band" x="97.812" y="426.831" width="173.516" height="6.893" fill="url(#layerGradient37)"/>
+<rect class="band" x="276.929" y="426.831" width="183.582" height="6.893" fill="url(#layerGradient37)"/>
+<rect class="band" x="466.115" y="426.831" width="75.533" height="6.893" fill="url(#layerGradient37)"/>
+<rect class="band" x="97.812" y="419.239" width="80.165" height="6.893" fill="url(#layerGradient38)"/>
+<rect class="band" x="181.789" y="419.239" width="89.539" height="6.893" fill="url(#layerGradient38)"/>
+<rect class="band" x="276.929" y="419.239" width="183.582" height="6.893" fill="url(#layerGradient38)"/>
+<rect class="band" x="466.115" y="419.239" width="74.465" height="6.893" fill="url(#layerGradient38)"/>
+<rect class="band" x="97.812" y="411.646" width="45.947" height="6.893" fill="url(#layerGradient39)"/>
+<rect class="band" x="154.240" y="411.646" width="6.672" height="6.893" fill="url(#layerGradient39)"/>
+<rect class="band" x="184.291" y="411.646" width="87.037" height="6.893" fill="url(#layerGradient39)"/>
+<rect class="band" x="276.929" y="411.646" width="25.737" height="6.893" fill="url(#layerGradient39)"/>
+<rect class="band" x="303.692" y="411.646" width="106.515" height="6.893" fill="url(#layerGradient39)"/>
+<rect class="band" x="447.714" y="411.646" width="6.977" height="6.893" fill="url(#layerGradient39)"/>
+<rect class="band" x="456.870" y="411.646" width="9.202" height="6.893" fill="url(#layerGradient39)"/>
+<rect class="band" x="466.115" y="411.646" width="40.368" height="6.893" fill="url(#layerGradient39)"/>
+<rect class="band" x="97.812" y="404.054" width="40.390" height="6.893" fill="url(#layerGradient40)"/>
+<rect class="band" x="156.918" y="404.054" width="2.919" height="6.893" fill="url(#layerGradient40)"/>
+<rect class="band" x="185.941" y="404.054" width="85.387" height="6.893" fill="url(#layerGradient40)"/>
+<rect class="band" x="276.929" y="404.054" width="17.371" height="6.893" fill="url(#layerGradient40)"/>
+<rect class="band" x="305.572" y="404.054" width="99.681" height="6.893" fill="url(#layerGradient40)"/>
+<rect class="band" x="480.115" y="404.054" width="12.589" height="6.893" fill="url(#layerGradient40)"/>
+<rect class="band" x="97.812" y="396.461" width="38.425" height="6.893" fill="url(#layerGradient41)"/>
+<rect class="band" x="186.790" y="396.461" width="21.975" height="6.893" fill="url(#layerGradient41)"/>
+<rect class="band" x="213.437" y="396.461" width="2.440" height="6.893" fill="url(#layerGradient41)"/>
+<rect class="band" x="219.331" y="396.461" width="51.997" height="6.893" fill="url(#layerGradient41)"/>
+<rect class="band" x="276.929" y="396.461" width="14.538" height="6.893" fill="url(#layerGradient41)"/>
+<rect class="band" x="313.999" y="396.461" width="26.792" height="6.893" fill="url(#layerGradient41)"/>
+<rect class="band" x="342.450" y="396.461" width="8.189" height="6.893" fill="url(#layerGradient41)"/>
+<rect class="band" x="361.406" y="396.461" width="8.865" height="6.893" fill="url(#layerGradient41)"/>
+<rect class="band" x="379.245" y="396.461" width="9.524" height="6.893" fill="url(#layerGradient41)"/>
+<rect class="band" x="482.014" y="396.461" width="7.171" height="6.893" fill="url(#layerGradient41)"/>
+<rect class="band" x="97.812" y="388.869" width="36.050" height="6.893" fill="url(#layerGradient42)"/>
+<rect class="band" x="187.652" y="388.869" width="18.882" height="6.893" fill="url(#layerGradient42)"/>
+<rect class="band" x="224.475" y="388.869" width="46.853" height="6.893" fill="url(#layerGradient42)"/>
+<rect class="band" x="276.929" y="388.869" width="13.111" height="6.893" fill="url(#layerGradient42)"/>
+<rect class="band" x="317.089" y="388.869" width="10.903" height="6.893" fill="url(#layerGradient42)"/>
+<rect class="band" x="328.238" y="388.869" width="7.616" height="6.893" fill="url(#layerGradient42)"/>
+<rect class="band" x="382.265" y="388.869" width="5.264" height="6.893" fill="url(#layerGradient42)"/>
+<rect class="band" x="97.812" y="381.276" width="35.107" height="6.893" fill="url(#layerGradient43)"/>
+<rect class="band" x="196.038" y="381.276" width="9.365" height="6.893" fill="url(#layerGradient43)"/>
+<rect class="band" x="226.271" y="381.276" width="62.511" height="6.893" fill="url(#layerGradient43)"/>
+<rect class="band" x="318.913" y="381.276" width="6.883" height="6.893" fill="url(#layerGradient43)"/>
+<rect class="band" x="97.812" y="373.683" width="33.911" height="6.893" fill="url(#layerGradient44)"/>
+<rect class="band" x="197.271" y="373.683" width="6.828" height="6.893" fill="url(#layerGradient44)"/>
+<rect class="band" x="228.088" y="373.683" width="15.986" height="6.893" fill="url(#layerGradient44)"/>
+<rect class="band" x="252.546" y="373.683" width="18.978" height="6.893" fill="url(#layerGradient44)"/>
+<rect class="band" x="276.350" y="373.683" width="10.984" height="6.893" fill="url(#layerGradient44)"/>
+<rect class="band" x="319.405" y="373.683" width="5.711" height="6.893" fill="url(#layerGradient44)"/>
+<rect class="band" x="97.812" y="366.091" width="33.487" height="6.893" fill="url(#layerGradient45)"/>
+<rect class="band" x="198.427" y="366.091" width="4.200" height="6.893" fill="url(#layerGradient45)"/>
+<rect class="band" x="257.497" y="366.091" width="12.686" height="6.893" fill="url(#layerGradient45)"/>
+<rect class="band" x="279.279" y="366.091" width="6.697" height="6.893" fill="url(#layerGradient45)"/>
+<rect class="band" x="320.990" y="366.091" width="3.357" height="6.893" fill="url(#layerGradient45)"/>
+<rect class="band" x="95.000" y="358.498" width="2.793" height="6.893" fill="url(#layerGradient46)"/>
+<rect class="band" x="97.812" y="358.498" width="5.344" height="6.893" fill="url(#layerGradient46)"/>
+<rect class="band" x="103.809" y="358.498" width="26.461" height="6.893" fill="url(#layerGradient46)"/>
+<rect class="band" x="258.373" y="358.498" width="10.590" height="6.893" fill="url(#layerGradient46)"/>
+<rect class="band" x="95.000" y="350.906" width="2.793" height="6.893" fill="url(#layerGradient47)"/>
+<rect class="band" x="97.812" y="350.906" width="3.846" height="6.893" fill="url(#layerGradient47)"/>
+<rect class="band" x="106.401" y="350.906" width="3.265" height="6.893" fill="url(#layerGradient47)"/>
+<rect class="band" x="111.657" y="350.906" width="17.717" height="6.893" fill="url(#layerGradient47)"/>
+<rect class="band" x="262.313" y="350.906" width="4.510" height="6.893" fill="url(#layerGradient47)"/>
+<rect class="band" x="95.000" y="343.313" width="2.793" height="6.893" fill="url(#layerGradient48)"/>
+<rect class="band" x="97.812" y="343.313" width="2.944" height="6.893" fill="url(#layerGradient48)"/>
+<rect class="band" x="107.117" y="343.313" width="1.717" height="6.893" fill="url(#layerGradient48)"/>
+<rect class="band" x="113.058" y="343.313" width="13.853" height="6.893" fill="url(#layerGradient48)"/>
+<rect class="band" x="95.000" y="335.720" width="2.793" height="6.893" fill="url(#layerGradient49)"/>
+<rect class="band" x="97.812" y="335.720" width="2.307" height="6.893" fill="url(#layerGradient49)"/>
+<rect class="band" x="114.474" y="335.720" width="12.038" height="6.893" fill="url(#layerGradient49)"/>
+<rect class="band" x="95.000" y="328.128" width="2.793" height="6.893" fill="url(#layerGradient50)"/>
+<rect class="band" x="97.812" y="328.128" width="1.727" height="6.893" fill="url(#layerGradient50)"/>
+<rect class="band" x="115.626" y="328.128" width="10.008" height="6.893" fill="url(#layerGradient50)"/>
+<rect class="band" x="95.287" y="320.535" width="2.506" height="6.893" fill="url(#layerGradient51)"/>
+<rect class="band" x="97.812" y="320.535" width="1.496" height="6.893" fill="url(#layerGradient51)"/>
+<rect class="band" x="117.063" y="320.535" width="8.138" height="6.893" fill="url(#layerGradient51)"/>
+<rect class="band" x="118.780" y="312.943" width="4.139" height="6.893" fill="url(#layerGradient52)"/>
+<line class="guide" x1="95.00" y1="297.00" x2="95.00" y2="730.00"/>
+<rect class="cover" x="88.00" y="358.40" width="14" height="7.09" rx="1"/>
+<text class="pin" x="95.00" y="749.00" text-anchor="middle">W3</text>
+<text class="detail" x="95.00" y="767.00" text-anchor="middle">hole ≤ 4,000</text>
+<text class="detail" x="95.00" y="783.00" text-anchor="middle">cover 4,200 ft</text>
+<line class="guide" x1="274.13" y1="297.00" x2="274.13" y2="730.00"/>
+<rect class="cover" x="267.13" y="381.18" width="14" height="7.09" rx="1"/>
+<text class="pin" x="274.13" y="749.00" text-anchor="middle">W1</text>
+<text class="detail" x="274.13" y="767.00" text-anchor="middle">hole ≤ 3,400</text>
+<text class="detail" x="274.13" y="783.00" text-anchor="middle">cover 3,600 ft</text>
+<line class="guide" x1="463.31" y1="297.00" x2="463.31" y2="730.00"/>
+<rect class="cover" x="456.31" y="411.55" width="14" height="7.09" rx="1"/>
+<text class="pin" x="463.31" y="749.00" text-anchor="middle">W2</text>
+<text class="detail" x="463.31" y="767.00" text-anchor="middle">hole ≤ 2,600</text>
+<text class="detail" x="463.31" y="783.00" text-anchor="middle">cover 2,800 ft</text>
+<line class="guide" x1="924.38" y1="297.00" x2="924.38" y2="730.00"/>
+<rect class="cover" x="917.38" y="586.18" width="14" height="7.09" rx="1"/>
+<text class="pin" x="924.38" y="749.00" text-anchor="middle">E2</text>
+<text class="detail" x="924.38" y="767.00" text-anchor="middle">hole ≤ 550</text>
+<text class="detail" x="924.38" y="783.00" text-anchor="middle">cover 600 ft</text>
+<line class="guide" x1="1217.19" y1="297.00" x2="1217.19" y2="730.00"/>
+<rect class="cover" x="1210.19" y="639.32" width="14" height="7.09" rx="1"/>
+<text class="pin" x="1217.19" y="749.00" text-anchor="middle">E1</text>
+<text class="detail" x="1217.19" y="767.00" text-anchor="middle">hole ≤ 200</text>
+<text class="detail" x="1217.19" y="783.00" text-anchor="middle">cover 250 ft</text>
+<line class="guide" x1="1510.00" y1="297.00" x2="1510.00" y2="730.00"/>
+<rect class="cover" x="1503.00" y="662.10" width="14" height="7.09" rx="1"/>
+<text class="pin" x="1510.00" y="749.00" text-anchor="middle">E3</text>
+<text class="detail" x="1510.00" y="767.00" text-anchor="middle">hole ≤ 125</text>
+<text class="detail" x="1510.00" y="783.00" text-anchor="middle">cover 150 ft</text>
+<rect x="72" y="860" width="48" height="10" fill="#3e94c5"/>
+<rect x="93" y="860" width="6" height="10" fill="#0d171c"/>
+<text class="legend" x="132" y="869">actual 2.3 mm registration-hole intersection</text>
+<rect x="520" y="859" width="48" height="12" fill="#cf9f35" stroke="#f4fafb" stroke-width="2"/>
+<text class="legend" x="580" y="869">first intact cover sheet</text>
+<line x1="865" y1="865" x2="902" y2="865" stroke="#f59e0b" stroke-width="3"/>
+<text class="legend" x="914" y="869">plan section trace</text>
+<text class="fine" x="1528" y="869" text-anchor="end">horizontal scale is cumulative section distance</text>
+</svg>
